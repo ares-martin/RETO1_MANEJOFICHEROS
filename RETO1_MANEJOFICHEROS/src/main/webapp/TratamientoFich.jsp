@@ -13,12 +13,12 @@
 	<table>
 		<tr>
 			<td colspan="2"></td>
-			<td>DATO1: <input type="text" name="dato1"/></td>
+			<td>DATO1: <input type="text" name="dato"/></td>
 		</tr>
 		
 		<tr>
 			<td colspan="2"></td>
-			<td>DATO2: <input type="text" name="dato2"/></td>
+			<td>DATO2: <input type="text" name="dato"/></td>
 		</tr>
 		
 		<tr>
@@ -32,13 +32,13 @@
 				</select>
 			</td>
 			<td colspan="1"></td>
-			<td>DATO3: <input type="text" name="dato3"/></td>
+			<td>DATO3: <input type="text" name="dato"/></td>
 		</tr>
 		
 		<tr>
 			<td>¿Qué quiere hacer con el fichero?</td>
 			<td colspan="1"></td>
-			<td>DATO4: <input type="text" name="dato3"/></td>
+			<td>DATO4: <input type="text" name="dato"/></td>
 		</tr>
 		
 		<tr>
@@ -47,14 +47,23 @@
 				Escritura: <input type="radio" name="eleccionFich" value="escritura">
 			</td>
 			<td colspan="1"></td>
-			<td>DATO5: <textarea name="dato5" rows="3" cols="20"></textarea></td>
+			<td>DATO5: <textarea name="dato" rows="3" cols="20"></textarea></td>
 		</tr>
 		
 		<tr>
 			<td colspan="2"></td>
-			<td>DATO6: <input type="text" name="dato3"/></td>
+			<td>DATO6: <input type="text" name="dato"/></td>
 		</tr>
 	</table>
+	
+	<%
+	if(request.getAttribute("error")!=null){
+		if(request.getAttribute("error").equals("error2")){
+			%><p style="color:red">(*) Los campos no pueden estar vacíos</p>
+		<%}
+	}
+%>
+	
 	<input type="submit" value="Enviar" name="boton"/>
 </form>
 </body>
