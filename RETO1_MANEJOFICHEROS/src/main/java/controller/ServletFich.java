@@ -13,32 +13,39 @@ import java.io.IOException;
 @WebServlet("/ServletFich")
 public class ServletFich extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
-    /**
-     * @see HttpServlet#HttpServlet()
-     */
-    public ServletFich() {
-        super();
-        // TODO Auto-generated constructor stub
-    }
 
 	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 * @see HttpServlet#HttpServlet()
+	 */
+	public ServletFich() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse
+	 *      response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String page="";
+		String page = "";
+		String[] arrayDatos = request.getParameterValues("dato");
+		boolean datosVacios = false;
+		getServletContext().setAttribute("datosVacios", false);
+		String eleccionFich = request.getParameter("eleccionFich") != null ? (String)request.getParameter("eleccionFich") : "";
 		
-		
-			String[] array = request.getParameterValues("dato");
-			if(array) {
-				request.setAttribute("error", "error1");
-				page="TratamientoFich.jsp";
-			}else{
-				request.setAttribute("error", "error1");
-				page="TratamientoFich.jsp";
-				
+		for (String s : arrayDatos) {
+			if (s.isBlank()) {
+				datosVacios = true;
 			}
+		}
 		
+		if (datosVacios) {
+			getServletContext().setAttribute("datosVacios", true);
+			page = "TratamientoFich.jsp";
+		} else {
+			page = "";
+		}
+
 		request.getRequestDispatcher(page).forward(request, response);
 	}
 
