@@ -26,7 +26,20 @@ public class ServletFich extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String page="";
 		
+		
+			String[] array = request.getParameterValues("dato");
+			if(array) {
+				request.setAttribute("error", "error1");
+				page="TratamientoFich.jsp";
+			}else{
+				request.setAttribute("error", "error1");
+				page="TratamientoFich.jsp";
+				
+			}
+		
+		request.getRequestDispatcher(page).forward(request, response);
 	}
 
 }
