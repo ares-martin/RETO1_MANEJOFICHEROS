@@ -84,7 +84,7 @@ public class ServletFich extends HttpServlet {
 							//Método para escribir en RDF
 						}
 					}
-					//No sé como hacer para que salga de aquí sin pasar por el dispatchet!!!!
+					page = "TratamientoFich.jsp";
 				}
 				break;
 			}
