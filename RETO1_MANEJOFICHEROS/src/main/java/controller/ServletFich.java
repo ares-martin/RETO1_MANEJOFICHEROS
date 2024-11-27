@@ -27,6 +27,7 @@ public class ServletFich extends HttpServlet {
 	 *      response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		getServletContext().setAttribute("datosVacios", false);
 		String page = "";
 
 		switch (request.getParameter("eleccionFich")) {
@@ -54,7 +55,6 @@ public class ServletFich extends HttpServlet {
 			case "escritura": {
 				String[] arrayDatos = request.getParameterValues("dato");
 				boolean datosVacios = false;
-				getServletContext().setAttribute("datosVacios", false);
 				
 				//Comprobación por si hay datos en blanco
 				for (String s : arrayDatos) {
