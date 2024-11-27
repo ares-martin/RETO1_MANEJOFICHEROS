@@ -27,26 +27,35 @@ public class ServletFich extends HttpServlet {
 	 *      response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		//Guardara el jsp que va a redirigir el servlet
 		String page = "";
 		String[] arrayDatos = request.getParameterValues("dato");
 		boolean datosVacios = false;
 		getServletContext().setAttribute("datosVacios", false);
-		String eleccionFich = request.getParameter("eleccionFich") != null ? (String)request.getParameter("eleccionFich") : "";
 		
+		//Recoge la accion elegida por el usuario para lectura o escritura
+		String accionFichero = request.getParameter("accionFichero") != null ? (String)request.getParameter("accionFichero") : "";
+		
+		//Comprobar si los datos no estan vacios
 		for (String s : arrayDatos) {
 			if (s.isBlank()) {
 				datosVacios = true;
 			}
 		}
 		
-		if (datosVacios) {
+		if (!datosVacios) {
+			
+			page = "";
+		} else {
+			
 			getServletContext().setAttribute("datosVacios", true);
 			page = "TratamientoFich.jsp";
-		} else {
-			page = "";
 		}
 
 		request.getRequestDispatcher(page).forward(request, response);
 	}
+	
+	private 
 
 }

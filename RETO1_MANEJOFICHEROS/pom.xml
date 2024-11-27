@@ -33,6 +33,13 @@
     	<version>6.1.0</version>
     </dependency>
     
+    <dependency>
+    	<groupId>org.apache.jena</groupId>
+    	<artifactId>apache-jena-libs</artifactId>
+   		<version>4.9.0</version> <!-- Verifica la versión más reciente -->
+    	<type>pom</type>
+	</dependency>
+    
   </dependencies>
 
   <build>
