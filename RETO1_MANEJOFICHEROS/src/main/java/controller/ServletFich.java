@@ -28,25 +28,67 @@ public class ServletFich extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String page = "";
-		String[] arrayDatos = request.getParameterValues("dato");
-		boolean datosVacios = false;
-		getServletContext().setAttribute("datosVacios", false);
-		String eleccionFich = request.getParameter("eleccionFich") != null ? (String)request.getParameter("eleccionFich") : "";
-		
-		for (String s : arrayDatos) {
-			if (s.isBlank()) {
-				datosVacios = true;
+
+		switch (request.getParameter("eleccionFich")) {
+			case "lectura": {
+				switch (request.getParameter("formatoFich")) {
+					case "XML": {
+						//Método para leer XML
+					}
+					case "JSON": {
+						//Método para leer JSON
+					}
+					case "CSV": {
+						//Método para leer CSV
+					}
+					case "XLS": {
+						//Método para leer XLS
+					}
+					case "RDF": {
+						//Método para leer RDF
+					}
+				}
+				page = "AccesoDatosA.jsp";
+				break;
+			}
+			case "escritura": {
+				String[] arrayDatos = request.getParameterValues("dato");
+				boolean datosVacios = false;
+				getServletContext().setAttribute("datosVacios", false);
+				
+				//Comprobación por si hay datos en blanco
+				for (String s : arrayDatos) {
+					if (s.isBlank()) {
+						datosVacios = true;
+					}
+				}
+				
+				if (datosVacios) {
+					getServletContext().setAttribute("datosVacios", true);
+					page = "TratamientoFich.jsp";
+				} else {
+					switch (request.getParameter("formatoFich")) {
+						case "XML": {
+							//Método para escribir en XML
+						}
+						case "JSON": {
+							//Método para escribir en JSON
+						}
+						case "CSV": {
+							//Método para escribir en CSV
+						}
+						case "XLS": {
+							//Método para escribir en XLS
+						}
+						case "RDF": {
+							//Método para escribir en RDF
+						}
+					}
+					//No sé como hacer para que salga de aquí sin pasar por el dispatchet!!!!
+				}
+				break;
 			}
 		}
-		
-		if (datosVacios) {
-			getServletContext().setAttribute("datosVacios", true);
-			page = "TratamientoFich.jsp";
-		} else {
-			page = "";
-		}
-
 		request.getRequestDispatcher(page).forward(request, response);
 	}
-
 }
