@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8" errorPage="Error.jsp"%>
 <!DOCTYPE html>
 <%
 boolean datosVacios = application.getAttribute("datosVacios") != null ? (boolean) application.getAttribute("datosVacios") : false;
@@ -15,12 +15,14 @@ boolean datosVacios = application.getAttribute("datosVacios") != null ? (boolean
 
 		<table>
 			<tr>
-				<td colspan="2"></td>
+				<td></td>
+				<td></td>
 				<td>DATO1: <input type="text" name="dato" /></td>
 			</tr>
 
 			<tr>
-				<td colspan="2"></td>
+				<td></td>
+				<td></td>
 				<td>DATO2: <input type="text" name="dato" /></td>
 			</tr>
 
@@ -33,34 +35,40 @@ boolean datosVacios = application.getAttribute("datosVacios") != null ? (boolean
 						<option value="RDF">RDF</option>
 				</select>
 				</td>
-				<td colspan="1"></td>
+				<td></td>
 				<td>DATO3: <input type="text" name="dato" /></td>
 			</tr>
 
 			<tr>
 				<td>¿Qué quiere hacer con el fichero?</td>
-				<td colspan="1"></td>
+				<td></td>
 				<td>DATO4: <input type="text" name="dato" /></td>
 			</tr>
 
 			<tr>
-				<td>Lectura: <input type="radio" name="eleccionFich" value="lectura" checked>
-					Escritura: <input type="radio" name="eleccionFich" value="escritura">
-				</td>
-				<td colspan="1"></td>
+				<td>Lectura: <input type="radio" name="eleccionFich" value="lectura" checked></td>
+				<td></td>
 				<td>DATO5: <textarea name="dato" rows="3" cols="20"></textarea></td>
 			</tr>
 
 			<tr>
-				<td colspan="2"></td>
+				<td>Escritura: <input type="radio" name="eleccionFich" value="escritura"></td>
+				<td></td>
 				<td>DATO6: <input type="text" name="dato" /></td>
+			</tr>
+			
+			<tr>
+				<td></td>
+				<td></td>
+				<td>
+					<% if (datosVacios) { %>
+						<p style="color: red">(*) Los campos no pueden estar vacíos</p>
+					<% } %>
+				</td>
 			</tr>
 		</table>
 		
-		<% if (datosVacios) { %>
-			<p style="color: red">(*) Los campos no pueden estar vacíos</p>
-		<% } %>
-
+		
 		<input type="submit" value="Enviar" name="boton" />
 	</form>
 </body>
