@@ -6,6 +6,16 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.io.InputStream;
+
+import org.apache.jena.rdf.model.Model;
+import org.apache.jena.rdf.model.ModelFactory;
+import org.apache.jena.rdf.model.Property;
+import org.apache.jena.rdf.model.RDFNode;
+import org.apache.jena.rdf.model.Resource;
+import org.apache.jena.rdf.model.Statement;
+import org.apache.jena.rdf.model.StmtIterator;
+import org.apache.jena.util.FileManager;
 
 /**
  * Servlet implementation class ServletFich
@@ -33,7 +43,7 @@ public class ServletFich extends HttpServlet {
 		String[] arrayDatos = request.getParameterValues("dato");
 		boolean datosVacios = false;
 		getServletContext().setAttribute("datosVacios", false);
-		
+		//lecturaRDF();
 		//Recoge la accion elegida por el usuario para lectura o escritura
 		String accionFichero = request.getParameter("accionFichero") != null ? (String)request.getParameter("accionFichero") : "";
 		
@@ -56,6 +66,32 @@ public class ServletFich extends HttpServlet {
 		request.getRequestDispatcher(page).forward(request, response);
 	}
 	
-	private 
+	private void lecturaRDF() {
+        Model model = ModelFactory.createDefaultModel();
+        
+        try (InputStream in = ServletFich.class.getClassLoader().getResourceAsStream("calidad-aire.rdf")) {
+            if (in == null) {
+                throw new IllegalArgumentException("Archivo no encontrado: ");
+            }
+
+            // Leer el modelo RDF
+            model.read(in, null, "RDF/XML");
+
+            // Iterar sobre los triples
+            StmtIterator iter = model.listStatements();
+            while (iter.hasNext()) {
+                Statement stmt = iter.nextStatement();
+                Resource subject = stmt.getSubject();     // Sujeto
+                Property predicate = stmt.getPredicate(); // Predicado
+                RDFNode object = stmt.getObject();        // Objeto
+
+                System.out.println(subject.toString() + " " +
+                                   predicate.toString() + " " +
+                                   object.toString());
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+	}
 
 }
