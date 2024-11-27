@@ -5,7 +5,14 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.IOException;
+import java.util.Properties;
+
+import com.google.gson.Gson;
 
 /**
  * Servlet implementation class ServletFich
@@ -27,68 +34,50 @@ public class ServletFich extends HttpServlet {
 	 *      response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		getServletContext().setAttribute("datosVacios", false);
 		String page = "";
-
-		switch (request.getParameter("eleccionFich")) {
-			case "lectura": {
-				switch (request.getParameter("formatoFich")) {
-					case "XML": {
-						//Método para leer XML
-					}
-					case "JSON": {
-						//Método para leer JSON
-					}
-					case "CSV": {
-						//Método para leer CSV
-					}
-					case "XLS": {
-						//Método para leer XLS
-					}
-					case "RDF": {
-						//Método para leer RDF
-					}
-				}
-				page = "AccesoDatosA.jsp";
-				break;
-			}
-			case "escritura": {
-				String[] arrayDatos = request.getParameterValues("dato");
-				boolean datosVacios = false;
-				
-				//Comprobación por si hay datos en blanco
-				for (String s : arrayDatos) {
-					if (s.isBlank()) {
-						datosVacios = true;
-					}
-				}
-				
-				if (datosVacios) {
-					getServletContext().setAttribute("datosVacios", true);
-					page = "TratamientoFich.jsp";
-				} else {
-					switch (request.getParameter("formatoFich")) {
-						case "XML": {
-							//Método para escribir en XML
-						}
-						case "JSON": {
-							//Método para escribir en JSON
-						}
-						case "CSV": {
-							//Método para escribir en CSV
-						}
-						case "XLS": {
-							//Método para escribir en XLS
-						}
-						case "RDF": {
-							//Método para escribir en RDF
-						}
-					}
-					page = "TratamientoFich.jsp";
-				}
-				break;
+		String[] arrayDatos = request.getParameterValues("dato");
+		boolean datosVacios = false;
+		getServletContext().setAttribute("datosVacios", false);
+		String eleccionFich = request.getParameter("eleccionFich") != null ? (String)request.getParameter("eleccionFich") : "";
+		
+		for (String s : arrayDatos) {
+			if (s.isBlank()) {
+				datosVacios = true;
 			}
 		}
+		
+		if (datosVacios) {
+			getServletContext().setAttribute("datosVacios", true);
+			page = "TratamientoFich.jsp";
+		} else {
+			page = "";
+		}
+
 		request.getRequestDispatcher(page).forward(request, response);
+		
+		if(request.getAttribute("formatoFich").equals("JSON")) {
+			lecturaJSON();
+		}
 	}
+	
+	protected void lecturaJSON() {
+		Gson gson = new Gson();
+		
+		String fichero = "calidad-aire.json";
+
+		try (BufferedReader br = new BufferedReader(new FileReader("calidad-aire.json"))) {
+		    String linea;
+		    while ((linea = br.readLine()) != null) {
+		        fichero += linea;
+		    }
+
+		} catch (FileNotFoundException ex) {
+		    System.out.println(ex.getMessage());
+		} catch (IOException ex) {
+		    System.out.println(ex.getMessage());
+		}
+		
+		Properties properties = gson.fromJson(fichero, Properties.class);
+	}
+
 }
