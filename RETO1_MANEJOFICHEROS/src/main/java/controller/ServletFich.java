@@ -5,12 +5,11 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
 import java.io.IOException;
-import java.util.Properties;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.util.List;
+import java.util.Map;
 
 import com.google.gson.Gson;
 
@@ -20,7 +19,8 @@ import com.google.gson.Gson;
 @WebServlet("/ServletFich")
 public class ServletFich extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-
+	Gson gson = new Gson(); // variable para leer JSON
+	
 	/**
 	 * @see HttpServlet#HttpServlet()
 	 */
@@ -34,50 +34,102 @@ public class ServletFich extends HttpServlet {
 	 *      response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String page = "";
-		String[] arrayDatos = request.getParameterValues("dato");
-		boolean datosVacios = false;
 		getServletContext().setAttribute("datosVacios", false);
-		String eleccionFich = request.getParameter("eleccionFich") != null ? (String)request.getParameter("eleccionFich") : "";
-		
-		for (String s : arrayDatos) {
-			if (s.isBlank()) {
-				datosVacios = true;
+		String page = "";
+
+		switch (request.getParameter("eleccionFich")) {
+			case "lectura": {
+				switch (request.getParameter("formatoFich")) {
+					case "XML": {
+						//Método para leer XML
+						break;
+					}
+					case "JSON": {
+						//Método para leer JSON
+						List<Map<String, Object>> data = lecturaJSON();
+						
+					    request.setAttribute("data", data);
+					    request.setAttribute("prueba", "prueba");
+					    break;
+					}
+					case "CSV": {
+						//Método para leer CSV
+						break;
+					}
+					case "XLS": {
+						//Método para leer XLS
+						break;
+					}
+					case "RDF": {
+						//Método para leer RDF
+						break;
+					}
+				}
+				page = "AccesoDatosA.jsp";
+				break;
+			}
+			case "escritura": {
+				String[] arrayDatos = request.getParameterValues("dato");
+				boolean datosVacios = false;
+				
+				//Comprobación por si hay datos en blanco
+				for (String s : arrayDatos) {
+					if (s.isBlank()) {
+						datosVacios = true;
+					}
+				}
+				
+				if (datosVacios) {
+					getServletContext().setAttribute("datosVacios", true);
+					page = "TratamientoFich.jsp";
+				} else {
+					switch (request.getParameter("formatoFich")) {
+						case "XML": {
+							//Método para escribir en XML
+							break;
+						}
+						case "JSON": {
+							//Método para escribir en JSON
+							break;
+						}
+						case "CSV": {
+							//Método para escribir en CSV
+							break;
+						}
+						case "XLS": {
+							//Método para escribir en XLS
+							break;
+						}
+						case "RDF": {
+							//Método para escribir en RDF
+							break;
+						}
+					}
+					page = "TratamientoFich.jsp";
+				}
+				break;
 			}
 		}
 		
-		if (datosVacios) {
-			getServletContext().setAttribute("datosVacios", true);
-			page = "TratamientoFich.jsp";
-		} else {
-			page = "";
-		}
-
 		request.getRequestDispatcher(page).forward(request, response);
-		
-		if(request.getAttribute("formatoFich").equals("JSON")) {
-			lecturaJSON();
-		}
 	}
 	
-	protected void lecturaJSON() {
-		Gson gson = new Gson();
+	protected List<Map<String,Object>> lecturaJSON() throws ServletException {
 		
-		String fichero = "calidad-aire.json";
+       InputStream inputStream = getClass().getClassLoader().getResourceAsStream("calidad-aire.json");
+       if (inputStream == null) {
+           throw new ServletException();
+           //redirigir a pagina error si no se encuentra el fichero
+       }
 
-		try (BufferedReader br = new BufferedReader(new FileReader("calidad-aire.json"))) {
-		    String linea;
-		    while ((linea = br.readLine()) != null) {
-		        fichero += linea;
-		    }
-
-		} catch (FileNotFoundException ex) {
-		    System.out.println(ex.getMessage());
-		} catch (IOException ex) {
-		    System.out.println(ex.getMessage());
-		}
-		
-		Properties properties = gson.fromJson(fichero, Properties.class);
-	}
-
+       try (InputStreamReader reader = new InputStreamReader(inputStream)) {
+    	   Map<String, Object> root = gson.fromJson(reader, Map.class);
+           List<Map<String, Object>> data = (List<Map<String, Object>>) root.get("result");
+           return data;
+           
+       } catch (IOException e) {
+           throw new ServletException(e);
+           //redirigir a pagina error si el fichero da error
+       }
+   }
 }
