@@ -6,6 +6,20 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.io.InputStream;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+
+import org.apache.jena.rdf.model.Model;
+import org.apache.jena.rdf.model.ModelFactory;
+import org.apache.jena.rdf.model.RDFNode;
+import org.apache.jena.rdf.model.Resource;
+import org.apache.jena.rdf.model.Statement;
+
 
 /**
  * Servlet implementation class ServletFich
@@ -47,6 +61,7 @@ public class ServletFich extends HttpServlet {
 					}
 					case "RDF": {
 						//Método para leer RDF
+						leerRDF(request, response);
 					}
 				}
 				page = "AccesoDatosA.jsp";
@@ -90,5 +105,44 @@ public class ServletFich extends HttpServlet {
 			}
 		}
 		request.getRequestDispatcher(page).forward(request, response);
+	}
+	
+	private void leerRDF(HttpServletRequest request, HttpServletResponse response) {
+		try (InputStream inputStream = ServletFich.class.getClassLoader().getResourceAsStream("forets_resilientes.rdf")) {
+            if (inputStream == null) {
+                throw new IllegalArgumentException("Archivo no encontrado: datos.rdf");
+            }
+            
+            Model model = ModelFactory.createDefaultModel();
+            model.read(inputStream, null, "RDF/XML");
+
+            // Mostrar los triples
+            List<ObjetoRDF> objetos = new ArrayList<>();
+            Set<String> todasLasPropiedades = new HashSet<>();
+            // Iterar sobre los recursos del modelo
+            for (Resource resource : model.listSubjects().toList()) {
+                // Crear un objeto RDF para cada recurso
+                ObjetoRDF objeto = new ObjetoRDF(resource.getURI());
+                
+                // Iterar sobre cada propiedad de ese recurso
+                for (Statement stmt : resource.listProperties().toList()) {
+                    String propiedad = stmt.getPredicate().getLocalName(); // Nombre de la propiedad
+                    String valor = stmt.getObject().isLiteral() 
+                                    ? stmt.getObject().asLiteral().getString() // Si es literal, obtiene el valor
+                                    : stmt.getObject().toString(); // Si es un recurso, conviértelo a string
+                                    
+                    // Agregar la propiedad al objeto RDF
+                    objeto.setPropiedad(propiedad, valor);
+                    todasLasPropiedades.add(propiedad);
+                }
+                objetos.add(objeto);
+            }
+            
+            request.setAttribute("objetos", objetos);
+    		request.setAttribute("propiedades", todasLasPropiedades);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
 	}
 }

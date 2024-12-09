@@ -40,6 +40,12 @@
 	    <version>2.10.1</version> 
 	</dependency>
 
+	<!-- dependencia para lectura/escritura RDF -->
+	<dependency>
+	    <groupId>org.apache.jena</groupId>
+	    <artifactId>jena-arq</artifactId>
+	    <version>4.9.0</version>
+	</dependency>
     
   </dependencies>
 
