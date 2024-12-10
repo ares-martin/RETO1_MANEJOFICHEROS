@@ -1,4 +1,4 @@
-package controller;
+package com.gf.RETO1_ManejoFicheros.controller;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
@@ -8,7 +8,6 @@ import jakarta.servlet.http.HttpServletResponse;
 
 import java.io.File;
 import java.io.IOException;
-import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
@@ -41,78 +40,85 @@ public class ServletFich extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse
 	 *      response)
 	 */
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		getServletContext().setAttribute("datosVacios", false);
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
 		String page = "";
-		ArrayList<String> cabeceras;
 
-		switch (request.getParameter("eleccionFich")) {
-		case "lectura": {
-			switch (request.getParameter("formatoFich")) {
-			case "XML": {
-				Map<String, List<String>> dataMap = lecturaXML();
-	            request.setAttribute("dataMap", dataMap);
-	            page = "AccesoDatosA.jsp";
-	            break;
-			}
-			case "JSON": {
-				// Método para leer JSON
-			}
-			case "CSV": {
-				// Método para leer CSV
-			}
-			case "XLS": {
-				// Método para leer XLS
-			}
-			case "RDF": {
-				// Método para leer RDF
-			}
-			}
-			// page = "AccesoDatosA.jsp";
-			break;
-		}
-		case "escritura": {
-			String[] arrayDatos = request.getParameterValues("dato");
-			boolean datosVacios = false;
+		try {
+			getServletContext().setAttribute("datosVacios", false);
 
-			// Comprobación por si hay datos en blanco
-			for (String s : arrayDatos) {
-				if (s.isBlank()) {
-					datosVacios = true;
-				}
-			}
-
-			if (datosVacios) {
-				getServletContext().setAttribute("datosVacios", true);
-				page = "TratamientoFich.jsp";
-			} else {
+			switch (request.getParameter("eleccionFich")) {
+			case "lectura": {
 				switch (request.getParameter("formatoFich")) {
 				case "XML": {
-					escrituraXML(arrayDatos);
+					Map<String, List<String>> dataMap = lecturaXML();
+					getServletContext().setAttribute("dataMap", dataMap);
+					page = "AccesoDatosA.jsp";
 					break;
 				}
 				case "JSON": {
-					// Método para escribir en JSON
+					// Método para leer JSON
 				}
 				case "CSV": {
-					// Método para escribir en CSV
+					// Método para leer CSV
 				}
 				case "XLS": {
-					// Método para escribir en XLS
+					// Método para leer XLS
 				}
 				case "RDF": {
-					// Método para escribir en RDF
+					// Método para leer RDF
 				}
 				}
-				page = "TratamientoFich.jsp";
+				// page = "AccesoDatosA.jsp";
+				break;
 			}
-			break;
+			case "escritura": {
+				String[] arrayDatos = request.getParameterValues("dato");
+				boolean datosVacios = false;
+
+				// Comprobación por si hay datos en blanco
+				for (String s : arrayDatos) {
+					if (s.isBlank()) {
+						datosVacios = true;
+					}
+				}
+
+				if (datosVacios) {
+					getServletContext().setAttribute("datosVacios", true);
+					page = "TratamientoFich.jsp";
+				} else {
+					switch (request.getParameter("formatoFich")) {
+					case "XML": {
+						escrituraXML(arrayDatos);
+						//page = "";
+						break;
+					}
+					case "JSON": {
+						// Método para escribir en JSON
+					}
+					case "CSV": {
+						// Método para escribir en CSV
+					}
+					case "XLS": {
+						// Método para escribir en XLS
+					}
+					case "RDF": {
+						// Método para escribir en RDF
+					}
+					}
+					page = "TratamientoFich.jsp";
+				}
+				break;
+			}
+			}
+		} catch (Exception e) {
+			page = "Error.jsp";
+		} finally {
+			request.getRequestDispatcher(page).forward(request, response);
 		}
-		}
-		request.getRequestDispatcher(page).forward(request, response);
+
 	}
 
-	
 //	public static void lecturaXML() {
 //		try {
 //			File archivo = new File(ServletFich.class.getClassLoader().getResource("calidad-aire.xml").getFile());
@@ -171,126 +177,103 @@ public class ServletFich extends HttpServlet {
 //			e.printStackTrace();
 //		}
 //	}
-	
+
 	public static Map<String, List<String>> lecturaXML() {
-	    Map<String, List<String>> dataMap = new LinkedHashMap<>();
 
-	    try {
-	        File archivo = new File(ServletFich.class.getClassLoader().getResource("calidad-aire.xml").getFile());
-
-	        // Crear una instancia de DocumentBuilderFactory
-	        DocumentBuilderFactory fabrica = DocumentBuilderFactory.newInstance();
-	        DocumentBuilder constructor = fabrica.newDocumentBuilder();
-	        Document documento = constructor.parse(archivo);
-
-	        // Normalizar el documento
-	        documento.getDocumentElement().normalize();
-
-	        // Obtener todos los nodos <observation-aire>
-	        NodeList listaObservaciones = documento.getElementsByTagName("observation-aire");
-
-	        for (int i = 0; i < listaObservaciones.getLength(); i++) {
-	            Node nodo = listaObservaciones.item(i);
-
-	            if (nodo.getNodeType() == Node.ELEMENT_NODE) {
-	                Element elemento = (Element) nodo;
-
-	                // Iterar por las etiquetas hijas del nodo <observation-aire>
-	                NodeList hijos = elemento.getChildNodes();
-	                for (int j = 0; j < hijos.getLength(); j++) {
-	                    Node hijo = hijos.item(j);
-
-	                    if (hijo.getNodeType() == Node.ELEMENT_NODE) {
-	                        String key = hijo.getNodeName();
-	                        String value = hijo.getTextContent();
-
-	                        // Agregar la clave y valor al mapa
-	                        dataMap.putIfAbsent(key, new ArrayList<>());
-	                        dataMap.get(key).add(value);
-	                    }
-	                }
-	            }
-	        }
-
-//	        // Imprimir el mapa (para depuración)
-//	        dataMap.forEach((key, values) -> {
-//	            System.out.println(key + ": " + values);
-//	        });
-
-	    } catch (Exception e) {
-	        e.printStackTrace();
-	    }
-
-	    return dataMap;
-	}
-
-
-	
-	public static void escrituraXML(String[] arrayDatos) {
-		File archivo = new File(ServletFich.class.getClassLoader().getResource("calidad-aire.xml").getFile());
+		Map<String, List<String>> dataMap = new LinkedHashMap<>();
 
 		try {
-			// Cargar el documento XML existente
-			DocumentBuilderFactory fabrica = DocumentBuilderFactory.newInstance();
-			DocumentBuilder constructor = fabrica.newDocumentBuilder();
-			Document documento = constructor.parse(new File("calidad-aire.xml"));
+			File archivo = new File(ServletFich.class.getClassLoader().getResource("calidad-aire.xml").getFile());
+
+			// Crear una instancia de DocumentBuilderFactory
+			DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
+			DocumentBuilder constructor = dbf.newDocumentBuilder();
+			Document documento = constructor.parse(archivo);
 
 			// Normalizar el documento
 			documento.getDocumentElement().normalize();
 
-			// Obtener el nodo <result> donde se deben agregar las observaciones
+			// Obtener todos los nodos <observation-aire>
+			NodeList listaObservaciones = documento.getElementsByTagName("observation-aire");
+
+			for (int i = 0; i < listaObservaciones.getLength(); i++) {
+				Node nodo = listaObservaciones.item(i);
+
+				if (nodo.getNodeType() == Node.ELEMENT_NODE) {
+					Element elemento = (Element) nodo;
+
+					// Iterar por las etiquetas hijas del nodo <observation-aire>
+					NodeList hijos = elemento.getChildNodes();
+					for (int j = 0; j < hijos.getLength(); j++) {
+						Node hijo = hijos.item(j);
+
+						if (hijo.getNodeType() == Node.ELEMENT_NODE) {
+							String key = hijo.getNodeName();
+							String value = hijo.getTextContent();
+
+							// Agregar la clave y valor al mapa
+							dataMap.putIfAbsent(key, new ArrayList<>());
+							dataMap.get(key).add(value);
+						}
+					}
+				}
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		return dataMap;
+	}
+
+
+	public static void escrituraXML(String[] arrayDatos) {
+
+		try {
+			// Cargar el archivo XML
+			File archivo = new File(ServletFich.class.getClassLoader().getResource("calidad-aire.xml").getFile());
+
+			// Inicializar el parseador de XML
+			DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
+			DocumentBuilder constructor = dbf.newDocumentBuilder();
+			Document documento = constructor.parse(archivo);
+
+			// Normalizar el documento
+			documento.getDocumentElement().normalize();
+
+			// Obtener o crear el nodo <result>
 			Node nodoResult = documento.getElementsByTagName("result").item(0);
 			if (nodoResult == null) {
 				nodoResult = documento.createElement("result");
 				documento.getDocumentElement().appendChild(nodoResult);
 			}
 
-			// Crear el nuevo nodo <observation-aire>
+			// Crear y agregar el nuevo nodo <observation-aire>
 			Element nuevaObservacion = documento.createElement("observation-aire");
+			String[] nombresElementos = { "publicationDate", "value", "magnitud", "estado", "estacion", "periodo" };
 
-			// Agregar los datos al nodo
-			Element publicationDate = documento.createElement("publicationDate");
-			publicationDate.appendChild(documento.createTextNode(arrayDatos[0]));
-			nuevaObservacion.appendChild(publicationDate);
+			for (int i = 0; i < nombresElementos.length; i++) {
+				Element elemento = documento.createElement(nombresElementos[i]);
+				elemento.appendChild(documento.createTextNode(arrayDatos[i]));
+				nuevaObservacion.appendChild(elemento);
+			}
 
-			Element value = documento.createElement("value");
-			value.appendChild(documento.createTextNode(arrayDatos[1]));
-			nuevaObservacion.appendChild(value);
-
-			Element magnitudElement = documento.createElement("magnitud");
-			magnitudElement.appendChild(documento.createTextNode(arrayDatos[2]));
-			nuevaObservacion.appendChild(magnitudElement);
-
-			Element estadoElement = documento.createElement("estado");
-			estadoElement.appendChild(documento.createTextNode(arrayDatos[3]));
-			nuevaObservacion.appendChild(estadoElement);
-
-			Element estacionElement = documento.createElement("estacion");
-			estacionElement.appendChild(documento.createTextNode(arrayDatos[4]));
-			nuevaObservacion.appendChild(estacionElement);
-
-			Element periodoElement = documento.createElement("periodo");
-			periodoElement.appendChild(documento.createTextNode(arrayDatos[5]));
-			nuevaObservacion.appendChild(periodoElement);
-
-			// Agregar el nuevo nodo al <result>
 			nodoResult.appendChild(nuevaObservacion);
 
 			// Guardar los cambios en el archivo
-			TransformerFactory transformerFactory = TransformerFactory.newInstance();
-			Transformer transformer = transformerFactory.newTransformer();
-			transformer.setOutputProperty(OutputKeys.INDENT, "yes"); // Indentar para legibilidad
+			TransformerFactory tf = TransformerFactory.newInstance();
+			Transformer transformer = tf.newTransformer();
+			transformer.setOutputProperty(OutputKeys.INDENT, "yes");
 			DOMSource fuente = new DOMSource(documento);
-			StreamResult resultado = new StreamResult(new File("calidad-aire.xml"));
+			StreamResult resultado = new StreamResult(archivo);
 
 			transformer.transform(fuente, resultado);
 
-			System.out.println(
-					"*************************************************\nNodo agregado exitosamente al archivo XML.\n*************************************************");
+			System.out.println("*************************************************\nNodo agregado exitosamente al archivo XML.\n*************************************************");
 
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
+	
 
 }
