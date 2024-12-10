@@ -27,68 +27,74 @@ public class ServletFich extends HttpServlet {
 	 *      response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		getServletContext().setAttribute("datosVacios", false);
 		String page = "";
-
-		switch (request.getParameter("eleccionFich")) {
-			case "lectura": {
-				switch (request.getParameter("formatoFich")) {
-					case "XML": {
-						//Método para leer XML
-					}
-					case "JSON": {
-						//Método para leer JSON
-					}
-					case "CSV": {
-						//Método para leer CSV
-					}
-					case "XLS": {
-						//Método para leer XLS
-					}
-					case "RDF": {
-						//Método para leer RDF
-					}
-				}
-				page = "AccesoDatosA.jsp";
-				break;
-			}
-			case "escritura": {
-				String[] arrayDatos = request.getParameterValues("dato");
-				boolean datosVacios = false;
-				
-				//Comprobación por si hay datos en blanco
-				for (String s : arrayDatos) {
-					if (s.isBlank()) {
-						datosVacios = true;
-					}
-				}
-				
-				if (datosVacios) {
-					getServletContext().setAttribute("datosVacios", true);
-					page = "TratamientoFich.jsp";
-				} else {
+		try{
+			getServletContext().setAttribute("datosVacios", false);
+			
+			switch (request.getParameter("eleccionFich")) {
+				case "lectura": {
 					switch (request.getParameter("formatoFich")) {
 						case "XML": {
-							//Método para escribir en XML
+							//Método para leer XML
 						}
 						case "JSON": {
-							//Método para escribir en JSON
+							//Método para leer JSON
 						}
 						case "CSV": {
-							//Método para escribir en CSV
+							//Método para leer CSV
 						}
 						case "XLS": {
-							//Método para escribir en XLS
+							//Método para leer XLS
 						}
 						case "RDF": {
-							//Método para escribir en RDF
+							//Método para leer RDF
 						}
 					}
-					page = "TratamientoFich.jsp";
-				}
-				break;
+					page = "AccesoDatosA.jsp";
+					break;
 			}
+				case "escritura": {
+					String[] arrayDatos = request.getParameterValues("dato");
+					boolean datosVacios = false;
+					
+					//Comprobación por si hay datos en blanco
+					for (String s : arrayDatos) {
+						if (s.isBlank()) {
+							datosVacios = true;
+						}
+					}
+					
+					if (datosVacios) {
+						getServletContext().setAttribute("datosVacios", true);
+						page = "TratamientoFich.jsp";
+					} else {
+						switch (request.getParameter("formatoFich")) {
+							case "XML": {
+								//Método para escribir en XML
+							}
+							case "JSON": {
+								//Método para escribir en JSON
+							}
+							case "CSV": {
+								//Método para escribir en CSV
+							}
+							case "XLS": {
+								//Método para escribir en XLS
+							}
+							case "RDF": {
+								//Método para escribir en RDF
+							}
+						}
+						page = "TratamientoFich.jsp";
+					}
+					break;
+				}
+			}
+		}catch(Exception e){
+			page = "Error.jsp";
+		}finally{
+			request.getRequestDispatcher(page).forward(request, response);
 		}
-		request.getRequestDispatcher(page).forward(request, response);
+		
 	}
 }
