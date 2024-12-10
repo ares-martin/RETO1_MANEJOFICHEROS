@@ -5,6 +5,11 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
@@ -13,6 +18,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.UUID;
 
 import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.ModelFactory;
@@ -97,9 +103,11 @@ public class ServletFich extends HttpServlet {
 						}
 						case "RDF": {
 							//Método para escribir en RDF
+							escribirRDF(request, response);
+							leerRDF(request, response);
 						}
 					}
-					page = "TratamientoFich.jsp";
+					page = "AccesoDatosA.jsp";
 				}
 				break;
 			}
@@ -108,9 +116,9 @@ public class ServletFich extends HttpServlet {
 	}
 	
 	private void leerRDF(HttpServletRequest request, HttpServletResponse response) {
-		try (InputStream inputStream = ServletFich.class.getClassLoader().getResourceAsStream("forets_resilientes.rdf")) {
+		try (InputStream inputStream = ServletFich.class.getClassLoader().getResourceAsStream("calidad-aire.rdf")) {
             if (inputStream == null) {
-                throw new IllegalArgumentException("Archivo no encontrado: datos.rdf");
+                throw new IllegalArgumentException("Archivo no encontrado: calidad-aire.rdf");
             }
             
             Model model = ModelFactory.createDefaultModel();
@@ -144,5 +152,47 @@ public class ServletFich extends HttpServlet {
 			e.printStackTrace();
 		}
 		
+	}
+
+	private void escribirRDF(HttpServletRequest request, HttpServletResponse response) {
+		String namespace = "http://example.org/observation/observation-";
+		String [] datos = request.getParameterValues("dato");
+		
+
+            // 3️⃣ Cargar el modelo RDF desde el InputStream
+            Model model = ModelFactory.createDefaultModel();
+
+          
+
+            // 4️⃣ Crear un nuevo recurso con una URI única
+            String uniqueId = UUID.randomUUID().toString();
+            String resourceURI = namespace + uniqueId;
+            Resource nuevoRecurso = model.createResource(resourceURI);
+
+            // 5️⃣ Agregar las propiedades al recurso
+            nuevoRecurso.addProperty(model.createProperty(namespace, "publicationDate"), datos[0]);
+            nuevoRecurso.addProperty(model.createProperty(namespace, "value"), datos[1]);
+            nuevoRecurso.addProperty(model.createProperty(namespace, "magnitud"), datos[2]);
+            nuevoRecurso.addProperty(model.createProperty(namespace, "estado"), datos[3]);
+            nuevoRecurso.addProperty(model.createProperty(namespace, "estacion"), datos[4]);
+            nuevoRecurso.addProperty(model.createProperty(namespace, "periodo"), datos[5]);
+            
+            InputStream inputStream = getClass().getClassLoader().getResourceAsStream("calidad-aire.rdf");
+
+            if (inputStream != null) {
+                model.read(inputStream, null, "RDF/XML");
+            }
+            // 6️⃣ Sobrescribir el archivo RDF
+
+            File rdfFile = new File(getServletContext().getRealPath("/calidad-aire.rdf"));
+            try (FileOutputStream out = new FileOutputStream(rdfFile)) {
+                model.write(out, "RDF/XML");
+            } catch (FileNotFoundException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 	}
 }
