@@ -9,6 +9,10 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.ArrayList;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
 
 import org.w3c.dom.*;
 import javax.xml.parsers.*;
@@ -40,13 +44,16 @@ public class ServletFich extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		getServletContext().setAttribute("datosVacios", false);
 		String page = "";
+		ArrayList<String> cabeceras;
 
 		switch (request.getParameter("eleccionFich")) {
 		case "lectura": {
 			switch (request.getParameter("formatoFich")) {
 			case "XML": {
-				lecturaXML();
-				break;
+				Map<String, List<String>> dataMap = lecturaXML();
+	            request.setAttribute("dataMap", dataMap);
+	            page = "AccesoDatosA.jsp";
+	            break;
 			}
 			case "JSON": {
 				// Método para leer JSON
@@ -106,64 +113,117 @@ public class ServletFich extends HttpServlet {
 	}
 
 	
-	public static void lecturaXML() {
-		try {
-			File archivo = new File(ServletFich.class.getClassLoader().getResource("calidad-aire.xml").getFile());
+//	public static void lecturaXML() {
+//		try {
+//			File archivo = new File(ServletFich.class.getClassLoader().getResource("calidad-aire.xml").getFile());
+//
+//			// Crear una instancia de DocumentBuilderFactory
+//			DocumentBuilderFactory fabrica = DocumentBuilderFactory.newInstance();
+//			// Crear un DocumentBuilder
+//			DocumentBuilder constructor = fabrica.newDocumentBuilder();
+//			// Parsear el archivo XML
+//			Document documento = constructor.parse(archivo);
+//
+//			// Normalizar el documento
+//			documento.getDocumentElement().normalize();
+//
+//			// Obtener el nodo raíz
+//			Element raiz = documento.getDocumentElement();
+//			System.out.println("Elemento raíz: " + raiz.getNodeName());
+//
+//			// Leer el total, inicio y filas
+//			String totalCount = documento.getElementsByTagName("totalCount").item(0).getTextContent();
+//			String start = documento.getElementsByTagName("start").item(0).getTextContent();
+//			String rows = documento.getElementsByTagName("rows").item(0).getTextContent();
+//			System.out.println("Total de resultados: " + totalCount);
+//			System.out.println("Inicio: " + start);
+//			System.out.println("Filas: " + rows);
+//
+//			// Leer cada nodo <observation-aire> dentro de <result>
+//			NodeList listaObservaciones = documento.getElementsByTagName("observation-aire");
+//
+//			for (int i = 0; i < listaObservaciones.getLength(); i++) {
+//				Node nodo = listaObservaciones.item(i);
+//
+//				if (nodo.getNodeType() == Node.ELEMENT_NODE) {
+//					Element elemento = (Element) nodo;
+//
+//					// Extraer valores específicos
+//					String fechaPublicacion = elemento.getElementsByTagName("publicationDate").item(0).getTextContent();
+//					String valor = elemento.getElementsByTagName("value").item(0).getTextContent();
+//					String magnitud = elemento.getElementsByTagName("magnitud").item(0).getTextContent();
+//					String estado = elemento.getElementsByTagName("estado").item(0).getTextContent();
+//					String estacion = elemento.getElementsByTagName("estacion").item(0).getTextContent();
+//					String periodo = elemento.getElementsByTagName("periodo").item(0).getTextContent();
+//
+//					// Mostrar los datos
+//					System.out.println("\nObservación " + (i + 1) + ":");
+//					System.out.println("Fecha de publicación: " + fechaPublicacion);
+//					System.out.println("Valor: " + valor);
+//					System.out.println("Magnitud: " + magnitud);
+//					System.out.println("Estado: " + estado);
+//					System.out.println("Estación: " + estacion);
+//					System.out.println("Periodo: " + periodo);
+//				}
+//			}
+//
+//		} catch (Exception e) {
+//			e.printStackTrace();
+//		}
+//	}
+	
+	public static Map<String, List<String>> lecturaXML() {
+	    Map<String, List<String>> dataMap = new LinkedHashMap<>();
 
-			// Crear una instancia de DocumentBuilderFactory
-			DocumentBuilderFactory fabrica = DocumentBuilderFactory.newInstance();
-			// Crear un DocumentBuilder
-			DocumentBuilder constructor = fabrica.newDocumentBuilder();
-			// Parsear el archivo XML
-			Document documento = constructor.parse(archivo);
+	    try {
+	        File archivo = new File(ServletFich.class.getClassLoader().getResource("calidad-aire.xml").getFile());
 
-			// Normalizar el documento
-			documento.getDocumentElement().normalize();
+	        // Crear una instancia de DocumentBuilderFactory
+	        DocumentBuilderFactory fabrica = DocumentBuilderFactory.newInstance();
+	        DocumentBuilder constructor = fabrica.newDocumentBuilder();
+	        Document documento = constructor.parse(archivo);
 
-			// Obtener el nodo raíz
-			Element raiz = documento.getDocumentElement();
-			System.out.println("Elemento raíz: " + raiz.getNodeName());
+	        // Normalizar el documento
+	        documento.getDocumentElement().normalize();
 
-			// Leer el total, inicio y filas
-			String totalCount = documento.getElementsByTagName("totalCount").item(0).getTextContent();
-			String start = documento.getElementsByTagName("start").item(0).getTextContent();
-			String rows = documento.getElementsByTagName("rows").item(0).getTextContent();
-			System.out.println("Total de resultados: " + totalCount);
-			System.out.println("Inicio: " + start);
-			System.out.println("Filas: " + rows);
+	        // Obtener todos los nodos <observation-aire>
+	        NodeList listaObservaciones = documento.getElementsByTagName("observation-aire");
 
-			// Leer cada nodo <observation-aire> dentro de <result>
-			NodeList listaObservaciones = documento.getElementsByTagName("observation-aire");
+	        for (int i = 0; i < listaObservaciones.getLength(); i++) {
+	            Node nodo = listaObservaciones.item(i);
 
-			for (int i = 0; i < listaObservaciones.getLength(); i++) {
-				Node nodo = listaObservaciones.item(i);
+	            if (nodo.getNodeType() == Node.ELEMENT_NODE) {
+	                Element elemento = (Element) nodo;
 
-				if (nodo.getNodeType() == Node.ELEMENT_NODE) {
-					Element elemento = (Element) nodo;
+	                // Iterar por las etiquetas hijas del nodo <observation-aire>
+	                NodeList hijos = elemento.getChildNodes();
+	                for (int j = 0; j < hijos.getLength(); j++) {
+	                    Node hijo = hijos.item(j);
 
-					// Extraer valores específicos
-					String fechaPublicacion = elemento.getElementsByTagName("publicationDate").item(0).getTextContent();
-					String valor = elemento.getElementsByTagName("value").item(0).getTextContent();
-					String magnitud = elemento.getElementsByTagName("magnitud").item(0).getTextContent();
-					String estado = elemento.getElementsByTagName("estado").item(0).getTextContent();
-					String estacion = elemento.getElementsByTagName("estacion").item(0).getTextContent();
-					String periodo = elemento.getElementsByTagName("periodo").item(0).getTextContent();
+	                    if (hijo.getNodeType() == Node.ELEMENT_NODE) {
+	                        String key = hijo.getNodeName();
+	                        String value = hijo.getTextContent();
 
-					// Mostrar los datos
-					System.out.println("\nObservación " + (i + 1) + ":");
-					System.out.println("Fecha de publicación: " + fechaPublicacion);
-					System.out.println("Valor: " + valor);
-					System.out.println("Magnitud: " + magnitud);
-					System.out.println("Estado: " + estado);
-					System.out.println("Estación: " + estacion);
-					System.out.println("Periodo: " + periodo);
-				}
-			}
+	                        // Agregar la clave y valor al mapa
+	                        dataMap.putIfAbsent(key, new ArrayList<>());
+	                        dataMap.get(key).add(value);
+	                    }
+	                }
+	            }
+	        }
 
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
+//	        // Imprimir el mapa (para depuración)
+//	        dataMap.forEach((key, values) -> {
+//	            System.out.println(key + ": " + values);
+//	        });
+
+	    } catch (Exception e) {
+	        e.printStackTrace();
+	    }
+
+	    return dataMap;
 	}
+
 
 	
 	public static void escrituraXML(String[] arrayDatos) {
