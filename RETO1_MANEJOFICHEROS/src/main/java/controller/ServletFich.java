@@ -40,8 +40,8 @@ public class ServletFich extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse
 	 *      response)
 	 */
-	protected void doPost(HttpServletRequest request, HttpServletResponse response)
-			throws ServletException, IOException {
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
 		String page = "";
 
 		try {
@@ -52,7 +52,7 @@ public class ServletFich extends HttpServlet {
 				switch (request.getParameter("formatoFich")) {
 				case "XML": {
 					Map<String, List<String>> dataMap = lecturaXML();
-					getServletContext().setAttribute("dataMap", dataMap);
+					request.setAttribute("dataMap", dataMap);
 					page = "AccesoDatosA.jsp";
 					break;
 				}
@@ -90,7 +90,7 @@ public class ServletFich extends HttpServlet {
 					switch (request.getParameter("formatoFich")) {
 					case "XML": {
 						escrituraXML(arrayDatos);
-						//page = "";
+						page = "TratamientoFich.jsp";
 						break;
 					}
 					case "JSON": {
@@ -112,6 +112,7 @@ public class ServletFich extends HttpServlet {
 			}
 			}
 		} catch (Exception e) {
+			request.setAttribute("mensajeError", e.getMessage());
 			page = "Error.jsp";
 		} finally {
 			request.getRequestDispatcher(page).forward(request, response);
@@ -221,11 +222,10 @@ public class ServletFich extends HttpServlet {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-
 		return dataMap;
 	}
 
-
+	
 	public static void escrituraXML(String[] arrayDatos) {
 
 		try {
@@ -268,7 +268,10 @@ public class ServletFich extends HttpServlet {
 
 			transformer.transform(fuente, resultado);
 
-			System.out.println("*************************************************\nNodo agregado exitosamente al archivo XML.\n*************************************************");
+			 if (java.awt.Desktop.isDesktopSupported()) {
+		            java.awt.Desktop desktop = java.awt.Desktop.getDesktop();
+		            desktop.open(archivo);
+		      }
 
 		} catch (Exception e) {
 			e.printStackTrace();
