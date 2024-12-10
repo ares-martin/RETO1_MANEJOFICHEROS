@@ -1,28 +1,43 @@
+<%@page import="java.util.Map"%>
+<%@page import="java.util.List"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Acceso Datos A</title>
 </head>
 <body>
-<!-- Lo más óptimo sería que cada tipo de fichero enviase un array o similar con los encabezados para 
-	hacer un for each -->
-	<h1 style="text-align:center">DATOS</h1>
-	
-	<table border="1">
-		<tr>
-			<td>publicationDate</td><td>value</td><td>value</td><td>magnitud</td>
-			<td>estado</td><td>estacion</td><td>periodo</td>
-		</tr>
-		<%
-		//Definir el for según el nombre del request y el tipo
-		for(String dato : request.getAttribute(name)){%>
-			<tr>
-				<td><%=dato %></td>
-			</tr>
-		<%}%>
-	</table>
+<h1 style="text-align:center">DATOS</h1>
+
+<table border="1" align="center">
+    <tr>
+        <th>publicationDate</th>
+        <th>value</th>
+        <th>magnitud</th>
+        <th>estado</th>
+        <th>estacion</th>
+        <th>periodo</th>
+    </tr>
+    <%
+        List<Map<String, Object>> data = (List<Map<String, Object>>) request.getAttribute("data");
+
+        if (data != null) {
+            for (Map<String, Object> dato : data) {
+    %>
+    <tr>
+        <td><%= dato.get("publicationDate") %></td>
+        <td><%= dato.get("value") %></td>
+        <td><%= dato.get("magnitud") %></td>
+        <td><%= dato.get("estado") %></td>
+        <td><%= dato.get("estacion") %></td>
+        <td><%= dato.get("periodo") %></td>
+    </tr>
+    <%
+            }
+        }
+    %>
+</table>
 </body>
 </html>
