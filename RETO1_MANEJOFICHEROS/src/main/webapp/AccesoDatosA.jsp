@@ -2,7 +2,7 @@
 <%@ page import="java.util.Map, java.util.List" %>
 <!DOCTYPE html>
 <%
-Map<String, List<String>> dataMap = (Map<String, List<String>>) request.getAttribute("dataMap");
+Map<String, List<String>> dataMap = (Map<String, List<String>>) application.getAttribute("dataMap");
 %>
 <html>
 <head>
@@ -12,8 +12,7 @@ Map<String, List<String>> dataMap = (Map<String, List<String>>) request.getAttri
 <body>
     <h1 style="text-align:center">DATOS</h1>
     
-    <table border="1" style="width: 100%; text-align: center;">
-        <thead>
+    <table border="1" style="width: 100%; text-align: left;">
             <tr>
                 <% 
                     // Generar cabeceras dinámicamente
@@ -24,8 +23,6 @@ Map<String, List<String>> dataMap = (Map<String, List<String>>) request.getAttri
                     }
                 %>
             </tr>
-        </thead>
-        <tbody>
             <%
                 if (dataMap != null) {
                     // Calcular la cantidad de filas (número de elementos en las listas)
@@ -44,7 +41,6 @@ Map<String, List<String>> dataMap = (Map<String, List<String>>) request.getAttri
                     out.print("<tr><td colspan='7'>No hay datos disponibles</td></tr>");
                 }
             %>
-        </tbody>
     </table>
 </body>
 </html>
