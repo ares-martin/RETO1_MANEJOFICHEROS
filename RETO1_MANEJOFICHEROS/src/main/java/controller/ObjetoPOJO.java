@@ -3,13 +3,18 @@ package controller;
 import java.util.HashMap;
 import java.util.Map;
 
-public class ObjetoRDF {
+public class ObjetoPOJO {
 	  private String uri; // Identificador único del objeto RDF
 	  private Map<String, String> propiedades; // Mapa con todas las propiedades del objeto
 	    
-	    // Constructor
-	    public ObjetoRDF(String uri) {
+	    // Constructor RDF
+	    public ObjetoPOJO(String uri) {
 	        this.uri = uri;
+	        this.propiedades = new HashMap<>();
+	    }
+	    
+	    // Constructor para los demás archivos
+	    public ObjetoPOJO() {
 	        this.propiedades = new HashMap<>();
 	    }
 

@@ -1,5 +1,5 @@
 <%@page import="java.util.Set"%>
-<%@page import="controller.ObjetoRDF"%>
+<%@page import="controller.ObjetoPOJO"%>
 <%@page import="java.util.List"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
@@ -14,28 +14,36 @@
 	hacer un for each -->
 	<h1 style="text-align: center">DATOS</h1>
 	<%
-	// Obtener las listas de objetos y propiedades desde el request
-	List<ObjetoRDF> objetos = (List<ObjetoRDF>) request.getAttribute("objetos");
-	Set<String> propiedades = (Set<String>) request.getAttribute("propiedades");
+	
+
+		// Obtener las listas de objetos y propiedades desde el request
+		List<ObjetoPOJO> datos = (List<ObjetoPOJO>) request.getAttribute("datos");
+		Set<String> cabeceras = (Set<String>) request.getAttribute("cabeceras");
 	%>
 	<table border="1">
 		<tr>
 			<th>URI</th>
 			<%
-			for (String propiedad : propiedades) {
+			
+
+				for (String propiedad : cabeceras) {
 			%>
-			<th><%=propiedad%></th>
+			<th><%= propiedad %></th>
 			<%
-			}
+			
+
+				}
 			%>
 		</tr>
 		<%
-		for (ObjetoRDF objeto : objetos) {
+		
+
+				for (ObjetoPOJO objeto : datos) {
 		%>
 		<tr>
-			<td><%=objeto.getUri()%></td>
+			<td><% if(objeto.getUri() != null)objeto.getUri();%></td>
 			<%
-			for (String propiedad : propiedades) {
+			for (String propiedad : cabeceras) {
 				String valor = objeto.getPropiedades().get(propiedad);
 			%>
 			<td><%=(valor != null) ? valor : "-"%></td>
