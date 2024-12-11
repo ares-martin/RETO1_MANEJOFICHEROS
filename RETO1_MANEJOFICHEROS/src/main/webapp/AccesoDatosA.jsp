@@ -1,9 +1,5 @@
 <%@page import="java.util.Set"%>
-<<<<<<< HEAD
-<%@page import="com.gf.RETO1_ManejoFicheros.entities.*"%>
-=======
 <%@page import="controller.ObjetoPOJO"%>
->>>>>>> RDF
 <%@page import="java.util.List"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>

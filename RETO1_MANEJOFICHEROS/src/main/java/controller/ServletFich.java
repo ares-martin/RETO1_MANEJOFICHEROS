@@ -107,13 +107,13 @@ public class ServletFich extends HttpServlet {
 						escribirRDF(request, response);
 						page = "TratamientoFich.jsp";
 					}break;
-				
+		
 				}
 			}
 
 		}
 		}
-		
+		request.getRequestDispatcher(page).forward(request, response);
 	}
 
 	private void leerRDF(HttpServletRequest request, HttpServletResponse response) {
