@@ -27,7 +27,7 @@
 		
 		<% for (ObjetoPOJO objeto : datos) { %>
 		<tr>
-			<td><% if (objeto.getUri() != null) objeto.getUri(); %></td>
+			<td><%= objeto.getUri() != null?objeto.getUri():"-"%></td>
 			
 			<% for (String propiedad : cabeceras) {
 					String valor = objeto.getPropiedades().get(propiedad);
