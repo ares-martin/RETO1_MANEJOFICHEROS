@@ -69,10 +69,11 @@ public class ServletFich extends HttpServlet {
 			case "RDF": {
 				// Método para leer RDF
 				leerRDF(request, response);
-				page = "AccesoDatosA.jsp";
+				
 			}break;
 			}
-		}
+			page = "AccesoDatosA.jsp";
+		}break;
 		
 		case "escritura": {
 			String[] arrayDatos = request.getParameterValues("dato");
