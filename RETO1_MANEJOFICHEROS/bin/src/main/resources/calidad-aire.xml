@@ -1,0 +1,773 @@
+<resultado>
+    <totalCount>92</totalCount>
+    <start>0</start>
+    <rows>92</rows>
+    <result>
+        <observation-aire>
+            <publicationDate>2024-11-26T00:00:00Z</publicationDate>
+            <value>0.17</value>
+            <magnitud>http://es.dbpedia.org/resource/Mon%C3%B3xido_de_carbono</magnitud>
+            <estado>Tiempo real</estado>
+            <estacion>El Picarral</estacion>
+            <periodo>Horario</periodo>
+        </observation-aire>
+        <observation-aire>
+            <publicationDate>2024-11-26T00:00:00Z</publicationDate>
+            <value>36.11</value>
+            <magnitud>http://es.dbpedia.org/resource/Di%C3%B3xido_de_nitr%C3%B3geno</magnitud>
+            <estado>Tiempo real</estado>
+            <estacion>El Picarral</estacion>
+            <periodo>Horario</periodo>
+        </observation-aire>
+        <observation-aire>
+            <publicationDate>2024-11-26T00:00:00Z</publicationDate>
+            <value>67.71</value>
+            <magnitud>http://es.dbpedia.org/resource/%C3%93xidos_de_nitr%C3%B3geno</magnitud>
+            <estado>Tiempo real</estado>
+            <estacion>El Picarral</estacion>
+            <periodo>Horario</periodo>
+        </observation-aire>
+        <observation-aire>
+            <publicationDate>2024-11-26T00:00:00Z</publicationDate>
+            <value>15.34</value>
+            <magnitud>http://es.dbpedia.org/resource/Ozono</magnitud>
+            <estado>Tiempo real</estado>
+            <estacion>El Picarral</estacion>
+            <periodo>Horario</periodo>
+            <nivel></nivel>
+            <clase></clase>
+        </observation-aire>
+        <observation-aire>
+            <publicationDate>2024-11-26T00:00:00Z</publicationDate>
+            <value>2.81</value>
+            <magnitud>http://es.dbpedia.org/resource/Sulfuro_de_hidr%C3%B3geno</magnitud>
+            <estado>Tiempo real</estado>
+            <estacion>El Picarral</estacion>
+            <periodo>Horario</periodo>
+        </observation-aire>
+        <observation-aire>
+            <publicationDate>2024-11-26T00:00:00Z</publicationDate>
+            <value>14.3</value>
+            <magnitud>http://es.dbpedia.org/resource/PM-2.5</magnitud>
+            <estado>Tiempo real</estado>
+            <estacion>El Picarral</estacion>
+            <periodo>Horario</periodo>
+        </observation-aire>
+        <observation-aire>
+            <publicationDate>2024-11-26T00:00:00Z</publicationDate>
+            <value>14.77</value>
+            <magnitud>http://es.dbpedia.org/resource/PM-2.5</magnitud>
+            <estado>Tiempo real</estado>
+            <estacion>El Picarral</estacion>
+            <periodo>Horario</periodo>
+        </observation-aire>
+        <observation-aire>
+            <publicationDate>2024-11-26T00:00:00Z</publicationDate>
+            <value>72.67</value>
+            <magnitud>http://es.dbpedia.org/resource/%C3%93xidos_de_nitr%C3%B3geno</magnitud>
+            <estado>Tiempo real</estado>
+            <estacion>El Picarral</estacion>
+            <periodo>Horario</periodo>
+        </observation-aire>
+        <observation-aire>
+            <publicationDate>2024-11-26T00:00:00Z</publicationDate>
+            <value>0.21</value>
+            <magnitud>http://es.dbpedia.org/resource/Mon%C3%B3xido_de_carbono</magnitud>
+            <estado>Tiempo real</estado>
+            <estacion>El Picarral</estacion>
+            <periodo>Horario</periodo>
+        </observation-aire>
+        <observation-aire>
+            <publicationDate>2024-11-26T00:00:00Z</publicationDate>
+            <value>40.35</value>
+            <magnitud>http://es.dbpedia.org/resource/Di%C3%B3xido_de_nitr%C3%B3geno</magnitud>
+            <estado>Tiempo real</estado>
+            <estacion>El Picarral</estacion>
+            <periodo>Horario</periodo>
+        </observation-aire>
+        <observation-aire>
+            <publicationDate>2024-11-26T00:00:00Z</publicationDate>
+            <value>15.34</value>
+            <magnitud>http://es.dbpedia.org/resource/Ozono</magnitud>
+            <estado>Tiempo real</estado>
+            <estacion>El Picarral</estacion>
+            <periodo>Horario</periodo>
+            <nivel></nivel>
+            <clase></clase>
+        </observation-aire>
+        <observation-aire>
+            <publicationDate>2024-11-26T00:00:00Z</publicationDate>
+            <value>3.17</value>
+            <magnitud>http://es.dbpedia.org/resource/Sulfuro_de_hidr%C3%B3geno</magnitud>
+            <estado>Tiempo real</estado>
+            <estacion>El Picarral</estacion>
+            <periodo>Horario</periodo>
+        </observation-aire>
+        <observation-aire>
+            <publicationDate>2024-11-26T00:00:00Z</publicationDate>
+            <value>4.43</value>
+            <magnitud>http://es.dbpedia.org/resource/Di%C3%B3xido_de_azufre</magnitud>
+            <estado>Tiempo real</estado>
+            <estacion>Roger de Flor</estacion>
+            <periodo>Horario</periodo>
+        </observation-aire>
+        <observation-aire>
+            <publicationDate>2024-11-26T00:00:00Z</publicationDate>
+            <value>39.78</value>
+            <magnitud>http://es.dbpedia.org/resource/Di%C3%B3xido_de_nitr%C3%B3geno</magnitud>
+            <estado>Tiempo real</estado>
+            <estacion>Roger de Flor</estacion>
+            <periodo>Horario</periodo>
+        </observation-aire>
+        <observation-aire>
+            <publicationDate>2024-11-26T00:00:00Z</publicationDate>
+            <value>140.63</value>
+            <magnitud>http://es.dbpedia.org/resource/%C3%93xidos_de_nitr%C3%B3geno</magnitud>
+            <estado>Tiempo real</estado>
+            <estacion>Roger de Flor</estacion>
+            <periodo>Horario</periodo>
+        </observation-aire>
+        <observation-aire>
+            <publicationDate>2024-11-26T00:00:00Z</publicationDate>
+            <value>0.35</value>
+            <magnitud>http://es.dbpedia.org/resource/Benceno</magnitud>
+            <estado>Tiempo real</estado>
+            <estacion>Roger de Flor</estacion>
+            <periodo>Horario</periodo>
+        </observation-aire>
+        <observation-aire>
+            <publicationDate>2024-11-26T00:00:00Z</publicationDate>
+            <value>22.11</value>
+            <magnitud>http://es.dbpedia.org/resource/PM10</magnitud>
+            <estado>Tiempo real</estado>
+            <estacion>Roger de Flor</estacion>
+            <periodo>Horario</periodo>
+        </observation-aire>
+        <observation-aire>
+            <publicationDate>2024-11-26T00:00:00Z</publicationDate>
+            <value>13.69</value>
+            <magnitud>http://es.dbpedia.org/resource/Ozono</magnitud>
+            <estado>Tiempo real</estado>
+            <estacion>Roger de Flor</estacion>
+            <periodo>Horario</periodo>
+            <nivel></nivel>
+            <clase></clase>
+        </observation-aire>
+        <observation-aire>
+            <publicationDate>2024-11-26T00:00:00Z</publicationDate>
+            <value>0.25</value>
+            <magnitud>http://es.dbpedia.org/resource/Mon%C3%B3xido_de_carbono</magnitud>
+            <estado>Tiempo real</estado>
+            <estacion>Roger de Flor</estacion>
+            <periodo>Horario</periodo>
+        </observation-aire>
+        <observation-aire>
+            <publicationDate>2024-11-26T00:00:00Z</publicationDate>
+            <value>13.69</value>
+            <magnitud>http://es.dbpedia.org/resource/Ozono</magnitud>
+            <estado>Tiempo real</estado>
+            <estacion>Roger de Flor</estacion>
+            <periodo>Horario</periodo>
+            <nivel></nivel>
+            <clase></clase>
+        </observation-aire>
+        <observation-aire>
+            <publicationDate>2024-11-26T00:00:00Z</publicationDate>
+            <value>3.63</value>
+            <magnitud>http://es.dbpedia.org/resource/Di%C3%B3xido_de_azufre</magnitud>
+            <estado>Tiempo real</estado>
+            <estacion>Roger de Flor</estacion>
+            <periodo>Horario</periodo>
+        </observation-aire>
+        <observation-aire>
+            <publicationDate>2024-11-26T00:00:00Z</publicationDate>
+            <value>0.19</value>
+            <magnitud>http://es.dbpedia.org/resource/Mon%C3%B3xido_de_carbono</magnitud>
+            <estado>Tiempo real</estado>
+            <estacion>Roger de Flor</estacion>
+            <periodo>Horario</periodo>
+        </observation-aire>
+        <observation-aire>
+            <publicationDate>2024-11-26T00:00:00Z</publicationDate>
+            <value>34.99</value>
+            <magnitud>http://es.dbpedia.org/resource/Di%C3%B3xido_de_nitr%C3%B3geno</magnitud>
+            <estado>Tiempo real</estado>
+            <estacion>Roger de Flor</estacion>
+            <periodo>Horario</periodo>
+        </observation-aire>
+        <observation-aire>
+            <publicationDate>2024-11-26T00:00:00Z</publicationDate>
+            <value>19.32</value>
+            <magnitud>http://es.dbpedia.org/resource/PM10</magnitud>
+            <estado>Tiempo real</estado>
+            <estacion>Roger de Flor</estacion>
+            <periodo>Horario</periodo>
+        </observation-aire>
+        <observation-aire>
+            <publicationDate>2024-11-26T00:00:00Z</publicationDate>
+            <value>115.58</value>
+            <magnitud>http://es.dbpedia.org/resource/%C3%93xidos_de_nitr%C3%B3geno</magnitud>
+            <estado>Tiempo real</estado>
+            <estacion>Roger de Flor</estacion>
+            <periodo>Horario</periodo>
+        </observation-aire>
+        <observation-aire>
+            <publicationDate>2024-11-26T00:00:00Z</publicationDate>
+            <value>0.38</value>
+            <magnitud>http://es.dbpedia.org/resource/Benceno</magnitud>
+            <estado>Tiempo real</estado>
+            <estacion>Roger de Flor</estacion>
+            <periodo>Horario</periodo>
+        </observation-aire>
+        <observation-aire>
+            <publicationDate>2024-11-26T00:00:00Z</publicationDate>
+            <value>1.33</value>
+            <magnitud>http://es.dbpedia.org/resource/Sulfuro_de_hidr%C3%B3geno</magnitud>
+            <estado>Tiempo real</estado>
+            <estacion>Jaime Ferrán</estacion>
+            <periodo>Horario</periodo>
+        </observation-aire>
+        <observation-aire>
+            <publicationDate>2024-11-26T00:00:00Z</publicationDate>
+            <value>14.93</value>
+            <magnitud>http://es.dbpedia.org/resource/Di%C3%B3xido_de_nitr%C3%B3geno</magnitud>
+            <estado>Tiempo real</estado>
+            <estacion>Jaime Ferrán</estacion>
+            <periodo>Horario</periodo>
+        </observation-aire>
+        <observation-aire>
+            <publicationDate>2024-11-26T00:00:00Z</publicationDate>
+            <value>37.93</value>
+            <magnitud>http://es.dbpedia.org/resource/%C3%93xidos_de_nitr%C3%B3geno</magnitud>
+            <estado>Tiempo real</estado>
+            <estacion>Jaime Ferrán</estacion>
+            <periodo>Horario</periodo>
+        </observation-aire>
+        <observation-aire>
+            <publicationDate>2024-11-26T00:00:00Z</publicationDate>
+            <value>4.95</value>
+            <magnitud>http://es.dbpedia.org/resource/Di%C3%B3xido_de_azufre</magnitud>
+            <estado>Tiempo real</estado>
+            <estacion>Jaime Ferrán</estacion>
+            <periodo>Horario</periodo>
+        </observation-aire>
+        <observation-aire>
+            <publicationDate>2024-11-26T00:00:00Z</publicationDate>
+            <value>0.17</value>
+            <magnitud>http://es.dbpedia.org/resource/Mon%C3%B3xido_de_carbono</magnitud>
+            <estado>Tiempo real</estado>
+            <estacion>Jaime Ferrán</estacion>
+            <periodo>Horario</periodo>
+        </observation-aire>
+        <observation-aire>
+            <publicationDate>2024-11-26T00:00:00Z</publicationDate>
+            <value>21.6</value>
+            <magnitud>http://es.dbpedia.org/resource/PM10</magnitud>
+            <estado>Tiempo real</estado>
+            <estacion>Jaime Ferrán</estacion>
+            <periodo>Horario</periodo>
+        </observation-aire>
+        <observation-aire>
+            <publicationDate>2024-11-26T00:00:00Z</publicationDate>
+            <value>15.58</value>
+            <magnitud>http://es.dbpedia.org/resource/Ozono</magnitud>
+            <estado>Tiempo real</estado>
+            <estacion>Jaime Ferrán</estacion>
+            <periodo>Horario</periodo>
+            <nivel></nivel>
+            <clase></clase>
+        </observation-aire>
+        <observation-aire>
+            <publicationDate>2024-11-26T00:00:00Z</publicationDate>
+            <value>4.13</value>
+            <magnitud>http://es.dbpedia.org/resource/Di%C3%B3xido_de_azufre</magnitud>
+            <estado>Tiempo real</estado>
+            <estacion>Jaime Ferrán</estacion>
+            <periodo>Horario</periodo>
+        </observation-aire>
+        <observation-aire>
+            <publicationDate>2024-11-26T00:00:00Z</publicationDate>
+            <value>22.07</value>
+            <magnitud>http://es.dbpedia.org/resource/PM10</magnitud>
+            <estado>Tiempo real</estado>
+            <estacion>Jaime Ferrán</estacion>
+            <periodo>Horario</periodo>
+        </observation-aire>
+        <observation-aire>
+            <publicationDate>2024-11-26T00:00:00Z</publicationDate>
+            <value>1.01</value>
+            <magnitud>http://es.dbpedia.org/resource/Sulfuro_de_hidr%C3%B3geno</magnitud>
+            <estado>Tiempo real</estado>
+            <estacion>Jaime Ferrán</estacion>
+            <periodo>Horario</periodo>
+        </observation-aire>
+        <observation-aire>
+            <publicationDate>2024-11-26T00:00:00Z</publicationDate>
+            <value>0.16</value>
+            <magnitud>http://es.dbpedia.org/resource/Mon%C3%B3xido_de_carbono</magnitud>
+            <estado>Tiempo real</estado>
+            <estacion>Jaime Ferrán</estacion>
+            <periodo>Horario</periodo>
+        </observation-aire>
+        <observation-aire>
+            <publicationDate>2024-11-26T00:00:00Z</publicationDate>
+            <value>14.75</value>
+            <magnitud>http://es.dbpedia.org/resource/Di%C3%B3xido_de_nitr%C3%B3geno</magnitud>
+            <estado>Tiempo real</estado>
+            <estacion>Jaime Ferrán</estacion>
+            <periodo>Horario</periodo>
+        </observation-aire>
+        <observation-aire>
+            <publicationDate>2024-11-26T00:00:00Z</publicationDate>
+            <value>36.53</value>
+            <magnitud>http://es.dbpedia.org/resource/%C3%93xidos_de_nitr%C3%B3geno</magnitud>
+            <estado>Tiempo real</estado>
+            <estacion>Jaime Ferrán</estacion>
+            <periodo>Horario</periodo>
+        </observation-aire>
+        <observation-aire>
+            <publicationDate>2024-11-26T00:00:00Z</publicationDate>
+            <value>15.58</value>
+            <magnitud>http://es.dbpedia.org/resource/Ozono</magnitud>
+            <estado>Tiempo real</estado>
+            <estacion>Jaime Ferrán</estacion>
+            <periodo>Horario</periodo>
+            <nivel></nivel>
+            <clase></clase>
+        </observation-aire>
+        <observation-aire>
+            <publicationDate>2024-11-26T00:00:00Z</publicationDate>
+            <value>13.88</value>
+            <magnitud>http://es.dbpedia.org/resource/PM10</magnitud>
+            <estado>Tiempo real</estado>
+            <estacion>Renovales</estacion>
+            <periodo>Horario</periodo>
+        </observation-aire>
+        <observation-aire>
+            <publicationDate>2024-11-26T00:00:00Z</publicationDate>
+            <value>19.74</value>
+            <magnitud>http://es.dbpedia.org/resource/Ozono</magnitud>
+            <estado>Tiempo real</estado>
+            <estacion>Renovales</estacion>
+            <periodo>Horario</periodo>
+            <nivel></nivel>
+            <clase></clase>
+        </observation-aire>
+        <observation-aire>
+            <publicationDate>2024-11-26T00:00:00Z</publicationDate>
+            <value>3.11</value>
+            <magnitud>http://es.dbpedia.org/resource/Di%C3%B3xido_de_azufre</magnitud>
+            <estado>Tiempo real</estado>
+            <estacion>Renovales</estacion>
+            <periodo>Horario</periodo>
+        </observation-aire>
+        <observation-aire>
+            <publicationDate>2024-11-26T00:00:00Z</publicationDate>
+            <value>0.31</value>
+            <magnitud>http://es.dbpedia.org/resource/Mon%C3%B3xido_de_carbono</magnitud>
+            <estado>Tiempo real</estado>
+            <estacion>Renovales</estacion>
+            <periodo>Horario</periodo>
+        </observation-aire>
+        <observation-aire>
+            <publicationDate>2024-11-26T00:00:00Z</publicationDate>
+            <value>30.62</value>
+            <magnitud>http://es.dbpedia.org/resource/Di%C3%B3xido_de_nitr%C3%B3geno</magnitud>
+            <estado>Tiempo real</estado>
+            <estacion>Renovales</estacion>
+            <periodo>Horario</periodo>
+        </observation-aire>
+        <observation-aire>
+            <publicationDate>2024-11-26T00:00:00Z</publicationDate>
+            <value>64.32</value>
+            <magnitud>http://es.dbpedia.org/resource/%C3%93xidos_de_nitr%C3%B3geno</magnitud>
+            <estado>Tiempo real</estado>
+            <estacion>Renovales</estacion>
+            <periodo>Horario</periodo>
+        </observation-aire>
+        <observation-aire>
+            <publicationDate>2024-11-26T00:00:00Z</publicationDate>
+            <value>83.44</value>
+            <magnitud>http://es.dbpedia.org/resource/%C3%93xidos_de_nitr%C3%B3geno</magnitud>
+            <estado>Tiempo real</estado>
+            <estacion>Renovales</estacion>
+            <periodo>Horario</periodo>
+        </observation-aire>
+        <observation-aire>
+            <publicationDate>2024-11-26T00:00:00Z</publicationDate>
+            <value>0.34</value>
+            <magnitud>http://es.dbpedia.org/resource/Mon%C3%B3xido_de_carbono</magnitud>
+            <estado>Tiempo real</estado>
+            <estacion>Renovales</estacion>
+            <periodo>Horario</periodo>
+        </observation-aire>
+        <observation-aire>
+            <publicationDate>2024-11-26T00:00:00Z</publicationDate>
+            <value>19.74</value>
+            <magnitud>http://es.dbpedia.org/resource/Ozono</magnitud>
+            <estado>Tiempo real</estado>
+            <estacion>Renovales</estacion>
+            <periodo>Horario</periodo>
+            <nivel></nivel>
+            <clase></clase>
+        </observation-aire>
+        <observation-aire>
+            <publicationDate>2024-11-26T00:00:00Z</publicationDate>
+            <value>3.68</value>
+            <magnitud>http://es.dbpedia.org/resource/Di%C3%B3xido_de_azufre</magnitud>
+            <estado>Tiempo real</estado>
+            <estacion>Renovales</estacion>
+            <periodo>Horario</periodo>
+        </observation-aire>
+        <observation-aire>
+            <publicationDate>2024-11-26T00:00:00Z</publicationDate>
+            <value>28.48</value>
+            <magnitud>http://es.dbpedia.org/resource/Di%C3%B3xido_de_nitr%C3%B3geno</magnitud>
+            <estado>Tiempo real</estado>
+            <estacion>Renovales</estacion>
+            <periodo>Horario</periodo>
+        </observation-aire>
+        <observation-aire>
+            <publicationDate>2024-11-26T00:00:00Z</publicationDate>
+            <value>12.43</value>
+            <magnitud>http://es.dbpedia.org/resource/PM10</magnitud>
+            <estado>Tiempo real</estado>
+            <estacion>Renovales</estacion>
+            <periodo>Horario</periodo>
+        </observation-aire>
+        <observation-aire>
+            <publicationDate>2024-11-26T00:00:00Z</publicationDate>
+            <value>14.64</value>
+            <magnitud>http://es.dbpedia.org/resource/PM-2.5</magnitud>
+            <estado>Tiempo real</estado>
+            <estacion>Las Fuentes </estacion>
+            <periodo>Horario</periodo>
+        </observation-aire>
+        <observation-aire>
+            <publicationDate>2024-11-26T00:00:00Z</publicationDate>
+            <value>34.16</value>
+            <magnitud>http://es.dbpedia.org/resource/Di%C3%B3xido_de_nitr%C3%B3geno</magnitud>
+            <estado>Tiempo real</estado>
+            <estacion>Las Fuentes </estacion>
+            <periodo>Horario</periodo>
+        </observation-aire>
+        <observation-aire>
+            <publicationDate>2024-11-26T00:00:00Z</publicationDate>
+            <value>2.29</value>
+            <magnitud>http://es.dbpedia.org/resource/Di%C3%B3xido_de_azufre</magnitud>
+            <estado>Tiempo real</estado>
+            <estacion>Las Fuentes </estacion>
+            <periodo>Horario</periodo>
+        </observation-aire>
+        <observation-aire>
+            <publicationDate>2024-11-26T00:00:00Z</publicationDate>
+            <value>0.22</value>
+            <magnitud>http://es.dbpedia.org/resource/Mon%C3%B3xido_de_carbono</magnitud>
+            <estado>Tiempo real</estado>
+            <estacion>Las Fuentes </estacion>
+            <periodo>Horario</periodo>
+        </observation-aire>
+        <observation-aire>
+            <publicationDate>2024-11-26T00:00:00Z</publicationDate>
+            <value>103.54</value>
+            <magnitud>http://es.dbpedia.org/resource/%C3%93xidos_de_nitr%C3%B3geno</magnitud>
+            <estado>Tiempo real</estado>
+            <estacion>Las Fuentes </estacion>
+            <periodo>Horario</periodo>
+        </observation-aire>
+        <observation-aire>
+            <publicationDate>2024-11-26T00:00:00Z</publicationDate>
+            <value>24.56</value>
+            <magnitud>http://es.dbpedia.org/resource/PM10</magnitud>
+            <estado>Tiempo real</estado>
+            <estacion>Las Fuentes </estacion>
+            <periodo>Horario</periodo>
+        </observation-aire>
+        <observation-aire>
+            <publicationDate>2024-11-26T00:00:00Z</publicationDate>
+            <value>12.89</value>
+            <magnitud>http://es.dbpedia.org/resource/Ozono</magnitud>
+            <estado>Tiempo real</estado>
+            <estacion>Las Fuentes </estacion>
+            <periodo>Horario</periodo>
+            <nivel></nivel>
+            <clase></clase>
+        </observation-aire>
+        <observation-aire>
+            <publicationDate>2024-11-26T00:00:00Z</publicationDate>
+            <value>119.73</value>
+            <magnitud>http://es.dbpedia.org/resource/%C3%93xidos_de_nitr%C3%B3geno</magnitud>
+            <estado>Tiempo real</estado>
+            <estacion>Las Fuentes </estacion>
+            <periodo>Horario</periodo>
+        </observation-aire>
+        <observation-aire>
+            <publicationDate>2024-11-26T00:00:00Z</publicationDate>
+            <value>11.24</value>
+            <magnitud>http://es.dbpedia.org/resource/PM-2.5</magnitud>
+            <estado>Tiempo real</estado>
+            <estacion>Las Fuentes </estacion>
+            <periodo>Horario</periodo>
+        </observation-aire>
+        <observation-aire>
+            <publicationDate>2024-11-26T00:00:00Z</publicationDate>
+            <value>3.04</value>
+            <magnitud>http://es.dbpedia.org/resource/Di%C3%B3xido_de_azufre</magnitud>
+            <estado>Tiempo real</estado>
+            <estacion>Las Fuentes </estacion>
+            <periodo>Horario</periodo>
+        </observation-aire>
+        <observation-aire>
+            <publicationDate>2024-11-26T00:00:00Z</publicationDate>
+            <value>0.24</value>
+            <magnitud>http://es.dbpedia.org/resource/Mon%C3%B3xido_de_carbono</magnitud>
+            <estado>Tiempo real</estado>
+            <estacion>Las Fuentes </estacion>
+            <periodo>Horario</periodo>
+        </observation-aire>
+        <observation-aire>
+            <publicationDate>2024-11-26T00:00:00Z</publicationDate>
+            <value>35.66</value>
+            <magnitud>http://es.dbpedia.org/resource/Di%C3%B3xido_de_nitr%C3%B3geno</magnitud>
+            <estado>Tiempo real</estado>
+            <estacion>Las Fuentes </estacion>
+            <periodo>Horario</periodo>
+        </observation-aire>
+        <observation-aire>
+            <publicationDate>2024-11-26T00:00:00Z</publicationDate>
+            <value>21.24</value>
+            <magnitud>http://es.dbpedia.org/resource/PM10</magnitud>
+            <estado>Tiempo real</estado>
+            <estacion>Las Fuentes </estacion>
+            <periodo>Horario</periodo>
+        </observation-aire>
+        <observation-aire>
+            <publicationDate>2024-11-26T00:00:00Z</publicationDate>
+            <value>12.89</value>
+            <magnitud>http://es.dbpedia.org/resource/Ozono</magnitud>
+            <estado>Tiempo real</estado>
+            <estacion>Las Fuentes </estacion>
+            <periodo>Horario</periodo>
+            <nivel></nivel>
+            <clase></clase>
+        </observation-aire>
+        <observation-aire>
+            <publicationDate>2024-11-26T00:00:00Z</publicationDate>
+            <value>0.37</value>
+            <magnitud>http://es.dbpedia.org/resource/Mon%C3%B3xido_de_carbono</magnitud>
+            <estado>Tiempo real</estado>
+            <estacion>Centro</estacion>
+            <periodo>Horario</periodo>
+        </observation-aire>
+        <observation-aire>
+            <publicationDate>2024-11-26T00:00:00Z</publicationDate>
+            <value>63.38</value>
+            <magnitud>http://es.dbpedia.org/resource/Di%C3%B3xido_de_nitr%C3%B3geno</magnitud>
+            <estado>Tiempo real</estado>
+            <estacion>Centro</estacion>
+            <periodo>Horario</periodo>
+        </observation-aire>
+        <observation-aire>
+            <publicationDate>2024-11-26T00:00:00Z</publicationDate>
+            <value>72.47</value>
+            <magnitud>http://es.dbpedia.org/resource/%C3%93xidos_de_nitr%C3%B3geno</magnitud>
+            <estado>Tiempo real</estado>
+            <estacion>Centro</estacion>
+            <periodo>Horario</periodo>
+        </observation-aire>
+        <observation-aire>
+            <publicationDate>2024-11-26T00:00:00Z</publicationDate>
+            <value>23.76</value>
+            <magnitud>http://es.dbpedia.org/resource/Ozono</magnitud>
+            <estado>Tiempo real</estado>
+            <estacion>Centro</estacion>
+            <periodo>Horario</periodo>
+            <nivel></nivel>
+            <clase></clase>
+        </observation-aire>
+        <observation-aire>
+            <publicationDate>2024-11-26T00:00:00Z</publicationDate>
+            <value>3.22</value>
+            <magnitud>http://es.dbpedia.org/resource/Di%C3%B3xido_de_azufre</magnitud>
+            <estado>Tiempo real</estado>
+            <estacion>Centro</estacion>
+            <periodo>Horario</periodo>
+        </observation-aire>
+        <observation-aire>
+            <publicationDate>2024-11-26T00:00:00Z</publicationDate>
+            <value>0.31</value>
+            <magnitud>http://es.dbpedia.org/resource/Mon%C3%B3xido_de_carbono</magnitud>
+            <estado>Tiempo real</estado>
+            <estacion>Centro</estacion>
+            <periodo>Horario</periodo>
+        </observation-aire>
+        <observation-aire>
+            <publicationDate>2024-11-26T00:00:00Z</publicationDate>
+            <value>53.86</value>
+            <magnitud>http://es.dbpedia.org/resource/%C3%93xidos_de_nitr%C3%B3geno</magnitud>
+            <estado>Tiempo real</estado>
+            <estacion>Centro</estacion>
+            <periodo>Horario</periodo>
+        </observation-aire>
+        <observation-aire>
+            <publicationDate>2024-11-26T00:00:00Z</publicationDate>
+            <value>23.76</value>
+            <magnitud>http://es.dbpedia.org/resource/Ozono</magnitud>
+            <estado>Tiempo real</estado>
+            <estacion>Centro</estacion>
+            <periodo>Horario</periodo>
+            <nivel></nivel>
+            <clase></clase>
+        </observation-aire>
+        <observation-aire>
+            <publicationDate>2024-11-26T00:00:00Z</publicationDate>
+            <value>2.93</value>
+            <magnitud>http://es.dbpedia.org/resource/Di%C3%B3xido_de_azufre</magnitud>
+            <estado>Tiempo real</estado>
+            <estacion>Centro</estacion>
+            <periodo>Horario</periodo>
+        </observation-aire>
+        <observation-aire>
+            <publicationDate>2024-11-26T00:00:00Z</publicationDate>
+            <value>46.65</value>
+            <magnitud>http://es.dbpedia.org/resource/Di%C3%B3xido_de_nitr%C3%B3geno</magnitud>
+            <estado>Tiempo real</estado>
+            <estacion>Centro</estacion>
+            <periodo>Horario</periodo>
+        </observation-aire>
+        <observation-aire>
+            <publicationDate>2024-11-26T00:00:00Z</publicationDate>
+            <value>83.6</value>
+            <magnitud>http://es.dbpedia.org/resource/%C3%93xidos_de_nitr%C3%B3geno</magnitud>
+            <estado>Tiempo real</estado>
+            <estacion>Avda Soria</estacion>
+            <periodo>Horario</periodo>
+        </observation-aire>
+        <observation-aire>
+            <publicationDate>2024-11-26T00:00:00Z</publicationDate>
+            <value>0.26</value>
+            <magnitud>http://es.dbpedia.org/resource/Mon%C3%B3xido_de_carbono</magnitud>
+            <estado>Tiempo real</estado>
+            <estacion>Avda Soria</estacion>
+            <periodo>Horario</periodo>
+        </observation-aire>
+        <observation-aire>
+            <publicationDate>2024-11-26T00:00:00Z</publicationDate>
+            <value>32.97</value>
+            <magnitud>http://es.dbpedia.org/resource/Di%C3%B3xido_de_nitr%C3%B3geno</magnitud>
+            <estado>Tiempo real</estado>
+            <estacion>Avda Soria</estacion>
+            <periodo>Horario</periodo>
+        </observation-aire>
+        <observation-aire>
+            <publicationDate>2024-11-26T00:00:00Z</publicationDate>
+            <value>1.97</value>
+            <magnitud>http://es.dbpedia.org/resource/Di%C3%B3xido_de_azufre</magnitud>
+            <estado>Tiempo real</estado>
+            <estacion>Avda Soria</estacion>
+            <periodo>Horario</periodo>
+        </observation-aire>
+        <observation-aire>
+            <publicationDate>2024-11-26T00:00:00Z</publicationDate>
+            <value>25.33</value>
+            <magnitud>http://es.dbpedia.org/resource/PM10</magnitud>
+            <estado>Tiempo real</estado>
+            <estacion>Avda Soria</estacion>
+            <periodo>Horario</periodo>
+        </observation-aire>
+        <observation-aire>
+            <publicationDate>2024-11-26T00:00:00Z</publicationDate>
+            <value>16.95</value>
+            <magnitud>http://es.dbpedia.org/resource/Ozono</magnitud>
+            <estado>Tiempo real</estado>
+            <estacion>Avda Soria</estacion>
+            <periodo>Horario</periodo>
+            <nivel></nivel>
+            <clase></clase>
+        </observation-aire>
+        <observation-aire>
+            <publicationDate>2024-11-26T00:00:00Z</publicationDate>
+            <value>43.09</value>
+            <magnitud>http://es.dbpedia.org/resource/Di%C3%B3xido_de_nitr%C3%B3geno</magnitud>
+            <estado>Tiempo real</estado>
+            <estacion>Actur</estacion>
+            <periodo>Horario</periodo>
+        </observation-aire>
+        <observation-aire>
+            <publicationDate>2024-11-26T00:00:00Z</publicationDate>
+            <value>9.86</value>
+            <magnitud>http://es.dbpedia.org/resource/PM-2.5</magnitud>
+            <estado>Tiempo real</estado>
+            <estacion>Actur</estacion>
+            <periodo>Horario</periodo>
+        </observation-aire>
+        <observation-aire>
+            <publicationDate>2024-11-26T00:00:00Z</publicationDate>
+            <value>11.20</value>
+            <magnitud>http://es.dbpedia.org/resource/Ozono</magnitud>
+            <estado>Tiempo real</estado>
+            <estacion>Actur</estacion>
+            <periodo>Horario</periodo>
+            <nivel></nivel>
+            <clase></clase>
+        </observation-aire>
+        <observation-aire>
+            <publicationDate>2024-11-26T00:00:00Z</publicationDate>
+            <value>28.16</value>
+            <magnitud>http://es.dbpedia.org/resource/PM10</magnitud>
+            <estado>Tiempo real</estado>
+            <estacion>Actur</estacion>
+            <periodo>Horario</periodo>
+        </observation-aire>
+        <observation-aire>
+            <publicationDate>2024-11-26T00:00:00Z</publicationDate>
+            <value>95.62</value>
+            <magnitud>http://es.dbpedia.org/resource/%C3%93xidos_de_nitr%C3%B3geno</magnitud>
+            <estado>Tiempo real</estado>
+            <estacion>Actur</estacion>
+            <periodo>Horario</periodo>
+        </observation-aire>
+        <observation-aire>
+            <publicationDate>2024-11-26T00:00:00Z</publicationDate>
+            <value>46.4</value>
+            <magnitud>http://es.dbpedia.org/resource/Di%C3%B3xido_de_nitr%C3%B3geno</magnitud>
+            <estado>Tiempo real</estado>
+            <estacion>Actur</estacion>
+            <periodo>Horario</periodo>
+        </observation-aire>
+        <observation-aire>
+            <publicationDate>2024-11-26T00:00:00Z</publicationDate>
+            <value>11.20</value>
+            <magnitud>http://es.dbpedia.org/resource/Ozono</magnitud>
+            <estado>Tiempo real</estado>
+            <estacion>Actur</estacion>
+            <periodo>Horario</periodo>
+            <nivel></nivel>
+            <clase></clase>
+        </observation-aire>
+        <observation-aire>
+            <publicationDate>2024-11-26T00:00:00Z</publicationDate>
+            <value>26.52</value>
+            <magnitud>http://es.dbpedia.org/resource/PM10</magnitud>
+            <estado>Tiempo real</estado>
+            <estacion>Actur</estacion>
+            <periodo>Horario</periodo>
+        </observation-aire>
+        <observation-aire>
+            <publicationDate>2024-11-26T00:00:00Z</publicationDate>
+            <value>98.35</value>
+            <magnitud>http://es.dbpedia.org/resource/%C3%93xidos_de_nitr%C3%B3geno</magnitud>
+            <estado>Tiempo real</estado>
+            <estacion>Actur</estacion>
+            <periodo>Horario</periodo>
+        </observation-aire>
+        <observation-aire>
+            <publicationDate>2024-11-26T00:00:00Z</publicationDate>
+            <value>11.77</value>
+            <magnitud>http://es.dbpedia.org/resource/PM-2.5</magnitud>
+            <estado>Tiempo real</estado>
+            <estacion>Actur</estacion>
+            <periodo>Horario</periodo>
+        </observation-aire>
+    </result>
+</resultado>

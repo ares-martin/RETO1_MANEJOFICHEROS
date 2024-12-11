@@ -33,6 +33,20 @@
     	<version>6.1.0</version>
     </dependency>
     
+    <!-- dependencia para la lectura de json-->
+	<dependency>
+	    <groupId>com.google.code.gson</groupId>
+	    <artifactId>gson</artifactId>
+	    <version>2.10.1</version> 
+	</dependency>
+
+	<!-- dependencia para lectura/escritura RDF -->
+	<dependency>
+	    <groupId>org.apache.jena</groupId>
+	    <artifactId>jena-arq</artifactId>
+	    <version>4.9.0</version>
+	</dependency>
+    
   </dependencies>
 
   <build>
