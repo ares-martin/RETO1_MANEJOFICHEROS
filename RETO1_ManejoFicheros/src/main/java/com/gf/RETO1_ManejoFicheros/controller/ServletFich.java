@@ -66,9 +66,8 @@ public class ServletFich extends HttpServlet {
 				switch (request.getParameter("formatoFich")) {
 				case "XML": {
 					leerXML(request);
-					page = "AccesoDatosA.jsp";
-					break;
-				}
+					
+				}break;
 				case "JSON": {
 					// Método para leer JSON
 				}
@@ -80,11 +79,9 @@ public class ServletFich extends HttpServlet {
 				}
 				case "RDF": {
 					leerRDF(request, response);
-					page = "AccesoDatosA.jsp";
-					break;
+				}break;
 				}
-				}
-				// page = "AccesoDatosA.jsp";
+				page = "AccesoDatosA.jsp";
 				break;
 			}
 			case "escritura": {
@@ -105,9 +102,7 @@ public class ServletFich extends HttpServlet {
 					switch (request.getParameter("formatoFich")) {
 					case "XML": {
 						escribirXML(arrayDatos);
-						page = "TratamientoFich.jsp";
-						break;
-					}
+					}break;
 					case "JSON": {
 						// Método para escribir en JSON
 					}
@@ -119,9 +114,7 @@ public class ServletFich extends HttpServlet {
 					}
 					case "RDF": {
 						escribirRDF(request, response);
-						page = "TratamientoFich.jsp";
-						break;
-					}
+					}break;
 					}
 					page = "TratamientoFich.jsp";
 				}
