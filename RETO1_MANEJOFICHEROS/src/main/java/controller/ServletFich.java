@@ -68,11 +68,11 @@ public class ServletFich extends HttpServlet {
 			case "RDF": {
 				// Método para leer RDF
 				leerRDF(request, response);
+				page = "AccesoDatosA.jsp";
+			}break;
 			}
-			}
-			page = "AccesoDatosA.jsp";
-			break;
 		}
+		
 		case "escritura": {
 			String[] arrayDatos = request.getParameterValues("dato");
 			boolean datosVacios = false;
@@ -89,26 +89,27 @@ public class ServletFich extends HttpServlet {
 				page = "TratamientoFich.jsp";
 			} else {
 				switch (request.getParameter("formatoFich")) {
-				case "XML": {
-					// Método para escribir en XML
+					case "XML": {
+						// Método para escribir en XML
+					}
+					case "JSON": {
+						// Método para escribir en JSON
+					}
+					case "CSV": {
+						// Método para escribir en CSV
+					}
+					case "XLS": {
+						// Método para escribir en XLS
+					}
+					case "RDF": {
+						// Método para escribir en RDF
+						escribirRDF(request, response);
+						page = "TratamientoFich.jsp";
+					}break;
+				
 				}
-				case "JSON": {
-					// Método para escribir en JSON
-				}
-				case "CSV": {
-					// Método para escribir en CSV
-				}
-				case "XLS": {
-					// Método para escribir en XLS
-				}
-				case "RDF": {
-					// Método para escribir en RDF
-					escribirRDF(request, response);
-				}
-				}
-				page = "TratamientoFich.jsp";
 			}
-			break;
+
 		}
 		}
 		request.getRequestDispatcher(page).forward(request, response);
@@ -165,7 +166,7 @@ public class ServletFich extends HttpServlet {
 		try {
 			// Crear el modelo RDF desde el archivo existente
 			Model model = ModelFactory.createDefaultModel();
-			
+
 			try (InputStream inputStream = new FileInputStream(f)) {
 				model.read(inputStream, null, "RDF/XML");
 			}
@@ -186,7 +187,7 @@ public class ServletFich extends HttpServlet {
 			// Guardar el modelo en el archivo RDF
 			try (FileOutputStream outputStream = new FileOutputStream(f)) {
 				model.write(outputStream, "RDF/XML");
-				
+
 				// Abre la aplicacion de lectura predeterminada para ver el archivo modificado
 				if (java.awt.Desktop.isDesktopSupported()) {
 					java.awt.Desktop desktop = java.awt.Desktop.getDesktop();
