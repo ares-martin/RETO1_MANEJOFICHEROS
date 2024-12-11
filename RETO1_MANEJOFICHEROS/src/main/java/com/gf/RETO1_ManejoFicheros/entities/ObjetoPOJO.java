@@ -1,4 +1,4 @@
-package controller;
+package com.gf.RETO1_ManejoFicheros.entities;
 
 import java.util.HashMap;
 import java.util.Map;
