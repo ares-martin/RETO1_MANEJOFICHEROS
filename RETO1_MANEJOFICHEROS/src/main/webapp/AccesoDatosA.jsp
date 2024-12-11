@@ -32,7 +32,7 @@
 			<% for (String propiedad : cabeceras) {
 					String valor = objeto.getPropiedades().get(propiedad);
 			%>
-				<td><%=(valor != null) ? valor : "-"%></td>
+				<td><%=(valor != null) ? valor : " "%></td>
 			<% } %>
 		</tr>
 		<% } %>
