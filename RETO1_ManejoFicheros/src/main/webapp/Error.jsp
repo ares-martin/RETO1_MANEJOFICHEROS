@@ -11,7 +11,10 @@
 
 	<h1 style="color: red" align="center">TIPO DE ERROR</h1>
 	
-	<p>Error: ${errorMessage}</p>
+	<%
+	if (exception != null) {
+		exception.printStackTrace(new PrintWriter(out));
+	} %>
 	
 </body>
 </html>
