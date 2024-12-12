@@ -1,0 +1,14 @@
+2024-12-12 21:06:44,334 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-12-12 21:30:20,773 [Worker-34: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.gf:RETO1_ManejoFicheros:0.0.1-SNAPSHOT @ C:\Users\juanl\git\RETO1_MANEJOFICHEROS\RETO1_ManejoFicheros\pom.xml.
+2024-12-12 21:30:22,552 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 5 resources from src\main\resources to target\classes
+2024-12-12 21:30:22,565 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\juanl\git\RETO1_MANEJOFICHEROS\RETO1_ManejoFicheros\src\test\resources
+2024-12-12 21:30:23,436 [Worker-32: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 5 resources from src\main\resources to target\classes
+2024-12-12 21:30:23,447 [Worker-32: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\juanl\git\RETO1_MANEJOFICHEROS\RETO1_ManejoFicheros\src\test\resources
+2024-12-12 21:34:37,711 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 5 resources from src\main\resources to target\classes
+2024-12-12 21:34:37,718 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\juanl\git\RETO1_MANEJOFICHEROS\RETO1_ManejoFicheros\src\test\resources
+2024-12-12 21:35:57,648 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 5 resources from src\main\resources to target\classes
+2024-12-12 21:35:57,653 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\juanl\git\RETO1_MANEJOFICHEROS\RETO1_ManejoFicheros\src\test\resources
+2024-12-12 21:36:03,965 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 5 resources from src\main\resources to target\classes
+2024-12-12 21:36:03,970 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\juanl\git\RETO1_MANEJOFICHEROS\RETO1_ManejoFicheros\src\test\resources
+2024-12-12 21:36:06,126 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 5 resources from src\main\resources to target\classes
+2024-12-12 21:36:06,130 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\juanl\git\RETO1_MANEJOFICHEROS\RETO1_ManejoFicheros\src\test\resources

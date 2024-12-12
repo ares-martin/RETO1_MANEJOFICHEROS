@@ -1,0 +1,6 @@
+INDEX VERSION 1.4+C:\Users\juanl\OneDrive\Documents\GitHub\RETO1_MANEJOFICHEROS\RETO1_ManejoFicheros\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+1633514790.index
+1201738557.index
+1099347325.index
+3718381907.index
+2749782679.index
