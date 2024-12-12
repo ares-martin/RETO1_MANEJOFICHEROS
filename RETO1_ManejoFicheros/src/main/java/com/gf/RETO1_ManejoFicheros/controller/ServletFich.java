@@ -75,27 +75,26 @@ public class ServletFich extends HttpServlet {
 			switch (request.getParameter("eleccionFich")) {
 			case "lectura": {
 				switch (request.getParameter("formatoFich")) {
-					case "XML": {
-						leerXML(request);
-						break;
-					}
-					case "JSON": {
-						// Método para leer JSON
-						lecturaJSON(request);
-						break;
-					}
-					case "CSV": {
-						// Método para leer CSV
-						break;
-					}
-					case "XLS": {
-						lecturaXLS(request);
-						break;
-					}
-					case "RDF": {
-						leerRDF(request, response);
-						break;
-					}
+				case "XML": {
+					lecturaXML(request);
+					break;
+				}
+				case "JSON": {
+					lecturaJSON(request);
+					break;
+				}
+				case "CSV": {
+					// Método para leer CSV
+					break;
+				}
+				case "XLS": {
+					lecturaXLS(request);
+					break;
+				}
+				case "RDF": {
+					lecturaRDF(request, response);
+					break;
+				}
 				}
 				page = "AccesoDatosA.jsp";
 				break;
@@ -116,27 +115,26 @@ public class ServletFich extends HttpServlet {
 					page = "TratamientoFich.jsp";
 				} else {
 					switch (request.getParameter("formatoFich")) {
-						case "XML": {
-							escribirXML(arrayDatos);
-							break;
-						}
-						case "JSON": {
-							// Método para escribir en JSON
-							escrituraJSON(request, response);
-							break;
-						}
-						case "CSV": {
-							// Método para escribir en CSV
-							break;
-						}
-						case "XLS": {
-							escrituraXLS(request);
-							break;
-						}
-						case "RDF": {
-							escribirRDF(request, response);
-							break;
-						}
+					case "XML": {
+						escrituraXML(arrayDatos);
+						break;
+					}
+					case "JSON": {
+						escrituraJSON(request, response);
+						break;
+					}
+					case "CSV": {
+						// Método para escribir en CSV
+						break;
+					}
+					case "XLS": {
+						escrituraXLS(request);
+						break;
+					}
+					case "RDF": {
+						escrituraRDF(request, response);
+						break;
+					}
 					}
 					page = "TratamientoFich.jsp";
 				}
@@ -150,8 +148,7 @@ public class ServletFich extends HttpServlet {
 		}
 	}
 
-	
-	public static void leerXML(HttpServletRequest request) {
+	public static void lecturaXML(HttpServletRequest request) {
 		List<ObjetoPOJO> datos = new ArrayList<ObjetoPOJO>();
 		Set<String> cabeceras = new HashSet<>();
 
@@ -199,7 +196,6 @@ public class ServletFich extends HttpServlet {
 					datos.add(pojo);
 				}
 			}
-			
 			request.setAttribute("datos", datos);
 			request.setAttribute("cabeceras", cabeceras);
 		} catch (Exception e) {
@@ -207,7 +203,7 @@ public class ServletFich extends HttpServlet {
 		}
 	}
 
-	public static void escribirXML(String[] arrayDatos) {
+	public static void escrituraXML(String[] arrayDatos) {
 		try {
 			// Cargar el archivo XML
 			File archivo = new File(ServletFich.class.getClassLoader().getResource("calidad-aire.xml").getFile());
@@ -253,13 +249,203 @@ public class ServletFich extends HttpServlet {
 				java.awt.Desktop desktop = java.awt.Desktop.getDesktop();
 				desktop.open(archivo);
 			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+	private void lecturaJSON(HttpServletRequest request) {
+		List<ObjetoPOJO> datos = new ArrayList<>();
+		Set<String> cabeceras = new HashSet<>();
 
+		// Cabeceras permitidas
+		Set<String> cabecerasPermitidas = Set.of("publicationDate", "value", "magnitud", "estado", "estacion",
+				"periodo");
+
+		try {
+			// Cargar el archivo JSON
+			InputStream inputStream = getClass().getClassLoader().getResourceAsStream("calidad-aire.json");
+
+			try (InputStreamReader reader = new InputStreamReader(inputStream)) {
+				Gson gson = new Gson();
+				Map<String, Object> jsonMap = gson.fromJson(reader, Map.class);
+
+				// Extraer la lista de resultados
+				if (jsonMap.containsKey("result")) {
+					List<Map<String, Object>> result = (List<Map<String, Object>>) jsonMap.get("result");
+
+					for (Map<String, Object> item : result) {
+						ObjetoPOJO pojo = new ObjetoPOJO();
+
+						// Rellenar el mapa de propiedades
+						for (Map.Entry<String, Object> entry : item.entrySet()) {
+							String clave = entry.getKey();
+							String valor = (entry.getValue() != null) ? entry.getValue().toString() : null;
+
+							// Se agregan solo las propiedades permitidas
+							if (cabecerasPermitidas.contains(clave)) {
+								pojo.setPropiedad(clave, valor);
+								cabeceras.add(clave);
+							}
+						}
+						datos.add(pojo);
+					}
+				}
+				request.setAttribute("datos", datos);
+				request.setAttribute("cabeceras", cabeceras);
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
 
-	private void leerRDF(HttpServletRequest request, HttpServletResponse response) {
+	private void escrituraJSON(HttpServletRequest request, HttpServletResponse response) {
+		// Ruta del archivo JSON
+		File archivo = new File(ServletFich.class.getClassLoader().getResource("calidad-aire.json").getFile());
+		String[] datos = request.getParameterValues("dato");
+
+		try (BufferedReader reader = new BufferedReader(new FileReader(archivo))) {
+			// Leer el contenido del archivo JSON
+			StringBuilder jsonContent = new StringBuilder();
+			String line;
+			while ((line = reader.readLine()) != null) {
+				jsonContent.append(line);
+			}
+
+			// Crear objeto GSON para trabajar con JSON
+			Gson gson = new Gson();
+			JsonObject jsonObject = gson.fromJson(jsonContent.toString(), JsonObject.class);
+
+			// Obtener datos desde JSP y asignarlos a las claves correctas
+			JsonObject newData = new JsonObject();
+			newData.addProperty("publicationDate", datos[0]);
+			newData.addProperty("value", datos[1]);
+			newData.addProperty("magnitud", datos[2]);
+			newData.addProperty("estado", datos[3]);
+			newData.addProperty("estacion", datos[4]);
+			newData.addProperty("periodo", datos[5]);
+
+			// Agregar el nuevo objeto a la lista 'result'
+			JsonArray resultArray = jsonObject.getAsJsonArray("result");
+			resultArray.add(newData);
+
+			// Escribir el JSON modificado de nuevo en el archivo
+			try (FileWriter file = new FileWriter(archivo)) {
+				gson.toJson(jsonObject, file);
+				file.flush();
+			}
+
+			// Abrir el archivo en el equipo
+			if (java.awt.Desktop.isDesktopSupported()) {
+				java.awt.Desktop desktop = java.awt.Desktop.getDesktop();
+				desktop.open(archivo);
+			}
+
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public static void lecturaXLS(HttpServletRequest request) throws Exception {
+		List<ObjetoPOJO> datos = new ArrayList<ObjetoPOJO>();
+		Set<String> cabeceras = new HashSet<>();
+
+		// Leer archivo
+		FileInputStream file = new FileInputStream(
+				new File(ServletFich.class.getClassLoader().getResource("calidad-aire.xlsx").getFile()));
+		Workbook workbook = WorkbookFactory.create(file);
+		Sheet sheet = workbook.getSheetAt(0);
+
+		// Bandera para identificar la primera fila
+		boolean isHeaderRow = true;
+		List<String> cabecerasAux = new ArrayList<>(); // Lista auxiliar
+
+		// Leer filas y celdas
+		for (Row row : sheet) {
+			if (isHeaderRow) {
+				// Procesar cabeceras
+				for (Cell cell : row) {
+					String cabecera = cell.getStringCellValue().trim();
+					cabeceras.add(cabecera);
+					cabecerasAux.add(cabecera);
+				}
+				isHeaderRow = false;
+			} else {
+				// Procesar filas
+				ObjetoPOJO pojo = new ObjetoPOJO();
+				int columnIndex = 0;
+
+				for (Cell cell : row) {
+					if (columnIndex < cabecerasAux.size()) {
+						String key = cabecerasAux.get(columnIndex);
+						String value;
+
+						// Convertir valor según tipo
+						switch (cell.getCellType()) {
+						case STRING:
+							value = cell.getStringCellValue();
+							break;
+						case NUMERIC:
+							value = String.valueOf(cell.getNumericCellValue());
+							break;
+						case BOOLEAN:
+							value = String.valueOf(cell.getBooleanCellValue());
+							break;
+						default:
+							value = "";
+						}
+						pojo.setPropiedad(key, value);
+					}
+					columnIndex++;
+				}
+				datos.add(pojo);
+			}
+		}
+		request.setAttribute("datos", datos);
+		request.setAttribute("cabeceras", cabeceras);
+
+		workbook.close();
+		file.close();
+	}
+
+	public static void escrituraXLS(HttpServletRequest request) throws Exception {
+		// Obtener datos del formulario
+		String[] datos = request.getParameterValues("dato");
+
+		File file = new File(ServletFich.class.getClassLoader().getResource("calidad-aire.xlsx").getFile());
+		FileInputStream inputStream = new FileInputStream(file);
+		Workbook workbook = new XSSFWorkbook(inputStream);
+		Sheet sheet = workbook.getSheetAt(0);
+
+		int ultimaFila = sheet.getLastRowNum() + 1; // Índice de la nueva fila
+		Row nuevaFila = sheet.createRow(ultimaFila);
+
+		// Agregar datos a las celdas
+		int colum = 0;
+		for (String dato : datos) {
+			nuevaFila.createCell(colum).setCellValue(dato);
+			colum++;
+		}
+
+		// Cerrar inputStream ANTES de escribir
+		inputStream.close();
+
+		// Guardar cambios
+		FileOutputStream outputStream = new FileOutputStream(file);
+		workbook.write(outputStream);
+
+		outputStream.close();
+		workbook.close();
+
+		if (java.awt.Desktop.isDesktopSupported()) {
+			java.awt.Desktop desktop = java.awt.Desktop.getDesktop();
+			desktop.open(file);
+		}
+	}
+
+	private void lecturaRDF(HttpServletRequest request, HttpServletResponse response) {
 		try (InputStream inputStream = ServletFich.class.getClassLoader().getResourceAsStream("calidad-aire.rdf")) {
 			if (inputStream == null) {
 				throw new IllegalArgumentException("Archivo no encontrado: calidad-aire.rdf");
@@ -299,7 +485,7 @@ public class ServletFich extends HttpServlet {
 		}
 	}
 
-	private void escribirRDF(HttpServletRequest request, HttpServletResponse response) {
+	private void escrituraRDF(HttpServletRequest request, HttpServletResponse response) {
 		String namespace = "http://example.org/observation/observation-";
 		String[] datos = request.getParameterValues("dato");
 
@@ -344,199 +530,7 @@ public class ServletFich extends HttpServlet {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-
 	}
+
 	
-	private void lecturaJSON(HttpServletRequest request) {
-		List<ObjetoPOJO> datos = new ArrayList<>();
-	    Set<String> cabeceras = new HashSet<>();
-	    
-	    // Cabeceras permitidas
-	    Set<String> cabecerasPermitidas = Set.of("publicationDate", "value", "magnitud", "estado", "estacion", "periodo");
-	    
-	    try {
-	        // Cargar el archivo JSON
-	        InputStream inputStream = getClass().getClassLoader().getResourceAsStream("calidad-aire.json");
-
-	        try (InputStreamReader reader = new InputStreamReader(inputStream)) {
-	        	Gson gson = new Gson();
-	            Map<String, Object> jsonMap = gson.fromJson(reader, Map.class);
-
-	            // Extraer la lista de resultados
-	            if (jsonMap.containsKey("result")) {
-	                List<Map<String, Object>> result = (List<Map<String, Object>>) jsonMap.get("result");
-
-	                for (Map<String, Object> item : result) {
-	                    ObjetoPOJO pojo = new ObjetoPOJO();
-
-	                    // Rellenar el mapa de propiedades
-	                    for (Map.Entry<String, Object> entry : item.entrySet()) {
-	                        String clave = entry.getKey();
-	                        String valor = (entry.getValue() != null) ? entry.getValue().toString() : null;
-	                        
-	                        // Se agregan solo las propiedades permitidas
-	                        if (cabecerasPermitidas.contains(clave)) {
-	                            pojo.setPropiedad(clave, valor);
-	                            cabeceras.add(clave);
-	                        }
-	                    }
-	                    datos.add(pojo);
-	                }
-	            }
-
-	            request.setAttribute("datos", datos);
-	            request.setAttribute("cabeceras", cabeceras);
-	        } catch (IOException e) {
-	            e.printStackTrace();
-	        }
-	    } catch (Exception e) {
-	        e.printStackTrace();
-	    }
-	}
-	
-	private void escrituraJSON(HttpServletRequest request, HttpServletResponse response){
-		// Ruta del archivo JSON
-        File archivo = new File(ServletFich.class.getClassLoader().getResource("calidad-aire.json").getFile());
-        String[] datos = request.getParameterValues("dato");
-
-        try (BufferedReader reader = new BufferedReader(new FileReader(archivo))) {
-            // Leer el contenido del archivo JSON
-            StringBuilder jsonContent = new StringBuilder();
-            String line;
-            while ((line = reader.readLine()) != null) {
-                jsonContent.append(line);
-            }
-
-            // Crear objeto GSON para trabajar con JSON
-            Gson gson = new Gson();
-            JsonObject jsonObject = gson.fromJson(jsonContent.toString(), JsonObject.class);
-
-            // Obtener datos desde JSP y asignarlos a las claves correctas
-            JsonObject newData = new JsonObject();
-            newData.addProperty("publicationDate", datos[0]);
-            newData.addProperty("value", datos[1]);
-            newData.addProperty("magnitud", datos[2]);
-            newData.addProperty("estado", datos[3]);
-            newData.addProperty("estacion", datos[4]);
-            newData.addProperty("periodo", datos[5]);
-
-            // Agregar el nuevo objeto a la lista 'result'
-            JsonArray resultArray = jsonObject.getAsJsonArray("result");
-            resultArray.add(newData);
-
-            // Escribir el JSON modificado de nuevo en el archivo
-            try (FileWriter file = new FileWriter(archivo)) {
-                gson.toJson(jsonObject, file);
-                file.flush();
-            }
-			
-			// Abrir el archivo en el equipo
-			if (java.awt.Desktop.isDesktopSupported()) {
-				java.awt.Desktop desktop = java.awt.Desktop.getDesktop();
-				desktop.open(archivo);
-			}
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        
-    }
-	
-    public static void lecturaXLS(HttpServletRequest request) throws Exception{
-	List<ObjetoPOJO> datos = new ArrayList<ObjetoPOJO>();
-	Set<String> cabeceras = new HashSet<>();
-		
-		
-	//Leer archivo
-        FileInputStream file= new FileInputStream(new File(ServletFich.class.getClassLoader().getResource("calidad-aire.xlsx").getFile()));
-        Workbook workbook= WorkbookFactory.create(file);
-        Sheet sheet= workbook.getSheetAt(0);
-
-        // Bandera para identificar la primera fila
-        boolean isHeaderRow = true;
-        List<String> cabecerasAux = new ArrayList<>(); // Lista auxiliar
-
-        
-        // Leer filas y celdas
-        for (Row row : sheet) {
-            if (isHeaderRow) {
-                // Procesar cabeceras
-                for (Cell cell : row) {
-                    String cabecera = cell.getStringCellValue().trim();
-                    cabeceras.add(cabecera);
-                    cabecerasAux.add(cabecera);
-                }
-                isHeaderRow = false;
-            } else {
-                // Procesar filas
-                ObjetoPOJO pojo = new ObjetoPOJO();
-                int columnIndex = 0;
-
-                for (Cell cell : row) {
-                    if (columnIndex < cabecerasAux.size()) {
-                        String key = cabecerasAux.get(columnIndex);
-                        String value;
-
-                        // Convertir valor según tipo
-                        switch (cell.getCellType()) {
-                            case STRING:
-                                value = cell.getStringCellValue();
-                                break;
-                            case NUMERIC:
-                                value = String.valueOf(cell.getNumericCellValue());
-                                break;
-                            case BOOLEAN:
-                                value = String.valueOf(cell.getBooleanCellValue());
-                                break;
-                            default:
-                                value = "";
-                        }
-                        pojo.setPropiedad(key, value);
-                    }
-                    columnIndex++;
-                }
-                datos.add(pojo);
-            }
-        }
-        
-        request.setAttribute("datos", datos);
-		request.setAttribute("cabeceras", cabeceras);
-
-        workbook.close();
-        file.close();
-    }	
-    public static void escrituraXLS(HttpServletRequest request) throws Exception {
-	// Obtener datos del formulario
-	String[] datos = request.getParameterValues("dato");
-		
-	File file= new File(ServletFich.class.getClassLoader().getResource("calidad-aire.xlsx").getFile());
-	FileInputStream inputStream = new FileInputStream(file);
-        Workbook workbook = new XSSFWorkbook(inputStream);
-        Sheet sheet = workbook.getSheetAt(0);
-
-        int ultimaFila = sheet.getLastRowNum() + 1; //Índice de la nueva fila
-        Row nuevaFila = sheet.createRow(ultimaFila);
-
-        //Agregar datos a las celdas
-        int colum= 0;
-        for (String dato : datos) {
-        	nuevaFila.createCell(colum).setCellValue(dato);
-        	colum++;
-        }
-
-        //Cerrar inputStream ANTES de escribir
-        inputStream.close();
-
-        //Guardar cambios
-        FileOutputStream outputStream = new FileOutputStream(file);
-        workbook.write(outputStream);
-        
-        outputStream.close();
-        workbook.close();
-        
-        if (java.awt.Desktop.isDesktopSupported()) {
-			java.awt.Desktop desktop = java.awt.Desktop.getDesktop();
-			desktop.open(file);
-		}
-    }
 }
