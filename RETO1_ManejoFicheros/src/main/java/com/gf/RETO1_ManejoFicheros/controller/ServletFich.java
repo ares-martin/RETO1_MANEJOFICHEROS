@@ -70,20 +70,25 @@ public class ServletFich extends HttpServlet {
 			case "lectura": {
 				switch (request.getParameter("formatoFich")) {
 					case "XML": {
-						leerXML(request);	
+						leerXML(request);
+						break;
 					}
 					case "JSON": {
 						// Método para leer JSON
 						lecturaJSON(request);
+						break;
 					}
 					case "CSV": {
 						// Método para leer CSV
+						break;
 					}
 					case "XLS": {
-						// Método para leer XLS
+						lecturaXLS(request);
+						break;
 					}
 					case "RDF": {
 						leerRDF(request, response);
+						break;
 					}
 				}
 				page = "AccesoDatosA.jsp";
@@ -107,19 +112,24 @@ public class ServletFich extends HttpServlet {
 					switch (request.getParameter("formatoFich")) {
 						case "XML": {
 							escribirXML(arrayDatos);
+							break;
 						}
 						case "JSON": {
 							// Método para escribir en JSON
 							escrituraJSON(request, response);
+							break;
 						}
 						case "CSV": {
 							// Método para escribir en CSV
+							break;
 						}
 						case "XLS": {
 							// Método para escribir en XLS
+							break;
 						}
 						case "RDF": {
 							escribirRDF(request, response);
+							break;
 						}
 					}
 					page = "TratamientoFich.jsp";
@@ -426,4 +436,67 @@ public class ServletFich extends HttpServlet {
         
     }
 	
+    public static void lecturaXLS(HttpServletRequest request) throws Exception{
+	List<ObjetoPOJO> datos = new ArrayList<ObjetoPOJO>();
+	Set<String> cabeceras = new HashSet<>();
+		
+		
+	//Leer archivo
+        FileInputStream file= new FileInputStream(new File(ServletFich.class.getClassLoader().getResource("calidad-aire.xlsx").getFile()));
+        Workbook workbook= WorkbookFactory.create(file);
+        Sheet sheet= workbook.getSheetAt(0);
+
+        // Bandera para identificar la primera fila
+        boolean isHeaderRow = true;
+        List<String> cabecerasAux = new ArrayList<>(); // Lista auxiliar
+
+        
+        // Leer filas y celdas
+        for (Row row : sheet) {
+            if (isHeaderRow) {
+                // Procesar cabeceras
+                for (Cell cell : row) {
+                    String cabecera = cell.getStringCellValue().trim();
+                    cabeceras.add(cabecera);
+                    cabecerasAux.add(cabecera);
+                }
+                isHeaderRow = false;
+            } else {
+                // Procesar filas
+                ObjetoPOJO pojo = new ObjetoPOJO();
+                int columnIndex = 0;
+
+                for (Cell cell : row) {
+                    if (columnIndex < cabecerasAux.size()) {
+                        String key = cabecerasAux.get(columnIndex);
+                        String value;
+
+                        // Convertir valor según tipo
+                        switch (cell.getCellType()) {
+                            case STRING:
+                                value = cell.getStringCellValue();
+                                break;
+                            case NUMERIC:
+                                value = String.valueOf(cell.getNumericCellValue());
+                                break;
+                            case BOOLEAN:
+                                value = String.valueOf(cell.getBooleanCellValue());
+                                break;
+                            default:
+                                value = "";
+                        }
+                        pojo.setPropiedad(key, value);
+                    }
+                    columnIndex++;
+                }
+                datos.add(pojo);
+            }
+        }
+        
+        request.setAttribute("datos", datos);
+		request.setAttribute("cabeceras", cabeceras);
+
+        workbook.close();
+        file.close();
+    }	
 }
