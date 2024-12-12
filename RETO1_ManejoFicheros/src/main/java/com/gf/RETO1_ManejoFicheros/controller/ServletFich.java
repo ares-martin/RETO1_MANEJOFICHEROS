@@ -490,8 +490,8 @@ public class ServletFich extends HttpServlet {
 		String[] datos = request.getParameterValues("dato");
 
 		// Ruta del archivo RDF
-		File f = new File(getServletContext().getRealPath("/calidad-aire.rdf"));
-
+		File f = new File("src/main/resources/calidad-aire.rdf");
+		
 		try {
 			// Crear el modelo RDF desde el archivo existente
 			Model model = ModelFactory.createDefaultModel();
