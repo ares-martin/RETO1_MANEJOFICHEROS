@@ -69,24 +69,22 @@ public class ServletFich extends HttpServlet {
 			switch (request.getParameter("eleccionFich")) {
 			case "lectura": {
 				switch (request.getParameter("formatoFich")) {
-				case "XML": {
-					leerXML(request);
-					
-				}break;
-				case "JSON": {
-					// Método para leer JSON
-					lecturaJSON(request);
-					break;
-				}
-				case "CSV": {
-					// Método para leer CSV
-				}
-				case "XLS": {
-					// Método para leer XLS
-				}
-				case "RDF": {
-					leerRDF(request, response);
-				}break;
+					case "XML": {
+						leerXML(request);	
+					}
+					case "JSON": {
+						// Método para leer JSON
+						lecturaJSON(request);
+					}
+					case "CSV": {
+						// Método para leer CSV
+					}
+					case "XLS": {
+						// Método para leer XLS
+					}
+					case "RDF": {
+						leerRDF(request, response);
+					}
 				}
 				page = "AccesoDatosA.jsp";
 				break;
@@ -107,23 +105,22 @@ public class ServletFich extends HttpServlet {
 					page = "TratamientoFich.jsp";
 				} else {
 					switch (request.getParameter("formatoFich")) {
-					case "XML": {
-						escribirXML(arrayDatos);
-					}break;
-					case "JSON": {
-						// Método para escribir en JSON
-						escrituraJSON(request, response);
-						break;
-					}
-					case "CSV": {
-						// Método para escribir en CSV
-					}
-					case "XLS": {
-						// Método para escribir en XLS
-					}
-					case "RDF": {
-						escribirRDF(request, response);
-					}break;
+						case "XML": {
+							escribirXML(arrayDatos);
+						}
+						case "JSON": {
+							// Método para escribir en JSON
+							escrituraJSON(request, response);
+						}
+						case "CSV": {
+							// Método para escribir en CSV
+						}
+						case "XLS": {
+							// Método para escribir en XLS
+						}
+						case "RDF": {
+							escribirRDF(request, response);
+						}
 					}
 					page = "TratamientoFich.jsp";
 				}
