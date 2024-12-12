@@ -6,9 +6,11 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
@@ -16,18 +18,21 @@ import java.util.Set;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
-import java.util.HashMap;
+import java.io.FileReader;
+import java.io.FileWriter;
 import java.util.Map;
 import java.util.UUID;
 
 import org.w3c.dom.*;
 import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.ModelFactory;
-import org.apache.jena.rdf.model.RDFNode;
 import org.apache.jena.rdf.model.Resource;
 import org.apache.jena.rdf.model.Statement;
 
 import com.gf.RETO1_ManejoFicheros.entities.ObjetoPOJO;
+import com.google.gson.Gson;
+import com.google.gson.JsonArray;
+import com.google.gson.JsonObject;
 
 import javax.xml.parsers.*;
 import javax.xml.transform.OutputKeys;
@@ -70,6 +75,8 @@ public class ServletFich extends HttpServlet {
 				}break;
 				case "JSON": {
 					// Método para leer JSON
+					lecturaJSON(request);
+					break;
 				}
 				case "CSV": {
 					// Método para leer CSV
@@ -105,6 +112,8 @@ public class ServletFich extends HttpServlet {
 					}break;
 					case "JSON": {
 						// Método para escribir en JSON
+						escrituraJSON(request, response);
+						break;
 					}
 					case "CSV": {
 						// Método para escribir en CSV
@@ -324,5 +333,100 @@ public class ServletFich extends HttpServlet {
 		}
 
 	}
+	
+	private void lecturaJSON(HttpServletRequest request) {
+		List<ObjetoPOJO> datos = new ArrayList<>();
+	    Set<String> cabeceras = new HashSet<>();
+	    
+	    // Cabeceras permitidas
+	    Set<String> cabecerasPermitidas = Set.of("publicationDate", "value", "magnitud", "estado", "estacion", "periodo");
+	    
+	    try {
+	        // Cargar el archivo JSON
+	        InputStream inputStream = getClass().getClassLoader().getResourceAsStream("calidad-aire.json");
+
+	        try (InputStreamReader reader = new InputStreamReader(inputStream)) {
+	        	Gson gson = new Gson();
+	            Map<String, Object> jsonMap = gson.fromJson(reader, Map.class);
+
+	            // Extraer la lista de resultados
+	            if (jsonMap.containsKey("result")) {
+	                List<Map<String, Object>> result = (List<Map<String, Object>>) jsonMap.get("result");
+
+	                for (Map<String, Object> item : result) {
+	                    ObjetoPOJO pojo = new ObjetoPOJO();
+
+	                    // Rellenar el mapa de propiedades
+	                    for (Map.Entry<String, Object> entry : item.entrySet()) {
+	                        String clave = entry.getKey();
+	                        String valor = (entry.getValue() != null) ? entry.getValue().toString() : null;
+	                        
+	                        // Se agregan solo las propiedades permitidas
+	                        if (cabecerasPermitidas.contains(clave)) {
+	                            pojo.setPropiedad(clave, valor);
+	                            cabeceras.add(clave);
+	                        }
+	                    }
+	                    datos.add(pojo);
+	                }
+	            }
+
+	            request.setAttribute("datos", datos);
+	            request.setAttribute("cabeceras", cabeceras);
+	        } catch (IOException e) {
+	            e.printStackTrace();
+	        }
+	    } catch (Exception e) {
+	        e.printStackTrace();
+	    }
+	}
+	
+	private void escrituraJSON(HttpServletRequest request, HttpServletResponse response){
+		// Ruta del archivo JSON
+        File archivo = new File(ServletFich.class.getClassLoader().getResource("calidad-aire.json").getFile());
+        String[] datos = request.getParameterValues("dato");
+
+        try (BufferedReader reader = new BufferedReader(new FileReader(archivo))) {
+            // Leer el contenido del archivo JSON
+            StringBuilder jsonContent = new StringBuilder();
+            String line;
+            while ((line = reader.readLine()) != null) {
+                jsonContent.append(line);
+            }
+
+            // Crear objeto GSON para trabajar con JSON
+            Gson gson = new Gson();
+            JsonObject jsonObject = gson.fromJson(jsonContent.toString(), JsonObject.class);
+
+            // Obtener datos desde JSP y asignarlos a las claves correctas
+            JsonObject newData = new JsonObject();
+            newData.addProperty("publicationDate", datos[0]);
+            newData.addProperty("value", datos[1]);
+            newData.addProperty("magnitud", datos[2]);
+            newData.addProperty("estado", datos[3]);
+            newData.addProperty("estacion", datos[4]);
+            newData.addProperty("periodo", datos[5]);
+
+            // Agregar el nuevo objeto a la lista 'result'
+            JsonArray resultArray = jsonObject.getAsJsonArray("result");
+            resultArray.add(newData);
+
+            // Escribir el JSON modificado de nuevo en el archivo
+            try (FileWriter file = new FileWriter(archivo)) {
+                gson.toJson(jsonObject, file);
+                file.flush();
+            }
+			
+			// Abrir el archivo en el equipo
+			if (java.awt.Desktop.isDesktopSupported()) {
+				java.awt.Desktop desktop = java.awt.Desktop.getDesktop();
+				desktop.open(archivo);
+			}
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        
+    }
 	
 }
