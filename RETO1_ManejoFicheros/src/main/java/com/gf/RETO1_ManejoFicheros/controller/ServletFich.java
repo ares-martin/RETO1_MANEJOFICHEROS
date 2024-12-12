@@ -124,7 +124,7 @@ public class ServletFich extends HttpServlet {
 							break;
 						}
 						case "XLS": {
-							// Método para escribir en XLS
+							escrituraXLS(request);
 							break;
 						}
 						case "RDF": {
@@ -499,4 +499,38 @@ public class ServletFich extends HttpServlet {
         workbook.close();
         file.close();
     }	
+    public static void escrituraXLS(HttpServletRequest request) throws Exception {
+	// Obtener datos del formulario
+	String[] datos = request.getParameterValues("dato");
+		
+	File file= new File(ServletFich.class.getClassLoader().getResource("calidad-aire.xlsx").getFile());
+	FileInputStream inputStream = new FileInputStream(file);
+        Workbook workbook = new XSSFWorkbook(inputStream);
+        Sheet sheet = workbook.getSheetAt(0);
+
+        int ultimaFila = sheet.getLastRowNum() + 1; //Índice de la nueva fila
+        Row nuevaFila = sheet.createRow(ultimaFila);
+
+        //Agregar datos a las celdas
+        int colum= 0;
+        for (String dato : datos) {
+        	nuevaFila.createCell(colum).setCellValue(dato);
+        	colum++;
+        }
+
+        //Cerrar inputStream ANTES de escribir
+        inputStream.close();
+
+        //Guardar cambios
+        FileOutputStream outputStream = new FileOutputStream(file);
+        workbook.write(outputStream);
+        
+        outputStream.close();
+        workbook.close();
+        
+        if (java.awt.Desktop.isDesktopSupported()) {
+			java.awt.Desktop desktop = java.awt.Desktop.getDesktop();
+			desktop.open(file);
+		}
+    }
 }
