@@ -450,7 +450,7 @@ public class ServletFich extends HttpServlet {
 			if (inputStream == null) {
 				throw new IllegalArgumentException("Archivo no encontrado: calidad-aire.rdf");
 			}
-
+			System.out.println(new File("src/main/resources/calidad-aire.rdf").getAbsolutePath());
 			Model model = ModelFactory.createDefaultModel();
 			model.read(inputStream, null, "RDF/XML");
 
@@ -486,10 +486,11 @@ public class ServletFich extends HttpServlet {
 	}
 
 	private void escrituraRDF(HttpServletRequest request, HttpServletResponse response) {
-		String namespace = "http://example.org/observation/observation-";
+		String namespace = "http://example.org/observation/";
 		String[] datos = request.getParameterValues("dato");
 
 		// Ruta del archivo RDF
+		// He tenido que modificar en el Working directory al del proyecto para que me cogiese bien la ruta
 		File f = new File("src/main/resources/calidad-aire.rdf");
 		
 		try {

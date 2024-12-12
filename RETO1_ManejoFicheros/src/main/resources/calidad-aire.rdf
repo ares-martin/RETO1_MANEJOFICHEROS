@@ -2,755 +2,739 @@
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xmlns:ex="http://example.org/observation/">
   <rdf:Description rdf:about="http://example.org/observation/observation-8712478040393">
-    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
-    <ex:value>4.95</ex:value>
-    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Di%C3%B3xido_de_azufre"/>
-    <ex:estado>Tiempo real</ex:estado>
-    <ex:estacion>Jaime Ferrán</ex:estacion>
     <ex:periodo>Horario</ex:periodo>
+    <ex:estacion>Jaime Ferrán</ex:estacion>
+    <ex:estado>Tiempo real</ex:estado>
+    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Di%C3%B3xido_de_azufre"/>
+    <ex:value>4.95</ex:value>
+    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/observation/observation-8712478040353">
-    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
-    <ex:value>37.93</ex:value>
-    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/%C3%93xidos_de_nitr%C3%B3geno"/>
-    <ex:estado>Tiempo real</ex:estado>
-    <ex:estacion>Jaime Ferrán</ex:estacion>
     <ex:periodo>Horario</ex:periodo>
+    <ex:estacion>Jaime Ferrán</ex:estacion>
+    <ex:estado>Tiempo real</ex:estado>
+    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/%C3%93xidos_de_nitr%C3%B3geno"/>
+    <ex:value>37.93</ex:value>
+    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/observation/observation-8712478040563">
-    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
-    <ex:value>4.13</ex:value>
-    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Di%C3%B3xido_de_azufre"/>
-    <ex:estado>Tiempo real</ex:estado>
-    <ex:estacion>Jaime Ferrán</ex:estacion>
     <ex:periodo>Horario</ex:periodo>
+    <ex:estacion>Jaime Ferrán</ex:estacion>
+    <ex:estado>Tiempo real</ex:estado>
+    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Di%C3%B3xido_de_azufre"/>
+    <ex:value>4.13</ex:value>
+    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/observation/observation-8712478040313">
-    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
-    <ex:value>14.93</ex:value>
-    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Di%C3%B3xido_de_nitr%C3%B3geno"/>
-    <ex:estado>Tiempo real</ex:estado>
-    <ex:estacion>Jaime Ferrán</ex:estacion>
     <ex:periodo>Horario</ex:periodo>
+    <ex:estacion>Jaime Ferrán</ex:estacion>
+    <ex:estado>Tiempo real</ex:estado>
+    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Di%C3%B3xido_de_nitr%C3%B3geno"/>
+    <ex:value>14.93</ex:value>
+    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/observation/observation-8712478039853">
-    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
-    <ex:value>22.11</ex:value>
-    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/PM10"/>
-    <ex:estado>Tiempo real</ex:estado>
-    <ex:estacion>Roger de Flor</ex:estacion>
     <ex:periodo>Horario</ex:periodo>
+    <ex:estacion>Roger de Flor</ex:estacion>
+    <ex:estado>Tiempo real</ex:estado>
+    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/PM10"/>
+    <ex:value>22.11</ex:value>
+    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/observation/observation-8712478041183">
-    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
-    <ex:value>19.74</ex:value>
-    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Ozono"/>
-    <ex:estado>Tiempo real</ex:estado>
-    <ex:estacion>Renovales</ex:estacion>
     <ex:periodo>Horario</ex:periodo>
+    <ex:estacion>Renovales</ex:estacion>
+    <ex:estado>Tiempo real</ex:estado>
+    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Ozono"/>
+    <ex:value>19.74</ex:value>
+    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/observation/observation-8712478041393">
-    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
-    <ex:value>34.16</ex:value>
-    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Di%C3%B3xido_de_nitr%C3%B3geno"/>
-    <ex:estado>Tiempo real</ex:estado>
-    <ex:estacion>Las Fuentes </ex:estacion>
     <ex:periodo>Horario</ex:periodo>
+    <ex:estacion>Las Fuentes </ex:estacion>
+    <ex:estado>Tiempo real</ex:estado>
+    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Di%C3%B3xido_de_nitr%C3%B3geno"/>
+    <ex:value>34.16</ex:value>
+    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/observation/observation-8712478041353">
-    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
-    <ex:value>14.64</ex:value>
-    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/PM-2.5"/>
-    <ex:estado>Tiempo real</ex:estado>
-    <ex:estacion>Las Fuentes </ex:estacion>
     <ex:periodo>Horario</ex:periodo>
+    <ex:estacion>Las Fuentes </ex:estacion>
+    <ex:estado>Tiempo real</ex:estado>
+    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/PM-2.5"/>
+    <ex:value>14.64</ex:value>
+    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/observation/observation-8712478041103">
-    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
-    <ex:value>83.44</ex:value>
-    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/%C3%93xidos_de_nitr%C3%B3geno"/>
-    <ex:estado>Tiempo real</ex:estado>
-    <ex:estacion>Renovales</ex:estacion>
     <ex:periodo>Horario</ex:periodo>
+    <ex:estacion>Renovales</ex:estacion>
+    <ex:estado>Tiempo real</ex:estado>
+    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/%C3%93xidos_de_nitr%C3%B3geno"/>
+    <ex:value>83.44</ex:value>
+    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/observation/observation-8712478039603">
-    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
-    <ex:value>15.34</ex:value>
-    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Ozono"/>
-    <ex:estado>Tiempo real</ex:estado>
-    <ex:estacion>El Picarral</ex:estacion>
     <ex:periodo>Horario</ex:periodo>
+    <ex:estacion>El Picarral</ex:estacion>
+    <ex:estado>Tiempo real</ex:estado>
+    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Ozono"/>
+    <ex:value>15.34</ex:value>
+    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/observation/observation-8712478040943">
-    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
-    <ex:value>3.11</ex:value>
-    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Di%C3%B3xido_de_azufre"/>
-    <ex:estado>Tiempo real</ex:estado>
-    <ex:estacion>Renovales</ex:estacion>
     <ex:periodo>Horario</ex:periodo>
+    <ex:estacion>Renovales</ex:estacion>
+    <ex:estado>Tiempo real</ex:estado>
+    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Di%C3%B3xido_de_azufre"/>
+    <ex:value>3.11</ex:value>
+    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/observation/observation-8712478041313">
-    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
-    <ex:value>12.43</ex:value>
-    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/PM10"/>
-    <ex:estado>Tiempo real</ex:estado>
-    <ex:estacion>Renovales</ex:estacion>
     <ex:periodo>Horario</ex:periodo>
+    <ex:estacion>Renovales</ex:estacion>
+    <ex:estado>Tiempo real</ex:estado>
+    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/PM10"/>
+    <ex:value>12.43</ex:value>
+    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/observation/observation-8712478039813">
-    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
-    <ex:value>0.35</ex:value>
-    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Benceno"/>
-    <ex:estado>Tiempo real</ex:estado>
-    <ex:estacion>Roger de Flor</ex:estacion>
     <ex:periodo>Horario</ex:periodo>
+    <ex:estacion>Roger de Flor</ex:estacion>
+    <ex:estado>Tiempo real</ex:estado>
+    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Benceno"/>
+    <ex:value>0.35</ex:value>
+    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/observation/observation-8712478041143">
-    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
-    <ex:value>0.34</ex:value>
-    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Mon%C3%B3xido_de_carbono"/>
-    <ex:estado>Tiempo real</ex:estado>
-    <ex:estacion>Renovales</ex:estacion>
     <ex:periodo>Horario</ex:periodo>
+    <ex:estacion>Renovales</ex:estacion>
+    <ex:estado>Tiempo real</ex:estado>
+    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Mon%C3%B3xido_de_carbono"/>
+    <ex:value>0.34</ex:value>
+    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/observation/observation-8712478040983">
-    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
-    <ex:value>0.31</ex:value>
-    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Mon%C3%B3xido_de_carbono"/>
-    <ex:estado>Tiempo real</ex:estado>
-    <ex:estacion>Renovales</ex:estacion>
     <ex:periodo>Horario</ex:periodo>
+    <ex:estacion>Renovales</ex:estacion>
+    <ex:estado>Tiempo real</ex:estado>
+    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Mon%C3%B3xido_de_carbono"/>
+    <ex:value>0.31</ex:value>
+    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/observation/observation-8712478042273">
-    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
-    <ex:value>2.93</ex:value>
-    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Di%C3%B3xido_de_azufre"/>
-    <ex:estado>Tiempo real</ex:estado>
-    <ex:estacion>Centro</ex:estacion>
     <ex:periodo>Horario</ex:periodo>
+    <ex:estacion>Centro</ex:estacion>
+    <ex:estado>Tiempo real</ex:estado>
+    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Di%C3%B3xido_de_azufre"/>
+    <ex:value>2.93</ex:value>
+    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/observation/observation-8712478040273">
-    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
-    <ex:value>1.33</ex:value>
-    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Sulfuro_de_hidr%C3%B3geno"/>
-    <ex:estado>Tiempo real</ex:estado>
-    <ex:estacion>Jaime Ferrán</ex:estacion>
     <ex:periodo>Horario</ex:periodo>
+    <ex:estacion>Jaime Ferrán</ex:estacion>
+    <ex:estado>Tiempo real</ex:estado>
+    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Sulfuro_de_hidr%C3%B3geno"/>
+    <ex:value>1.33</ex:value>
+    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/observation/observation-8712478042103">
-    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
-    <ex:value>3.22</ex:value>
-    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Di%C3%B3xido_de_azufre"/>
-    <ex:estado>Tiempo real</ex:estado>
-    <ex:estacion>Centro</ex:estacion>
     <ex:periodo>Horario</ex:periodo>
+    <ex:estacion>Centro</ex:estacion>
+    <ex:estado>Tiempo real</ex:estado>
+    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Di%C3%B3xido_de_azufre"/>
+    <ex:value>3.22</ex:value>
+    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/observation/observation-8712478042313">
-    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
-    <ex:value>46.65</ex:value>
-    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Di%C3%B3xido_de_nitr%C3%B3geno"/>
-    <ex:estado>Tiempo real</ex:estado>
-    <ex:estacion>Centro</ex:estacion>
     <ex:periodo>Horario</ex:periodo>
+    <ex:estacion>Centro</ex:estacion>
+    <ex:estado>Tiempo real</ex:estado>
+    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Di%C3%B3xido_de_nitr%C3%B3geno"/>
+    <ex:value>46.65</ex:value>
+    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/observation/observation-8712478042143">
-    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
-    <ex:value>0.31</ex:value>
-    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Mon%C3%B3xido_de_carbono"/>
-    <ex:estado>Tiempo real</ex:estado>
-    <ex:estacion>Centro</ex:estacion>
     <ex:periodo>Horario</ex:periodo>
+    <ex:estacion>Centro</ex:estacion>
+    <ex:estado>Tiempo real</ex:estado>
+    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Mon%C3%B3xido_de_carbono"/>
+    <ex:value>0.31</ex:value>
+    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/observation/observation-8712478042983">
-    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
-    <ex:value>11.77</ex:value>
-    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/PM-2.5"/>
-    <ex:estado>Tiempo real</ex:estado>
-    <ex:estacion>Actur</ex:estacion>
     <ex:periodo>Horario</ex:periodo>
+    <ex:estacion>Actur</ex:estacion>
+    <ex:estado>Tiempo real</ex:estado>
+    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/PM-2.5"/>
+    <ex:value>11.77</ex:value>
+    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/observation/observation-8712478040233">
-    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
-    <ex:value>0.38</ex:value>
-    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Benceno"/>
-    <ex:estado>Tiempo real</ex:estado>
-    <ex:estacion>Roger de Flor</ex:estacion>
     <ex:periodo>Horario</ex:periodo>
+    <ex:estacion>Roger de Flor</ex:estacion>
+    <ex:estado>Tiempo real</ex:estado>
+    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Benceno"/>
+    <ex:value>0.38</ex:value>
+    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/observation/observation-8712478042353">
-    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
-    <ex:value>83.6</ex:value>
-    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/%C3%93xidos_de_nitr%C3%B3geno"/>
-    <ex:estado>Tiempo real</ex:estado>
-    <ex:estacion>Avda Soria</ex:estacion>
     <ex:periodo>Horario</ex:periodo>
+    <ex:estacion>Avda Soria</ex:estacion>
+    <ex:estado>Tiempo real</ex:estado>
+    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/%C3%93xidos_de_nitr%C3%B3geno"/>
+    <ex:value>83.6</ex:value>
+    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/observation/observation-8712478042773">
-    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
-    <ex:value>95.62</ex:value>
-    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/%C3%93xidos_de_nitr%C3%B3geno"/>
-    <ex:estado>Tiempo real</ex:estado>
-    <ex:estacion>Actur</ex:estacion>
     <ex:periodo>Horario</ex:periodo>
+    <ex:estacion>Actur</ex:estacion>
+    <ex:estado>Tiempo real</ex:estado>
+    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/%C3%93xidos_de_nitr%C3%B3geno"/>
+    <ex:value>95.62</ex:value>
+    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/observation/observation-8712478039773">
-    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
-    <ex:value>140.63</ex:value>
-    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/%C3%93xidos_de_nitr%C3%B3geno"/>
-    <ex:estado>Tiempo real</ex:estado>
-    <ex:estacion>Roger de Flor</ex:estacion>
     <ex:periodo>Horario</ex:periodo>
+    <ex:estacion>Roger de Flor</ex:estacion>
+    <ex:estado>Tiempo real</ex:estado>
+    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/%C3%93xidos_de_nitr%C3%B3geno"/>
+    <ex:value>140.63</ex:value>
+    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/observation/observation-8712478039983">
-    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
-    <ex:value>13.69</ex:value>
-    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Ozono"/>
-    <ex:estado>Tiempo real</ex:estado>
-    <ex:estacion>Roger de Flor</ex:estacion>
     <ex:periodo>Horario</ex:periodo>
+    <ex:estacion>Roger de Flor</ex:estacion>
+    <ex:estado>Tiempo real</ex:estado>
+    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Ozono"/>
+    <ex:value>13.69</ex:value>
+    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/observation/observation-8712478042943">
-    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
-    <ex:value>98.35</ex:value>
-    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/%C3%93xidos_de_nitr%C3%B3geno"/>
-    <ex:estado>Tiempo real</ex:estado>
-    <ex:estacion>Actur</ex:estacion>
     <ex:periodo>Horario</ex:periodo>
+    <ex:estacion>Actur</ex:estacion>
+    <ex:estado>Tiempo real</ex:estado>
+    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/%C3%93xidos_de_nitr%C3%B3geno"/>
+    <ex:value>98.35</ex:value>
+    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/observation/observation-8712478041063">
-    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
-    <ex:value>64.32</ex:value>
-    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/%C3%93xidos_de_nitr%C3%B3geno"/>
-    <ex:estado>Tiempo real</ex:estado>
-    <ex:estacion>Renovales</ex:estacion>
     <ex:periodo>Horario</ex:periodo>
+    <ex:estacion>Renovales</ex:estacion>
+    <ex:estado>Tiempo real</ex:estado>
+    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/%C3%93xidos_de_nitr%C3%B3geno"/>
+    <ex:value>64.32</ex:value>
+    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/observation/observation-8712478042733">
-    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
-    <ex:value>28.16</ex:value>
-    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/PM10"/>
-    <ex:estado>Tiempo real</ex:estado>
-    <ex:estacion>Actur</ex:estacion>
     <ex:periodo>Horario</ex:periodo>
+    <ex:estacion>Actur</ex:estacion>
+    <ex:estado>Tiempo real</ex:estado>
+    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/PM10"/>
+    <ex:value>28.16</ex:value>
+    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/observation/observation-8712478039563">
-    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
-    <ex:value>40.35</ex:value>
-    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Di%C3%B3xido_de_nitr%C3%B3geno"/>
-    <ex:estado>Tiempo real</ex:estado>
-    <ex:estacion>El Picarral</ex:estacion>
     <ex:periodo>Horario</ex:periodo>
+    <ex:estacion>El Picarral</ex:estacion>
+    <ex:estado>Tiempo real</ex:estado>
+    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Di%C3%B3xido_de_nitr%C3%B3geno"/>
+    <ex:value>40.35</ex:value>
+    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/observation/observation-8712478042903">
-    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
-    <ex:value>26.52</ex:value>
-    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/PM10"/>
-    <ex:estado>Tiempo real</ex:estado>
-    <ex:estacion>Actur</ex:estacion>
     <ex:periodo>Horario</ex:periodo>
+    <ex:estacion>Actur</ex:estacion>
+    <ex:estado>Tiempo real</ex:estado>
+    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/PM10"/>
+    <ex:value>26.52</ex:value>
+    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/observation/observation-8712478041233">
-    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
-    <ex:value>3.68</ex:value>
-    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Di%C3%B3xido_de_azufre"/>
-    <ex:estado>Tiempo real</ex:estado>
-    <ex:estacion>Renovales</ex:estacion>
     <ex:periodo>Horario</ex:periodo>
+    <ex:estacion>Renovales</ex:estacion>
+    <ex:estado>Tiempo real</ex:estado>
+    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Di%C3%B3xido_de_azufre"/>
+    <ex:value>3.68</ex:value>
+    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/observation/observation-8712478040803">
-    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
-    <ex:value>15.58</ex:value>
-    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Ozono"/>
-    <ex:estado>Tiempo real</ex:estado>
-    <ex:estacion>Jaime Ferrán</ex:estacion>
     <ex:periodo>Horario</ex:periodo>
+    <ex:estacion>Jaime Ferrán</ex:estacion>
+    <ex:estado>Tiempo real</ex:estado>
+    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Ozono"/>
+    <ex:value>15.58</ex:value>
+    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/observation/observation-8712478041883">
-    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
-    <ex:value>12.89</ex:value>
-    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Ozono"/>
-    <ex:estado>Tiempo real</ex:estado>
-    <ex:estacion>Las Fuentes </ex:estacion>
     <ex:periodo>Horario</ex:periodo>
+    <ex:estacion>Las Fuentes </ex:estacion>
+    <ex:estado>Tiempo real</ex:estado>
+    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Ozono"/>
+    <ex:value>12.89</ex:value>
+    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/observation/observation-8712478041273">
-    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
-    <ex:value>28.48</ex:value>
-    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Di%C3%B3xido_de_nitr%C3%B3geno"/>
-    <ex:estado>Tiempo real</ex:estado>
-    <ex:estacion>Renovales</ex:estacion>
     <ex:periodo>Horario</ex:periodo>
+    <ex:estacion>Renovales</ex:estacion>
+    <ex:estado>Tiempo real</ex:estado>
+    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Di%C3%B3xido_de_nitr%C3%B3geno"/>
+    <ex:value>28.48</ex:value>
+    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/observation/observation-8712478039943">
-    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
-    <ex:value>0.25</ex:value>
-    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Mon%C3%B3xido_de_carbono"/>
-    <ex:estado>Tiempo real</ex:estado>
-    <ex:estacion>Roger de Flor</ex:estacion>
     <ex:periodo>Horario</ex:periodo>
+    <ex:estacion>Roger de Flor</ex:estacion>
+    <ex:estado>Tiempo real</ex:estado>
+    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Mon%C3%B3xido_de_carbono"/>
+    <ex:value>0.25</ex:value>
+    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/observation/observation-8712478039733">
-    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
-    <ex:value>39.78</ex:value>
-    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Di%C3%B3xido_de_nitr%C3%B3geno"/>
-    <ex:estado>Tiempo real</ex:estado>
-    <ex:estacion>Roger de Flor</ex:estacion>
     <ex:periodo>Horario</ex:periodo>
+    <ex:estacion>Roger de Flor</ex:estacion>
+    <ex:estado>Tiempo real</ex:estado>
+    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Di%C3%B3xido_de_nitr%C3%B3geno"/>
+    <ex:value>39.78</ex:value>
+    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/observation/observation-8712478041023">
-    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
-    <ex:value>30.62</ex:value>
-    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Di%C3%B3xido_de_nitr%C3%B3geno"/>
-    <ex:estado>Tiempo real</ex:estado>
-    <ex:estacion>Renovales</ex:estacion>
     <ex:periodo>Horario</ex:periodo>
+    <ex:estacion>Renovales</ex:estacion>
+    <ex:estado>Tiempo real</ex:estado>
+    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Di%C3%B3xido_de_nitr%C3%B3geno"/>
+    <ex:value>30.62</ex:value>
+    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/observation/observation-8712478027235">
-    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
-    <ex:value>0.21</ex:value>
-    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Mon%C3%B3xido_de_carbono"/>
-    <ex:estado>Tiempo real</ex:estado>
-    <ex:estacion>El Picarral</ex:estacion>
     <ex:periodo>Horario</ex:periodo>
+    <ex:estacion>El Picarral</ex:estacion>
+    <ex:estado>Tiempo real</ex:estado>
+    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Mon%C3%B3xido_de_carbono"/>
+    <ex:value>0.21</ex:value>
+    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/observation/observation-8712478027025">
-    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
-    <ex:value>15.34</ex:value>
-    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Ozono"/>
-    <ex:estado>Tiempo real</ex:estado>
-    <ex:estacion>El Picarral</ex:estacion>
     <ex:periodo>Horario</ex:periodo>
+    <ex:estacion>El Picarral</ex:estacion>
+    <ex:estado>Tiempo real</ex:estado>
+    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Ozono"/>
+    <ex:value>15.34</ex:value>
+    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/observation/observation-8712478041843">
-    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
-    <ex:value>21.24</ex:value>
-    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/PM10"/>
-    <ex:estado>Tiempo real</ex:estado>
-    <ex:estacion>Las Fuentes </ex:estacion>
     <ex:periodo>Horario</ex:periodo>
+    <ex:estacion>Las Fuentes </ex:estacion>
+    <ex:estado>Tiempo real</ex:estado>
+    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/PM10"/>
+    <ex:value>21.24</ex:value>
+    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/observation/observation-8712478042393">
-    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
-    <ex:value>0.26</ex:value>
-    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Mon%C3%B3xido_de_carbono"/>
-    <ex:estado>Tiempo real</ex:estado>
-    <ex:estacion>Avda Soria</ex:estacion>
     <ex:periodo>Horario</ex:periodo>
+    <ex:estacion>Avda Soria</ex:estacion>
+    <ex:estado>Tiempo real</ex:estado>
+    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Mon%C3%B3xido_de_carbono"/>
+    <ex:value>0.26</ex:value>
+    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/observation/observation-8712478042183">
-    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
-    <ex:value>53.86</ex:value>
-    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/%C3%93xidos_de_nitr%C3%B3geno"/>
-    <ex:estado>Tiempo real</ex:estado>
-    <ex:estacion>Centro</ex:estacion>
     <ex:periodo>Horario</ex:periodo>
+    <ex:estacion>Centro</ex:estacion>
+    <ex:estado>Tiempo real</ex:estado>
+    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/%C3%93xidos_de_nitr%C3%B3geno"/>
+    <ex:value>53.86</ex:value>
+    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/observation/observation-8712478041803">
-    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
-    <ex:value>35.66</ex:value>
-    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Di%C3%B3xido_de_nitr%C3%B3geno"/>
-    <ex:estado>Tiempo real</ex:estado>
-    <ex:estacion>Las Fuentes </ex:estacion>
     <ex:periodo>Horario</ex:periodo>
+    <ex:estacion>Las Fuentes </ex:estacion>
+    <ex:estado>Tiempo real</ex:estado>
+    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Di%C3%B3xido_de_nitr%C3%B3geno"/>
+    <ex:value>35.66</ex:value>
+    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/observation/observation-8712478040153">
-    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
-    <ex:value>19.32</ex:value>
-    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/PM10"/>
-    <ex:estado>Tiempo real</ex:estado>
-    <ex:estacion>Roger de Flor</ex:estacion>
     <ex:periodo>Horario</ex:periodo>
+    <ex:estacion>Roger de Flor</ex:estacion>
+    <ex:estado>Tiempo real</ex:estado>
+    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/PM10"/>
+    <ex:value>19.32</ex:value>
+    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/observation/observation-8712478042433">
-    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
-    <ex:value>32.97</ex:value>
-    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Di%C3%B3xido_de_nitr%C3%B3geno"/>
-    <ex:estado>Tiempo real</ex:estado>
-    <ex:estacion>Avda Soria</ex:estacion>
     <ex:periodo>Horario</ex:periodo>
+    <ex:estacion>Avda Soria</ex:estacion>
+    <ex:estado>Tiempo real</ex:estado>
+    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Di%C3%B3xido_de_nitr%C3%B3geno"/>
+    <ex:value>32.97</ex:value>
+    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/observation/observation-8712478042223">
-    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
-    <ex:value>23.76</ex:value>
-    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Ozono"/>
-    <ex:estado>Tiempo real</ex:estado>
-    <ex:estacion>Centro</ex:estacion>
     <ex:periodo>Horario</ex:periodo>
+    <ex:estacion>Centro</ex:estacion>
+    <ex:estado>Tiempo real</ex:estado>
+    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Ozono"/>
+    <ex:value>23.76</ex:value>
+    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/observation/observation-8712478042643">
-    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
-    <ex:value>9.86</ex:value>
-    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/PM-2.5"/>
-    <ex:estado>Tiempo real</ex:estado>
-    <ex:estacion>Actur</ex:estacion>
     <ex:periodo>Horario</ex:periodo>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/observation/observation-0762cef4-f468-4beb-a065-ec2a43daed43">
-    <ex:observation-periodo>5</ex:observation-periodo>
-    <ex:observation-estacion>4</ex:observation-estacion>
-    <ex:observation-estado>3</ex:observation-estado>
-    <ex:observation-magnitud>2</ex:observation-magnitud>
-    <ex:observation-value>1</ex:observation-value>
-    <ex:observation-publicationDate>Hola</ex:observation-publicationDate>
+    <ex:estacion>Actur</ex:estacion>
+    <ex:estado>Tiempo real</ex:estado>
+    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/PM-2.5"/>
+    <ex:value>9.86</ex:value>
+    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/observation/observation-8712478040113">
-    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
-    <ex:value>34.99</ex:value>
-    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Di%C3%B3xido_de_nitr%C3%B3geno"/>
-    <ex:estado>Tiempo real</ex:estado>
-    <ex:estacion>Roger de Flor</ex:estacion>
     <ex:periodo>Horario</ex:periodo>
+    <ex:estacion>Roger de Flor</ex:estacion>
+    <ex:estado>Tiempo real</ex:estado>
+    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Di%C3%B3xido_de_nitr%C3%B3geno"/>
+    <ex:value>34.99</ex:value>
+    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/observation/observation-8712478042473">
-    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
-    <ex:value>1.97</ex:value>
-    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Di%C3%B3xido_de_azufre"/>
-    <ex:estado>Tiempo real</ex:estado>
-    <ex:estacion>Avda Soria</ex:estacion>
     <ex:periodo>Horario</ex:periodo>
+    <ex:estacion>Avda Soria</ex:estacion>
+    <ex:estado>Tiempo real</ex:estado>
+    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Di%C3%B3xido_de_azufre"/>
+    <ex:value>1.97</ex:value>
+    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/observation/observation-8712478042853">
-    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
-    <ex:value>11.20</ex:value>
-    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Ozono"/>
-    <ex:estado>Tiempo real</ex:estado>
-    <ex:estacion>Actur</ex:estacion>
     <ex:periodo>Horario</ex:periodo>
+    <ex:estacion>Actur</ex:estacion>
+    <ex:estado>Tiempo real</ex:estado>
+    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Ozono"/>
+    <ex:value>11.20</ex:value>
+    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/observation/observation-8712478042013">
-    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
-    <ex:value>72.47</ex:value>
-    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/%C3%93xidos_de_nitr%C3%B3geno"/>
-    <ex:estado>Tiempo real</ex:estado>
-    <ex:estacion>Centro</ex:estacion>
     <ex:periodo>Horario</ex:periodo>
+    <ex:estacion>Centro</ex:estacion>
+    <ex:estado>Tiempo real</ex:estado>
+    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/%C3%93xidos_de_nitr%C3%B3geno"/>
+    <ex:value>72.47</ex:value>
+    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/observation/observation-8712478042683">
-    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
-    <ex:value>11.20</ex:value>
-    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Ozono"/>
-    <ex:estado>Tiempo real</ex:estado>
-    <ex:estacion>Actur</ex:estacion>
     <ex:periodo>Horario</ex:periodo>
+    <ex:estacion>Actur</ex:estacion>
+    <ex:estado>Tiempo real</ex:estado>
+    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Ozono"/>
+    <ex:value>11.20</ex:value>
+    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/observation/observation-8712478042813">
-    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
-    <ex:value>46.4</ex:value>
-    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Di%C3%B3xido_de_nitr%C3%B3geno"/>
-    <ex:estado>Tiempo real</ex:estado>
-    <ex:estacion>Actur</ex:estacion>
     <ex:periodo>Horario</ex:periodo>
+    <ex:estacion>Actur</ex:estacion>
+    <ex:estado>Tiempo real</ex:estado>
+    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Di%C3%B3xido_de_nitr%C3%B3geno"/>
+    <ex:value>46.4</ex:value>
+    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/observation/observation-8712478040513">
-    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
-    <ex:value>15.58</ex:value>
-    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Ozono"/>
-    <ex:estado>Tiempo real</ex:estado>
-    <ex:estacion>Jaime Ferrán</ex:estacion>
     <ex:periodo>Horario</ex:periodo>
+    <ex:estacion>Jaime Ferrán</ex:estacion>
+    <ex:estado>Tiempo real</ex:estado>
+    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Ozono"/>
+    <ex:value>15.58</ex:value>
+    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/observation/observation-8712478039653">
-    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
-    <ex:value>3.17</ex:value>
-    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Sulfuro_de_hidr%C3%B3geno"/>
-    <ex:estado>Tiempo real</ex:estado>
-    <ex:estacion>El Picarral</ex:estacion>
     <ex:periodo>Horario</ex:periodo>
+    <ex:estacion>El Picarral</ex:estacion>
+    <ex:estado>Tiempo real</ex:estado>
+    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Sulfuro_de_hidr%C3%B3geno"/>
+    <ex:value>3.17</ex:value>
+    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/observation/observation-8712478042603">
-    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
-    <ex:value>43.09</ex:value>
-    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Di%C3%B3xido_de_nitr%C3%B3geno"/>
-    <ex:estado>Tiempo real</ex:estado>
-    <ex:estacion>Actur</ex:estacion>
     <ex:periodo>Horario</ex:periodo>
+    <ex:estacion>Actur</ex:estacion>
+    <ex:estado>Tiempo real</ex:estado>
+    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Di%C3%B3xido_de_nitr%C3%B3geno"/>
+    <ex:value>43.09</ex:value>
+    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/observation/observation-8712478039693">
-    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
-    <ex:value>4.43</ex:value>
-    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Di%C3%B3xido_de_azufre"/>
-    <ex:estado>Tiempo real</ex:estado>
-    <ex:estacion>Roger de Flor</ex:estacion>
     <ex:periodo>Horario</ex:periodo>
+    <ex:estacion>Roger de Flor</ex:estacion>
+    <ex:estado>Tiempo real</ex:estado>
+    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Di%C3%B3xido_de_azufre"/>
+    <ex:value>4.43</ex:value>
+    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/observation/observation-8712478027155">
-    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
-    <ex:value>14.77</ex:value>
-    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/PM-2.5"/>
-    <ex:estado>Tiempo real</ex:estado>
-    <ex:estacion>El Picarral</ex:estacion>
     <ex:periodo>Horario</ex:periodo>
+    <ex:estacion>El Picarral</ex:estacion>
+    <ex:estado>Tiempo real</ex:estado>
+    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/PM-2.5"/>
+    <ex:value>14.77</ex:value>
+    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/observation/observation-8712478041593">
-    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
-    <ex:value>12.89</ex:value>
-    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Ozono"/>
-    <ex:estado>Tiempo real</ex:estado>
-    <ex:estacion>Las Fuentes </ex:estacion>
     <ex:periodo>Horario</ex:periodo>
+    <ex:estacion>Las Fuentes </ex:estacion>
+    <ex:estado>Tiempo real</ex:estado>
+    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Ozono"/>
+    <ex:value>12.89</ex:value>
+    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/observation/observation-8712478040723">
-    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
-    <ex:value>14.75</ex:value>
-    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Di%C3%B3xido_de_nitr%C3%B3geno"/>
-    <ex:estado>Tiempo real</ex:estado>
-    <ex:estacion>Jaime Ferrán</ex:estacion>
     <ex:periodo>Horario</ex:periodo>
+    <ex:estacion>Jaime Ferrán</ex:estacion>
+    <ex:estado>Tiempo real</ex:estado>
+    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Di%C3%B3xido_de_nitr%C3%B3geno"/>
+    <ex:value>14.75</ex:value>
+    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/observation/observation-8712478027115">
-    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
-    <ex:value>14.3</ex:value>
-    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/PM-2.5"/>
-    <ex:estado>Tiempo real</ex:estado>
-    <ex:estacion>El Picarral</ex:estacion>
     <ex:periodo>Horario</ex:periodo>
+    <ex:estacion>El Picarral</ex:estacion>
+    <ex:estado>Tiempo real</ex:estado>
+    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/PM-2.5"/>
+    <ex:value>14.3</ex:value>
+    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/observation/observation-8712478041763">
-    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
-    <ex:value>0.24</ex:value>
-    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Mon%C3%B3xido_de_carbono"/>
-    <ex:estado>Tiempo real</ex:estado>
-    <ex:estacion>Las Fuentes </ex:estacion>
     <ex:periodo>Horario</ex:periodo>
+    <ex:estacion>Las Fuentes </ex:estacion>
+    <ex:estado>Tiempo real</ex:estado>
+    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Mon%C3%B3xido_de_carbono"/>
+    <ex:value>0.24</ex:value>
+    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/observation/observation-8712478041553">
-    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
-    <ex:value>24.56</ex:value>
-    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/PM10"/>
-    <ex:estado>Tiempo real</ex:estado>
-    <ex:estacion>Las Fuentes </ex:estacion>
     <ex:periodo>Horario</ex:periodo>
+    <ex:estacion>Las Fuentes </ex:estacion>
+    <ex:estado>Tiempo real</ex:estado>
+    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/PM10"/>
+    <ex:value>24.56</ex:value>
+    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/observation/observation-8712478041973">
-    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
-    <ex:value>63.38</ex:value>
-    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Di%C3%B3xido_de_nitr%C3%B3geno"/>
-    <ex:estado>Tiempo real</ex:estado>
-    <ex:estacion>Centro</ex:estacion>
     <ex:periodo>Horario</ex:periodo>
+    <ex:estacion>Centro</ex:estacion>
+    <ex:estado>Tiempo real</ex:estado>
+    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Di%C3%B3xido_de_nitr%C3%B3geno"/>
+    <ex:value>63.38</ex:value>
+    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/observation/observation-8712478040763">
-    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
-    <ex:value>36.53</ex:value>
-    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/%C3%93xidos_de_nitr%C3%B3geno"/>
-    <ex:estado>Tiempo real</ex:estado>
-    <ex:estacion>Jaime Ferrán</ex:estacion>
     <ex:periodo>Horario</ex:periodo>
+    <ex:estacion>Jaime Ferrán</ex:estacion>
+    <ex:estado>Tiempo real</ex:estado>
+    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/%C3%93xidos_de_nitr%C3%B3geno"/>
+    <ex:value>36.53</ex:value>
+    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/observation/observation-8712478042053">
-    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
-    <ex:value>23.76</ex:value>
-    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Ozono"/>
-    <ex:estado>Tiempo real</ex:estado>
-    <ex:estacion>Centro</ex:estacion>
     <ex:periodo>Horario</ex:periodo>
+    <ex:estacion>Centro</ex:estacion>
+    <ex:estado>Tiempo real</ex:estado>
+    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Ozono"/>
+    <ex:value>23.76</ex:value>
+    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/observation/observation-8712478041723">
-    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
-    <ex:value>3.04</ex:value>
-    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Di%C3%B3xido_de_azufre"/>
-    <ex:estado>Tiempo real</ex:estado>
-    <ex:estacion>Las Fuentes </ex:estacion>
     <ex:periodo>Horario</ex:periodo>
+    <ex:estacion>Las Fuentes </ex:estacion>
+    <ex:estado>Tiempo real</ex:estado>
+    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Di%C3%B3xido_de_azufre"/>
+    <ex:value>3.04</ex:value>
+    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/observation/observation-8712478041513">
-    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
-    <ex:value>103.54</ex:value>
-    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/%C3%93xidos_de_nitr%C3%B3geno"/>
-    <ex:estado>Tiempo real</ex:estado>
-    <ex:estacion>Las Fuentes </ex:estacion>
     <ex:periodo>Horario</ex:periodo>
+    <ex:estacion>Las Fuentes </ex:estacion>
+    <ex:estado>Tiempo real</ex:estado>
+    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/%C3%93xidos_de_nitr%C3%B3geno"/>
+    <ex:value>103.54</ex:value>
+    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/observation/observation-8712478041933">
-    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
-    <ex:value>0.37</ex:value>
-    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Mon%C3%B3xido_de_carbono"/>
-    <ex:estado>Tiempo real</ex:estado>
-    <ex:estacion>Centro</ex:estacion>
     <ex:periodo>Horario</ex:periodo>
+    <ex:estacion>Centro</ex:estacion>
+    <ex:estado>Tiempo real</ex:estado>
+    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Mon%C3%B3xido_de_carbono"/>
+    <ex:value>0.37</ex:value>
+    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/observation/observation-8712478040193">
-    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
-    <ex:value>115.58</ex:value>
-    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/%C3%93xidos_de_nitr%C3%B3geno"/>
-    <ex:estado>Tiempo real</ex:estado>
-    <ex:estacion>Roger de Flor</ex:estacion>
     <ex:periodo>Horario</ex:periodo>
+    <ex:estacion>Roger de Flor</ex:estacion>
+    <ex:estado>Tiempo real</ex:estado>
+    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/%C3%93xidos_de_nitr%C3%B3geno"/>
+    <ex:value>115.58</ex:value>
+    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/observation/observation-8712478027195">
-    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
-    <ex:value>72.67</ex:value>
-    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/%C3%93xidos_de_nitr%C3%B3geno"/>
-    <ex:estado>Tiempo real</ex:estado>
-    <ex:estacion>El Picarral</ex:estacion>
     <ex:periodo>Horario</ex:periodo>
+    <ex:estacion>El Picarral</ex:estacion>
+    <ex:estado>Tiempo real</ex:estado>
+    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/%C3%93xidos_de_nitr%C3%B3geno"/>
+    <ex:value>72.67</ex:value>
+    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/observation/observation-8712478040033">
-    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
-    <ex:value>3.63</ex:value>
-    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Di%C3%B3xido_de_azufre"/>
-    <ex:estado>Tiempo real</ex:estado>
-    <ex:estacion>Roger de Flor</ex:estacion>
     <ex:periodo>Horario</ex:periodo>
+    <ex:estacion>Roger de Flor</ex:estacion>
+    <ex:estado>Tiempo real</ex:estado>
+    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Di%C3%B3xido_de_azufre"/>
+    <ex:value>3.63</ex:value>
+    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/observation/observation-8712478042553">
-    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
-    <ex:value>16.95</ex:value>
-    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Ozono"/>
-    <ex:estado>Tiempo real</ex:estado>
-    <ex:estacion>Avda Soria</ex:estacion>
     <ex:periodo>Horario</ex:periodo>
+    <ex:estacion>Avda Soria</ex:estacion>
+    <ex:estado>Tiempo real</ex:estado>
+    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Ozono"/>
+    <ex:value>16.95</ex:value>
+    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/observation/observation-8712478040473">
-    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
-    <ex:value>21.6</ex:value>
-    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/PM10"/>
-    <ex:estado>Tiempo real</ex:estado>
-    <ex:estacion>Jaime Ferrán</ex:estacion>
     <ex:periodo>Horario</ex:periodo>
+    <ex:estacion>Jaime Ferrán</ex:estacion>
+    <ex:estado>Tiempo real</ex:estado>
+    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/PM10"/>
+    <ex:value>21.6</ex:value>
+    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/observation/observation-8712478040683">
-    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
-    <ex:value>0.16</ex:value>
-    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Mon%C3%B3xido_de_carbono"/>
-    <ex:estado>Tiempo real</ex:estado>
-    <ex:estacion>Jaime Ferrán</ex:estacion>
     <ex:periodo>Horario</ex:periodo>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/observation/observation-8164b773-830a-4284-829b-1c2da2b89411">
-    <ex:observation-publicationDate>hola</ex:observation-publicationDate>
-    <ex:observation-value>1</ex:observation-value>
-    <ex:observation-magnitud>2</ex:observation-magnitud>
-    <ex:observation-estado>3</ex:observation-estado>
-    <ex:observation-estacion>4</ex:observation-estacion>
-    <ex:observation-periodo>5</ex:observation-periodo>
+    <ex:estacion>Jaime Ferrán</ex:estacion>
+    <ex:estado>Tiempo real</ex:estado>
+    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Mon%C3%B3xido_de_carbono"/>
+    <ex:value>0.16</ex:value>
+    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/observation/observation-8712478040433">
-    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
-    <ex:value>0.17</ex:value>
-    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Mon%C3%B3xido_de_carbono"/>
-    <ex:estado>Tiempo real</ex:estado>
-    <ex:estacion>Jaime Ferrán</ex:estacion>
     <ex:periodo>Horario</ex:periodo>
+    <ex:estacion>Jaime Ferrán</ex:estacion>
+    <ex:estado>Tiempo real</ex:estado>
+    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Mon%C3%B3xido_de_carbono"/>
+    <ex:value>0.17</ex:value>
+    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/observation/observation-8712478040643">
-    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
-    <ex:value>1.01</ex:value>
-    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Sulfuro_de_hidr%C3%B3geno"/>
-    <ex:estado>Tiempo real</ex:estado>
-    <ex:estacion>Jaime Ferrán</ex:estacion>
     <ex:periodo>Horario</ex:periodo>
+    <ex:estacion>Jaime Ferrán</ex:estacion>
+    <ex:estado>Tiempo real</ex:estado>
+    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Sulfuro_de_hidr%C3%B3geno"/>
+    <ex:value>1.01</ex:value>
+    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/observation/observation-8712478040603">
-    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
-    <ex:value>22.07</ex:value>
-    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/PM10"/>
-    <ex:estado>Tiempo real</ex:estado>
-    <ex:estacion>Jaime Ferrán</ex:estacion>
     <ex:periodo>Horario</ex:periodo>
+    <ex:estacion>Jaime Ferrán</ex:estacion>
+    <ex:estado>Tiempo real</ex:estado>
+    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/PM10"/>
+    <ex:value>22.07</ex:value>
+    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/observation/observation-8712478042513">
-    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
-    <ex:value>25.33</ex:value>
-    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/PM10"/>
-    <ex:estado>Tiempo real</ex:estado>
-    <ex:estacion>Avda Soria</ex:estacion>
     <ex:periodo>Horario</ex:periodo>
+    <ex:estacion>Avda Soria</ex:estacion>
+    <ex:estado>Tiempo real</ex:estado>
+    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/PM10"/>
+    <ex:value>25.33</ex:value>
+    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/observation/observation-8712478026945">
-    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
-    <ex:value>36.11</ex:value>
-    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Di%C3%B3xido_de_nitr%C3%B3geno"/>
-    <ex:estado>Tiempo real</ex:estado>
-    <ex:estacion>El Picarral</ex:estacion>
     <ex:periodo>Horario</ex:periodo>
+    <ex:estacion>El Picarral</ex:estacion>
+    <ex:estado>Tiempo real</ex:estado>
+    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Di%C3%B3xido_de_nitr%C3%B3geno"/>
+    <ex:value>36.11</ex:value>
+    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/observation/observation-8712478041473">
-    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
-    <ex:value>0.22</ex:value>
-    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Mon%C3%B3xido_de_carbono"/>
-    <ex:estado>Tiempo real</ex:estado>
-    <ex:estacion>Las Fuentes </ex:estacion>
     <ex:periodo>Horario</ex:periodo>
+    <ex:estacion>Las Fuentes </ex:estacion>
+    <ex:estado>Tiempo real</ex:estado>
+    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Mon%C3%B3xido_de_carbono"/>
+    <ex:value>0.22</ex:value>
+    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/observation/observation-8712478041683">
-    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
-    <ex:value>11.24</ex:value>
-    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/PM-2.5"/>
-    <ex:estado>Tiempo real</ex:estado>
-    <ex:estacion>Las Fuentes </ex:estacion>
     <ex:periodo>Horario</ex:periodo>
+    <ex:estacion>Las Fuentes </ex:estacion>
+    <ex:estado>Tiempo real</ex:estado>
+    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/PM-2.5"/>
+    <ex:value>11.24</ex:value>
+    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/observation/observation-8712478027075">
-    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
-    <ex:value>2.81</ex:value>
-    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Sulfuro_de_hidr%C3%B3geno"/>
-    <ex:estado>Tiempo real</ex:estado>
-    <ex:estacion>El Picarral</ex:estacion>
     <ex:periodo>Horario</ex:periodo>
+    <ex:estacion>El Picarral</ex:estacion>
+    <ex:estado>Tiempo real</ex:estado>
+    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Sulfuro_de_hidr%C3%B3geno"/>
+    <ex:value>2.81</ex:value>
+    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/observation/observation-8712478039888">
-    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
-    <ex:value>13.69</ex:value>
-    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Ozono"/>
-    <ex:estado>Tiempo real</ex:estado>
-    <ex:estacion>Roger de Flor</ex:estacion>
     <ex:periodo>Horario</ex:periodo>
+    <ex:estacion>Roger de Flor</ex:estacion>
+    <ex:estado>Tiempo real</ex:estado>
+    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Ozono"/>
+    <ex:value>13.69</ex:value>
+    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/observation/observation-8712478041643">
-    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
-    <ex:value>119.73</ex:value>
-    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/%C3%93xidos_de_nitr%C3%B3geno"/>
-    <ex:estado>Tiempo real</ex:estado>
-    <ex:estacion>Las Fuentes </ex:estacion>
     <ex:periodo>Horario</ex:periodo>
+    <ex:estacion>Las Fuentes </ex:estacion>
+    <ex:estado>Tiempo real</ex:estado>
+    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/%C3%93xidos_de_nitr%C3%B3geno"/>
+    <ex:value>119.73</ex:value>
+    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/observation/observation-8712478041433">
-    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
-    <ex:value>2.29</ex:value>
-    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Di%C3%B3xido_de_azufre"/>
-    <ex:estado>Tiempo real</ex:estado>
-    <ex:estacion>Las Fuentes </ex:estacion>
     <ex:periodo>Horario</ex:periodo>
+    <ex:estacion>Las Fuentes </ex:estacion>
+    <ex:estado>Tiempo real</ex:estado>
+    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Di%C3%B3xido_de_azufre"/>
+    <ex:value>2.29</ex:value>
+    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/observation/observation-8712478026985">
-    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
-    <ex:value>67.71</ex:value>
-    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/%C3%93xidos_de_nitr%C3%B3geno"/>
-    <ex:estado>Tiempo real</ex:estado>
-    <ex:estacion>El Picarral</ex:estacion>
     <ex:periodo>Horario</ex:periodo>
+    <ex:estacion>El Picarral</ex:estacion>
+    <ex:estado>Tiempo real</ex:estado>
+    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/%C3%93xidos_de_nitr%C3%B3geno"/>
+    <ex:value>67.71</ex:value>
+    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/observation/observation-8712478040853">
-    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
-    <ex:value>13.88</ex:value>
-    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/PM10"/>
-    <ex:estado>Tiempo real</ex:estado>
-    <ex:estacion>Renovales</ex:estacion>
     <ex:periodo>Horario</ex:periodo>
+    <ex:estacion>Renovales</ex:estacion>
+    <ex:estado>Tiempo real</ex:estado>
+    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/PM10"/>
+    <ex:value>13.88</ex:value>
+    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/observation/observation-8712478040893">
-    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
-    <ex:value>19.74</ex:value>
-    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Ozono"/>
-    <ex:estado>Tiempo real</ex:estado>
-    <ex:estacion>Renovales</ex:estacion>
     <ex:periodo>Horario</ex:periodo>
+    <ex:estacion>Renovales</ex:estacion>
+    <ex:estado>Tiempo real</ex:estado>
+    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Ozono"/>
+    <ex:value>19.74</ex:value>
+    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/observation/observation-8712478040073">
-    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
-    <ex:value>0.19</ex:value>
-    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Mon%C3%B3xido_de_carbono"/>
-    <ex:estado>Tiempo real</ex:estado>
-    <ex:estacion>Roger de Flor</ex:estacion>
     <ex:periodo>Horario</ex:periodo>
+    <ex:estacion>Roger de Flor</ex:estacion>
+    <ex:estado>Tiempo real</ex:estado>
+    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Mon%C3%B3xido_de_carbono"/>
+    <ex:value>0.19</ex:value>
+    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/observation/observation-8712478026905">
-    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
-    <ex:value>0.17</ex:value>
-    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Mon%C3%B3xido_de_carbono"/>
-    <ex:estado>Tiempo real</ex:estado>
-    <ex:estacion>El Picarral</ex:estacion>
     <ex:periodo>Horario</ex:periodo>
+    <ex:estacion>El Picarral</ex:estacion>
+    <ex:estado>Tiempo real</ex:estado>
+    <ex:magnitud rdf:resource="http://es.dbpedia.org/resource/Mon%C3%B3xido_de_carbono"/>
+    <ex:value>0.17</ex:value>
+    <ex:publicationDate>2024-11-26T00:00:00Z</ex:publicationDate>
   </rdf:Description>
 </rdf:RDF>
