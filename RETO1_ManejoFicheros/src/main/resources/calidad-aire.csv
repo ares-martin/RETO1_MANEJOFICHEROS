@@ -1,93 +1,93 @@
-publicationDate;value;magnitud;estado;estacion;periodo;nivel;clase;nivelNumero;limiteHorario;limiteDiario
-2024-11-27T00:00:00Z;"69.39";"http://es.dbpedia.org/resource/%C3%93xidos_de_nitr%C3%B3geno";"Tiempo real";"El Picarral";"Horario";"";"";"";"";""
-2024-11-27T00:00:00Z;"7.694";"http://es.dbpedia.org/resource/Ozono";"Tiempo real";"El Picarral";"Horario";"";"";"";"";""
-2024-11-27T00:00:00Z;"3.8";"http://es.dbpedia.org/resource/Sulfuro_de_hidr%C3%B3geno";"Tiempo real";"El Picarral";"Horario";"";"";"";"";""
-2024-11-27T00:00:00Z;"0.2";"http://es.dbpedia.org/resource/Mon%C3%B3xido_de_carbono";"Tiempo real";"El Picarral";"Horario";"";"";"";"";""
-2024-11-27T00:00:00Z;"22.96";"http://es.dbpedia.org/resource/Di%C3%B3xido_de_nitr%C3%B3geno";"Tiempo real";"El Picarral";"Horario";"";"";"";"";""
-2024-11-27T00:00:00Z;"13.01";"http://es.dbpedia.org/resource/PM-2.5";"Tiempo real";"El Picarral";"Horario";"";"";"";"";""
-2024-11-27T00:00:00Z;"4.12";"http://es.dbpedia.org/resource/Sulfuro_de_hidr%C3%B3geno";"Tiempo real";"El Picarral";"Horario";"";"";"";"";""
-2024-11-27T00:00:00Z;"23.9";"http://es.dbpedia.org/resource/Di%C3%B3xido_de_nitr%C3%B3geno";"Tiempo real";"El Picarral";"Horario";"";"";"";"";""
-2024-11-27T00:00:00Z;"65.93";"http://es.dbpedia.org/resource/%C3%93xidos_de_nitr%C3%B3geno";"Tiempo real";"El Picarral";"Horario";"";"";"";"";""
-2024-11-27T00:00:00Z;"0.19";"http://es.dbpedia.org/resource/Mon%C3%B3xido_de_carbono";"Tiempo real";"El Picarral";"Horario";"";"";"";"";""
-2024-11-27T00:00:00Z;"7.694";"http://es.dbpedia.org/resource/Ozono";"Tiempo real";"El Picarral";"Horario";"";"";"";"";""
-2024-11-27T00:00:00Z;"12.77";"http://es.dbpedia.org/resource/PM-2.5";"Tiempo real";"El Picarral";"Horario";"";"";"";"";""
-2024-11-27T00:00:00Z;"18.26";"http://es.dbpedia.org/resource/Di%C3%B3xido_de_nitr%C3%B3geno";"Tiempo real";"Roger de Flor";"Horario";"";"";"";"";""
-2024-11-27T00:00:00Z;"0.34";"http://es.dbpedia.org/resource/Benceno";"Tiempo real";"Roger de Flor";"Horario";"";"";"";"";""
-2024-11-27T00:00:00Z;"61.03";"http://es.dbpedia.org/resource/%C3%93xidos_de_nitr%C3%B3geno";"Tiempo real";"Roger de Flor";"Horario";"";"";"";"";""
-2024-11-27T00:00:00Z;"5.248";"http://es.dbpedia.org/resource/Ozono";"Tiempo real";"Roger de Flor";"Horario";"";"";"";"";""
-2024-11-27T00:00:00Z;"3.7";"http://es.dbpedia.org/resource/Di%C3%B3xido_de_azufre";"Tiempo real";"Roger de Flor";"Horario";"";"";"";"";""
-2024-11-27T00:00:00Z;"0.17";"http://es.dbpedia.org/resource/Mon%C3%B3xido_de_carbono";"Tiempo real";"Roger de Flor";"Horario";"";"";"";"";""
-2024-11-27T00:00:00Z;"23.49";"http://es.dbpedia.org/resource/PM10";"Tiempo real";"Roger de Flor";"Horario";"";"";"";"";""
-2024-11-27T00:00:00Z;"0.17";"http://es.dbpedia.org/resource/Mon%C3%B3xido_de_carbono";"Tiempo real";"Roger de Flor";"Horario";"";"";"";"";""
-2024-11-27T00:00:00Z;"19.14";"http://es.dbpedia.org/resource/Di%C3%B3xido_de_nitr%C3%B3geno";"Tiempo real";"Roger de Flor";"Horario";"";"";"";"";""
-2024-11-27T00:00:00Z;"24.84";"http://es.dbpedia.org/resource/PM10";"Tiempo real";"Roger de Flor";"Horario";"";"";"";"";""
-2024-11-27T00:00:00Z;"3.72";"http://es.dbpedia.org/resource/Di%C3%B3xido_de_azufre";"Tiempo real";"Roger de Flor";"Horario";"";"";"";"";""
-2024-11-27T00:00:00Z;"81.98";"http://es.dbpedia.org/resource/%C3%93xidos_de_nitr%C3%B3geno";"Tiempo real";"Roger de Flor";"Horario";"";"";"";"";""
-2024-11-27T00:00:00Z;"5.248";"http://es.dbpedia.org/resource/Ozono";"Tiempo real";"Roger de Flor";"Horario";"";"";"";"";""
-2024-11-27T00:00:00Z;"0.31";"http://es.dbpedia.org/resource/Benceno";"Tiempo real";"Roger de Flor";"Horario";"";"";"";"";""
-2024-11-27T00:00:00Z;"7.719";"http://es.dbpedia.org/resource/Ozono";"Tiempo real";"Jaime Ferrán";"Horario";"";"";"";"";""
-2024-11-27T00:00:00Z;"0.17";"http://es.dbpedia.org/resource/Mon%C3%B3xido_de_carbono";"Tiempo real";"Jaime Ferrán";"Horario";"";"";"";"";""
-2024-11-27T00:00:00Z;"10.03";"http://es.dbpedia.org/resource/Di%C3%B3xido_de_nitr%C3%B3geno";"Tiempo real";"Jaime Ferrán";"Horario";"";"";"";"";""
-2024-11-27T00:00:00Z;"4.24";"http://es.dbpedia.org/resource/Di%C3%B3xido_de_azufre";"Tiempo real";"Jaime Ferrán";"Horario";"";"";"";"";""
-2024-11-27T00:00:00Z;"23.98";"http://es.dbpedia.org/resource/PM10";"Tiempo real";"Jaime Ferrán";"Horario";"";"";"";"";""
-2024-11-27T00:00:00Z;"1.54";"http://es.dbpedia.org/resource/Sulfuro_de_hidr%C3%B3geno";"Tiempo real";"Jaime Ferrán";"Horario";"";"";"";"";""
-2024-11-27T00:00:00Z;"52.11";"http://es.dbpedia.org/resource/%C3%93xidos_de_nitr%C3%B3geno";"Tiempo real";"Jaime Ferrán";"Horario";"";"";"";"";""
-2024-11-27T00:00:00Z;"4.93";"http://es.dbpedia.org/resource/Di%C3%B3xido_de_azufre";"Tiempo real";"Jaime Ferrán";"Horario";"";"";"";"";""
-2024-11-27T00:00:00Z;"10.88";"http://es.dbpedia.org/resource/Di%C3%B3xido_de_nitr%C3%B3geno";"Tiempo real";"Jaime Ferrán";"Horario";"";"";"";"";""
-2024-11-27T00:00:00Z;"1.39";"http://es.dbpedia.org/resource/Sulfuro_de_hidr%C3%B3geno";"Tiempo real";"Jaime Ferrán";"Horario";"";"";"";"";""
-2024-11-27T00:00:00Z;"23.4";"http://es.dbpedia.org/resource/PM10";"Tiempo real";"Jaime Ferrán";"Horario";"";"";"";"";""
-2024-11-27T00:00:00Z;"7.719";"http://es.dbpedia.org/resource/Ozono";"Tiempo real";"Jaime Ferrán";"Horario";"";"";"";"";""
-2024-11-27T00:00:00Z;"44.79";"http://es.dbpedia.org/resource/%C3%93xidos_de_nitr%C3%B3geno";"Tiempo real";"Jaime Ferrán";"Horario";"";"";"";"";""
-2024-11-27T00:00:00Z;"0.14";"http://es.dbpedia.org/resource/Mon%C3%B3xido_de_carbono";"Tiempo real";"Jaime Ferrán";"Horario";"";"";"";"";""
-2024-11-27T00:00:00Z;"6.481";"http://es.dbpedia.org/resource/Ozono";"Tiempo real";"Renovales";"Horario";"";"";"";"";""
-2024-11-27T00:00:00Z;"3.52";"http://es.dbpedia.org/resource/Di%C3%B3xido_de_azufre";"Tiempo real";"Renovales";"Horario";"";"";"";"";""
-2024-11-27T00:00:00Z;"0.23";"http://es.dbpedia.org/resource/Mon%C3%B3xido_de_carbono";"Tiempo real";"Renovales";"Horario";"";"";"";"";""
-2024-11-27T00:00:00Z;"20.27";"http://es.dbpedia.org/resource/Di%C3%B3xido_de_nitr%C3%B3geno";"Tiempo real";"Renovales";"Horario";"";"";"";"";""
-2024-11-27T00:00:00Z;"25.64";"http://es.dbpedia.org/resource/PM10";"Tiempo real";"Renovales";"Horario";"";"";"";"";""
-2024-11-27T00:00:00Z;"50.88";"http://es.dbpedia.org/resource/%C3%93xidos_de_nitr%C3%B3geno";"Tiempo real";"Renovales";"Horario";"";"";"";"";""
-2024-11-27T00:00:00Z;"20.75";"http://es.dbpedia.org/resource/PM10";"Tiempo real";"Renovales";"Horario";"";"";"";"";""
-2024-11-27T00:00:00Z;"3.78";"http://es.dbpedia.org/resource/Di%C3%B3xido_de_azufre";"Tiempo real";"Renovales";"Horario";"";"";"";"";""
-2024-11-27T00:00:00Z;"0.3";"http://es.dbpedia.org/resource/Mon%C3%B3xido_de_carbono";"Tiempo real";"Renovales";"Horario";"";"";"";"";""
-2024-11-27T00:00:00Z;"18.46";"http://es.dbpedia.org/resource/Di%C3%B3xido_de_nitr%C3%B3geno";"Tiempo real";"Renovales";"Horario";"";"";"";"";""
-2024-11-27T00:00:00Z;"67.3";"http://es.dbpedia.org/resource/%C3%93xidos_de_nitr%C3%B3geno";"Tiempo real";"Renovales";"Horario";"";"";"";"";""
-2024-11-27T00:00:00Z;"6.481";"http://es.dbpedia.org/resource/Ozono";"Tiempo real";"Renovales";"Horario";"";"";"";"";""
-2024-11-27T00:00:00Z;"0.25";"http://es.dbpedia.org/resource/Mon%C3%B3xido_de_carbono";"Tiempo real";"Las Fuentes ";"Horario";"";"";"";"";""
-2024-11-27T00:00:00Z;"4.886";"http://es.dbpedia.org/resource/Ozono";"Tiempo real";"Las Fuentes ";"Horario";"";"";"";"";""
-2024-11-27T00:00:00Z;"25.97";"http://es.dbpedia.org/resource/Di%C3%B3xido_de_nitr%C3%B3geno";"Tiempo real";"Las Fuentes ";"Horario";"";"";"";"";""
-2024-11-27T00:00:00Z;"22.35";"http://es.dbpedia.org/resource/PM10";"Tiempo real";"Las Fuentes ";"Horario";"";"";"";"";""
-2024-11-27T00:00:00Z;"16.87";"http://es.dbpedia.org/resource/PM-2.5";"Tiempo real";"Las Fuentes ";"Horario";"";"";"";"";""
-2024-11-27T00:00:00Z;"88.58";"http://es.dbpedia.org/resource/%C3%93xidos_de_nitr%C3%B3geno";"Tiempo real";"Las Fuentes ";"Horario";"";"";"";"";""
-2024-11-27T00:00:00Z;"2.92";"http://es.dbpedia.org/resource/Di%C3%B3xido_de_azufre";"Tiempo real";"Las Fuentes ";"Horario";"";"";"";"";""
-2024-11-27T00:00:00Z;"2.23";"http://es.dbpedia.org/resource/Di%C3%B3xido_de_azufre";"Tiempo real";"Las Fuentes ";"Horario";"";"";"";"";""
-2024-11-27T00:00:00Z;"15.73";"http://es.dbpedia.org/resource/PM-2.5";"Tiempo real";"Las Fuentes ";"Horario";"";"";"";"";""
-2024-11-27T00:00:00Z;"0.31";"http://es.dbpedia.org/resource/Mon%C3%B3xido_de_carbono";"Tiempo real";"Las Fuentes ";"Horario";"";"";"";"";""
-2024-11-27T00:00:00Z;"23.85";"http://es.dbpedia.org/resource/Di%C3%B3xido_de_nitr%C3%B3geno";"Tiempo real";"Las Fuentes ";"Horario";"";"";"";"";""
-2024-11-27T00:00:00Z;"24.7";"http://es.dbpedia.org/resource/PM10";"Tiempo real";"Las Fuentes ";"Horario";"";"";"";"";""
-2024-11-27T00:00:00Z;"83.73";"http://es.dbpedia.org/resource/%C3%93xidos_de_nitr%C3%B3geno";"Tiempo real";"Las Fuentes ";"Horario";"";"";"";"";""
-2024-11-27T00:00:00Z;"4.886";"http://es.dbpedia.org/resource/Ozono";"Tiempo real";"Las Fuentes ";"Horario";"";"";"";"";""
-2024-11-27T00:00:00Z;"61.45";"http://es.dbpedia.org/resource/%C3%93xidos_de_nitr%C3%B3geno";"Tiempo real";"Centro";"Horario";"";"";"";"";""
-2024-11-27T00:00:00Z;"2.52";"http://es.dbpedia.org/resource/Di%C3%B3xido_de_azufre";"Tiempo real";"Centro";"Horario";"";"";"";"";""
-2024-11-27T00:00:00Z;"8.406";"http://es.dbpedia.org/resource/Ozono";"Tiempo real";"Centro";"Horario";"";"";"";"";""
-2024-11-27T00:00:00Z;"0.3";"http://es.dbpedia.org/resource/Mon%C3%B3xido_de_carbono";"Tiempo real";"Centro";"Horario";"";"";"";"";""
-2024-11-27T00:00:00Z;"52.65";"http://es.dbpedia.org/resource/Di%C3%B3xido_de_nitr%C3%B3geno";"Tiempo real";"Centro";"Horario";"";"";"";"";""
-2024-11-27T00:00:00Z;"2.42";"http://es.dbpedia.org/resource/Di%C3%B3xido_de_azufre";"Tiempo real";"Centro";"Horario";"";"";"";"";""
-2024-11-27T00:00:00Z;"53.05";"http://es.dbpedia.org/resource/%C3%93xidos_de_nitr%C3%B3geno";"Tiempo real";"Centro";"Horario";"";"";"";"";""
-2024-11-27T00:00:00Z;"0.27";"http://es.dbpedia.org/resource/Mon%C3%B3xido_de_carbono";"Tiempo real";"Centro";"Horario";"";"";"";"";""
-2024-11-27T00:00:00Z;"44.9";"http://es.dbpedia.org/resource/Di%C3%B3xido_de_nitr%C3%B3geno";"Tiempo real";"Centro";"Horario";"";"";"";"";""
-2024-11-27T00:00:00Z;"8.406";"http://es.dbpedia.org/resource/Ozono";"Tiempo real";"Centro";"Horario";"";"";"";"";""
-2024-11-27T00:00:00Z;"0.26";"http://es.dbpedia.org/resource/Mon%C3%B3xido_de_carbono";"Tiempo real";"Avda Soria";"Horario";"";"";"";"";""
-2024-11-27T00:00:00Z;"17.28";"http://es.dbpedia.org/resource/PM10";"Tiempo real";"Avda Soria";"Horario";"";"";"";"";""
-2024-11-27T00:00:00Z;"2.14";"http://es.dbpedia.org/resource/Di%C3%B3xido_de_azufre";"Tiempo real";"Avda Soria";"Horario";"";"";"";"";""
-2024-11-27T00:00:00Z;"83.69";"http://es.dbpedia.org/resource/%C3%93xidos_de_nitr%C3%B3geno";"Tiempo real";"Avda Soria";"Horario";"";"";"";"";""
-2024-11-27T00:00:00Z;"20.64";"http://es.dbpedia.org/resource/Di%C3%B3xido_de_nitr%C3%B3geno";"Tiempo real";"Avda Soria";"Horario";"";"";"";"";""
-2024-11-27T00:00:00Z;"4.495";"http://es.dbpedia.org/resource/Ozono";"Tiempo real";"Avda Soria";"Horario";"";"";"";"";""
-2024-11-27T00:00:00Z;"8.42";"http://es.dbpedia.org/resource/PM-2.5";"Tiempo real";"Actur";"Horario";"";"";"";"";""
-2024-11-27T00:00:00Z;"3.620";"http://es.dbpedia.org/resource/Ozono";"Tiempo real";"Actur";"Horario";"";"";"";"";""
-2024-11-27T00:00:00Z;"19.27";"http://es.dbpedia.org/resource/PM10";"Tiempo real";"Actur";"Horario";"";"";"";"";""
-2024-11-27T00:00:00Z;"25.29";"http://es.dbpedia.org/resource/Di%C3%B3xido_de_nitr%C3%B3geno";"Tiempo real";"Actur";"Horario";"";"";"";"";""
-2024-11-27T00:00:00Z;"96.94";"http://es.dbpedia.org/resource/%C3%93xidos_de_nitr%C3%B3geno";"Tiempo real";"Actur";"Horario";"";"";"";"";""
-2024-11-27T00:00:00Z;"9.85";"http://es.dbpedia.org/resource/PM-2.5";"Tiempo real";"Actur";"Horario";"";"";"";"";""
-2024-11-27T00:00:00Z;"18.81";"http://es.dbpedia.org/resource/PM10";"Tiempo real";"Actur";"Horario";"";"";"";"";""
-2024-11-27T00:00:00Z;"23.99";"http://es.dbpedia.org/resource/Di%C3%B3xido_de_nitr%C3%B3geno";"Tiempo real";"Actur";"Horario";"";"";"";"";""
-2024-11-27T00:00:00Z;"3.620";"http://es.dbpedia.org/resource/Ozono";"Tiempo real";"Actur";"Horario";"";"";"";"";""
-2024-11-27T00:00:00Z;"78.09";"http://es.dbpedia.org/resource/%C3%93xidos_de_nitr%C3%B3geno";"Tiempo real";"Actur";"Horario";"";"";"";"";""
+publicationDate,value,magnitud,estado,estacion,periodo
+2024-11-27T00:00:00Z,69.39,http://es.dbpedia.org/resource/%C3%93xidos_de_nitr%C3%B3geno,Tiempo real,El Picarral,Horario
+2024-11-27T00:00:00Z,7.694,http://es.dbpedia.org/resource/Ozono,Tiempo real,El Picarral,Horario
+2024-11-27T00:00:00Z,3.8,http://es.dbpedia.org/resource/Sulfuro_de_hidr%C3%B3geno,Tiempo real,El Picarral,Horario
+2024-11-27T00:00:00Z,0.2,http://es.dbpedia.org/resource/Mon%C3%B3xido_de_carbono,Tiempo real,El Picarral,Horario
+2024-11-27T00:00:00Z,22.96,http://es.dbpedia.org/resource/Di%C3%B3xido_de_nitr%C3%B3geno,Tiempo real,El Picarral,Horario
+2024-11-27T00:00:00Z,13.01,http://es.dbpedia.org/resource/PM-2.5,Tiempo real,El Picarral,Horario
+2024-11-27T00:00:00Z,4.12,http://es.dbpedia.org/resource/Sulfuro_de_hidr%C3%B3geno,Tiempo real,El Picarral,Horario
+2024-11-27T00:00:00Z,23.9,http://es.dbpedia.org/resource/Di%C3%B3xido_de_nitr%C3%B3geno,Tiempo real,El Picarral,Horario
+2024-11-27T00:00:00Z,65.93,http://es.dbpedia.org/resource/%C3%93xidos_de_nitr%C3%B3geno,Tiempo real,El Picarral,Horario
+2024-11-27T00:00:00Z,0.19,http://es.dbpedia.org/resource/Mon%C3%B3xido_de_carbono,Tiempo real,El Picarral,Horario
+2024-11-27T00:00:00Z,7.694,http://es.dbpedia.org/resource/Ozono,Tiempo real,El Picarral,Horario
+2024-11-27T00:00:00Z,12.77,http://es.dbpedia.org/resource/PM-2.5,Tiempo real,El Picarral,Horario
+2024-11-27T00:00:00Z,18.26,http://es.dbpedia.org/resource/Di%C3%B3xido_de_nitr%C3%B3geno,Tiempo real,Roger de Flor,Horario
+2024-11-27T00:00:00Z,0.34,http://es.dbpedia.org/resource/Benceno,Tiempo real,Roger de Flor,Horario
+2024-11-27T00:00:00Z,61.03,http://es.dbpedia.org/resource/%C3%93xidos_de_nitr%C3%B3geno,Tiempo real,Roger de Flor,Horario
+2024-11-27T00:00:00Z,5.248,http://es.dbpedia.org/resource/Ozono,Tiempo real,Roger de Flor,Horario
+2024-11-27T00:00:00Z,3.7,http://es.dbpedia.org/resource/Di%C3%B3xido_de_azufre,Tiempo real,Roger de Flor,Horario
+2024-11-27T00:00:00Z,0.17,http://es.dbpedia.org/resource/Mon%C3%B3xido_de_carbono,Tiempo real,Roger de Flor,Horario
+2024-11-27T00:00:00Z,23.49,http://es.dbpedia.org/resource/PM10,Tiempo real,Roger de Flor,Horario
+2024-11-27T00:00:00Z,0.17,http://es.dbpedia.org/resource/Mon%C3%B3xido_de_carbono,Tiempo real,Roger de Flor,Horario
+2024-11-27T00:00:00Z,19.14,http://es.dbpedia.org/resource/Di%C3%B3xido_de_nitr%C3%B3geno,Tiempo real,Roger de Flor,Horario
+2024-11-27T00:00:00Z,24.84,http://es.dbpedia.org/resource/PM10,Tiempo real,Roger de Flor,Horario
+2024-11-27T00:00:00Z,3.72,http://es.dbpedia.org/resource/Di%C3%B3xido_de_azufre,Tiempo real,Roger de Flor,Horario
+2024-11-27T00:00:00Z,81.98,http://es.dbpedia.org/resource/%C3%93xidos_de_nitr%C3%B3geno,Tiempo real,Roger de Flor,Horario
+2024-11-27T00:00:00Z,5.248,http://es.dbpedia.org/resource/Ozono,Tiempo real,Roger de Flor,Horario
+2024-11-27T00:00:00Z,0.31,http://es.dbpedia.org/resource/Benceno,Tiempo real,Roger de Flor,Horario
+2024-11-27T00:00:00Z,7.719,http://es.dbpedia.org/resource/Ozono,Tiempo real,Jaime Ferrán,Horario
+2024-11-27T00:00:00Z,0.17,http://es.dbpedia.org/resource/Mon%C3%B3xido_de_carbono,Tiempo real,Jaime Ferrán,Horario
+2024-11-27T00:00:00Z,10.03,http://es.dbpedia.org/resource/Di%C3%B3xido_de_nitr%C3%B3geno,Tiempo real,Jaime Ferrán,Horario
+2024-11-27T00:00:00Z,4.24,http://es.dbpedia.org/resource/Di%C3%B3xido_de_azufre,Tiempo real,Jaime Ferrán,Horario
+2024-11-27T00:00:00Z,23.98,http://es.dbpedia.org/resource/PM10,Tiempo real,Jaime Ferrán,Horario
+2024-11-27T00:00:00Z,1.54,http://es.dbpedia.org/resource/Sulfuro_de_hidr%C3%B3geno,Tiempo real,Jaime Ferrán,Horario
+2024-11-27T00:00:00Z,52.11,http://es.dbpedia.org/resource/%C3%93xidos_de_nitr%C3%B3geno,Tiempo real,Jaime Ferrán,Horario
+2024-11-27T00:00:00Z,4.93,http://es.dbpedia.org/resource/Di%C3%B3xido_de_azufre,Tiempo real,Jaime Ferrán,Horario
+2024-11-27T00:00:00Z,10.88,http://es.dbpedia.org/resource/Di%C3%B3xido_de_nitr%C3%B3geno,Tiempo real,Jaime Ferrán,Horario
+2024-11-27T00:00:00Z,1.39,http://es.dbpedia.org/resource/Sulfuro_de_hidr%C3%B3geno,Tiempo real,Jaime Ferrán,Horario
+2024-11-27T00:00:00Z,23.4,http://es.dbpedia.org/resource/PM10,Tiempo real,Jaime Ferrán,Horario
+2024-11-27T00:00:00Z,7.719,http://es.dbpedia.org/resource/Ozono,Tiempo real,Jaime Ferrán,Horario
+2024-11-27T00:00:00Z,44.79,http://es.dbpedia.org/resource/%C3%93xidos_de_nitr%C3%B3geno,Tiempo real,Jaime Ferrán,Horario
+2024-11-27T00:00:00Z,0.14,http://es.dbpedia.org/resource/Mon%C3%B3xido_de_carbono,Tiempo real,Jaime Ferrán,Horario
+2024-11-27T00:00:00Z,6.481,http://es.dbpedia.org/resource/Ozono,Tiempo real,Renovales,Horario
+2024-11-27T00:00:00Z,3.52,http://es.dbpedia.org/resource/Di%C3%B3xido_de_azufre,Tiempo real,Renovales,Horario
+2024-11-27T00:00:00Z,0.23,http://es.dbpedia.org/resource/Mon%C3%B3xido_de_carbono,Tiempo real,Renovales,Horario
+2024-11-27T00:00:00Z,20.27,http://es.dbpedia.org/resource/Di%C3%B3xido_de_nitr%C3%B3geno,Tiempo real,Renovales,Horario
+2024-11-27T00:00:00Z,25.64,http://es.dbpedia.org/resource/PM10,Tiempo real,Renovales,Horario
+2024-11-27T00:00:00Z,50.88,http://es.dbpedia.org/resource/%C3%93xidos_de_nitr%C3%B3geno,Tiempo real,Renovales,Horario
+2024-11-27T00:00:00Z,20.75,http://es.dbpedia.org/resource/PM10,Tiempo real,Renovales,Horario
+2024-11-27T00:00:00Z,3.78,http://es.dbpedia.org/resource/Di%C3%B3xido_de_azufre,Tiempo real,Renovales,Horario
+2024-11-27T00:00:00Z,0.3,http://es.dbpedia.org/resource/Mon%C3%B3xido_de_carbono,Tiempo real,Renovales,Horario
+2024-11-27T00:00:00Z,18.46,http://es.dbpedia.org/resource/Di%C3%B3xido_de_nitr%C3%B3geno,Tiempo real,Renovales,Horario
+2024-11-27T00:00:00Z,67.3,http://es.dbpedia.org/resource/%C3%93xidos_de_nitr%C3%B3geno,Tiempo real,Renovales,Horario
+2024-11-27T00:00:00Z,6.481,http://es.dbpedia.org/resource/Ozono,Tiempo real,Renovales,Horario
+2024-11-27T00:00:00Z,0.25,http://es.dbpedia.org/resource/Mon%C3%B3xido_de_carbono,Tiempo real,Las Fuentes ,Horario
+2024-11-27T00:00:00Z,4.886,http://es.dbpedia.org/resource/Ozono,Tiempo real,Las Fuentes ,Horario
+2024-11-27T00:00:00Z,25.97,http://es.dbpedia.org/resource/Di%C3%B3xido_de_nitr%C3%B3geno,Tiempo real,Las Fuentes ,Horario
+2024-11-27T00:00:00Z,22.35,http://es.dbpedia.org/resource/PM10,Tiempo real,Las Fuentes ,Horario
+2024-11-27T00:00:00Z,16.87,http://es.dbpedia.org/resource/PM-2.5,Tiempo real,Las Fuentes ,Horario
+2024-11-27T00:00:00Z,88.58,http://es.dbpedia.org/resource/%C3%93xidos_de_nitr%C3%B3geno,Tiempo real,Las Fuentes ,Horario
+2024-11-27T00:00:00Z,2.92,http://es.dbpedia.org/resource/Di%C3%B3xido_de_azufre,Tiempo real,Las Fuentes ,Horario
+2024-11-27T00:00:00Z,2.23,http://es.dbpedia.org/resource/Di%C3%B3xido_de_azufre,Tiempo real,Las Fuentes ,Horario
+2024-11-27T00:00:00Z,15.73,http://es.dbpedia.org/resource/PM-2.5,Tiempo real,Las Fuentes ,Horario
+2024-11-27T00:00:00Z,0.31,http://es.dbpedia.org/resource/Mon%C3%B3xido_de_carbono,Tiempo real,Las Fuentes ,Horario
+2024-11-27T00:00:00Z,23.85,http://es.dbpedia.org/resource/Di%C3%B3xido_de_nitr%C3%B3geno,Tiempo real,Las Fuentes ,Horario
+2024-11-27T00:00:00Z,24.7,http://es.dbpedia.org/resource/PM10,Tiempo real,Las Fuentes ,Horario
+2024-11-27T00:00:00Z,83.73,http://es.dbpedia.org/resource/%C3%93xidos_de_nitr%C3%B3geno,Tiempo real,Las Fuentes ,Horario
+2024-11-27T00:00:00Z,4.886,http://es.dbpedia.org/resource/Ozono,Tiempo real,Las Fuentes ,Horario
+2024-11-27T00:00:00Z,61.45,http://es.dbpedia.org/resource/%C3%93xidos_de_nitr%C3%B3geno,Tiempo real,Centro,Horario
+2024-11-27T00:00:00Z,2.52,http://es.dbpedia.org/resource/Di%C3%B3xido_de_azufre,Tiempo real,Centro,Horario
+2024-11-27T00:00:00Z,8.406,http://es.dbpedia.org/resource/Ozono,Tiempo real,Centro,Horario
+2024-11-27T00:00:00Z,0.3,http://es.dbpedia.org/resource/Mon%C3%B3xido_de_carbono,Tiempo real,Centro,Horario
+2024-11-27T00:00:00Z,52.65,http://es.dbpedia.org/resource/Di%C3%B3xido_de_nitr%C3%B3geno,Tiempo real,Centro,Horario
+2024-11-27T00:00:00Z,2.42,http://es.dbpedia.org/resource/Di%C3%B3xido_de_azufre,Tiempo real,Centro,Horario
+2024-11-27T00:00:00Z,53.05,http://es.dbpedia.org/resource/%C3%93xidos_de_nitr%C3%B3geno,Tiempo real,Centro,Horario
+2024-11-27T00:00:00Z,0.27,http://es.dbpedia.org/resource/Mon%C3%B3xido_de_carbono,Tiempo real,Centro,Horario
+2024-11-27T00:00:00Z,44.9,http://es.dbpedia.org/resource/Di%C3%B3xido_de_nitr%C3%B3geno,Tiempo real,Centro,Horario
+2024-11-27T00:00:00Z,8.406,http://es.dbpedia.org/resource/Ozono,Tiempo real,Centro,Horario
+2024-11-27T00:00:00Z,0.26,http://es.dbpedia.org/resource/Mon%C3%B3xido_de_carbono,Tiempo real,Avda Soria,Horario
+2024-11-27T00:00:00Z,17.28,http://es.dbpedia.org/resource/PM10,Tiempo real,Avda Soria,Horario
+2024-11-27T00:00:00Z,2.14,http://es.dbpedia.org/resource/Di%C3%B3xido_de_azufre,Tiempo real,Avda Soria,Horario
+2024-11-27T00:00:00Z,83.69,http://es.dbpedia.org/resource/%C3%93xidos_de_nitr%C3%B3geno,Tiempo real,Avda Soria,Horario
+2024-11-27T00:00:00Z,20.64,http://es.dbpedia.org/resource/Di%C3%B3xido_de_nitr%C3%B3geno,Tiempo real,Avda Soria,Horario
+2024-11-27T00:00:00Z,4.495,http://es.dbpedia.org/resource/Ozono,Tiempo real,Avda Soria,Horario
+2024-11-27T00:00:00Z,8.42,http://es.dbpedia.org/resource/PM-2.5,Tiempo real,Actur,Horario
+2024-11-27T00:00:00Z,3.62,http://es.dbpedia.org/resource/Ozono,Tiempo real,Actur,Horario
+2024-11-27T00:00:00Z,19.27,http://es.dbpedia.org/resource/PM10,Tiempo real,Actur,Horario
+2024-11-27T00:00:00Z,25.29,http://es.dbpedia.org/resource/Di%C3%B3xido_de_nitr%C3%B3geno,Tiempo real,Actur,Horario
+2024-11-27T00:00:00Z,96.94,http://es.dbpedia.org/resource/%C3%93xidos_de_nitr%C3%B3geno,Tiempo real,Actur,Horario
+2024-11-27T00:00:00Z,9.85,http://es.dbpedia.org/resource/PM-2.5,Tiempo real,Actur,Horario
+2024-11-27T00:00:00Z,18.81,http://es.dbpedia.org/resource/PM10,Tiempo real,Actur,Horario
+2024-11-27T00:00:00Z,23.99,http://es.dbpedia.org/resource/Di%C3%B3xido_de_nitr%C3%B3geno,Tiempo real,Actur,Horario
+2024-11-27T00:00:00Z,3.62,http://es.dbpedia.org/resource/Ozono,Tiempo real,Actur,Horario
+2024-11-27T00:00:00Z,78.09,http://es.dbpedia.org/resource/%C3%93xidos_de_nitr%C3%B3geno,Tiempo real,Actur,Horario

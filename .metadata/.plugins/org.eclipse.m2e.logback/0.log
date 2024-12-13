@@ -1,1 +1,52 @@
 2024-12-12 21:02:55,987 [Worker-5: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-12-12 22:39:46,703 [Worker-5: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-12-12 22:40:07,405 [Worker-3: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.gf:RETO1_ManejoFicheros:0.0.1-SNAPSHOT @ C:\Users\juanl\OneDrive\Documents\GitHub\RETO1_MANEJOFICHEROS\RETO1_ManejoFicheros\pom.xml.
+2024-12-12 22:40:08,810 [Worker-3: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /RETO1_ManejoFicheros/src/main/java
+2024-12-12 22:40:08,811 [Worker-3: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /RETO1_ManejoFicheros/src/main/resources
+2024-12-12 22:40:08,812 [Worker-3: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /RETO1_ManejoFicheros/src/test/java
+2024-12-12 22:40:08,813 [Worker-3: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /RETO1_ManejoFicheros/src/test/resources
+2024-12-12 22:40:09,734 [Worker-3: Importing Maven projects] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 3 sec
+2024-12-12 22:40:10,359 [Worker-3: Building Project RETO1_ManejoFicheros] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 5 resources from src\main\resources to target\classes
+2024-12-12 22:40:10,371 [Worker-3: Building Project RETO1_ManejoFicheros] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\juanl\OneDrive\Documents\GitHub\RETO1_MANEJOFICHEROS\RETO1_ManejoFicheros\src\test\resources
+2024-12-12 23:34:34,493 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 5 resources from src\main\resources to target\classes
+2024-12-12 23:34:34,497 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\juanl\OneDrive\Documents\GitHub\RETO1_MANEJOFICHEROS\RETO1_ManejoFicheros\src\test\resources
+2024-12-12 23:34:51,760 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 5 resources from src\main\resources to target\classes
+2024-12-12 23:34:51,763 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\juanl\OneDrive\Documents\GitHub\RETO1_MANEJOFICHEROS\RETO1_ManejoFicheros\src\test\resources
+2024-12-12 23:36:37,937 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 5 resources from src\main\resources to target\classes
+2024-12-12 23:36:37,942 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\juanl\OneDrive\Documents\GitHub\RETO1_MANEJOFICHEROS\RETO1_ManejoFicheros\src\test\resources
+2024-12-13 00:17:48,696 [Worker-58: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 8 resources from src\main\resources to target\classes
+2024-12-13 00:17:48,702 [Worker-58: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\juanl\OneDrive\Documents\GitHub\RETO1_MANEJOFICHEROS\RETO1_ManejoFicheros\src\test\resources
+2024-12-13 00:21:28,824 [Worker-60: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 7 resources from src\main\resources to target\classes
+2024-12-13 00:21:28,839 [Worker-60: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\juanl\OneDrive\Documents\GitHub\RETO1_MANEJOFICHEROS\RETO1_ManejoFicheros\src\test\resources
+2024-12-13 00:22:16,526 [Worker-66: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 11 resources from src\main\resources to target\classes
+2024-12-13 00:22:16,532 [Worker-66: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\juanl\OneDrive\Documents\GitHub\RETO1_MANEJOFICHEROS\RETO1_ManejoFicheros\src\test\resources
+2024-12-13 00:46:01,284 [Worker-60: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 11 resources from src\main\resources to target\classes
+2024-12-13 00:46:01,292 [Worker-60: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\juanl\OneDrive\Documents\GitHub\RETO1_MANEJOFICHEROS\RETO1_ManejoFicheros\src\test\resources
+2024-12-13 00:48:03,290 [Worker-73: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 11 resources from src\main\resources to target\classes
+2024-12-13 00:48:03,294 [Worker-73: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\juanl\OneDrive\Documents\GitHub\RETO1_MANEJOFICHEROS\RETO1_ManejoFicheros\src\test\resources
+2024-12-13 00:56:17,743 [Worker-60: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2024-12-13 00:56:17,748 [Worker-60: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\juanl\OneDrive\Documents\GitHub\RETO1_MANEJOFICHEROS\RETO1_ManejoFicheros\src\test\resources
+2024-12-13 01:28:40,301 [Worker-85: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-13 01:28:40,308 [Worker-85: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\juanl\OneDrive\Documents\GitHub\RETO1_MANEJOFICHEROS\RETO1_ManejoFicheros\src\test\resources
+2024-12-13 01:28:45,111 [Worker-86: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 11 resources from src\main\resources to target\classes
+2024-12-13 01:28:45,115 [Worker-86: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\juanl\OneDrive\Documents\GitHub\RETO1_MANEJOFICHEROS\RETO1_ManejoFicheros\src\test\resources
+2024-12-13 01:29:23,746 [Worker-85: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 11 resources from src\main\resources to target\classes
+2024-12-13 01:29:23,750 [Worker-85: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\juanl\OneDrive\Documents\GitHub\RETO1_MANEJOFICHEROS\RETO1_ManejoFicheros\src\test\resources
+2024-12-13 01:29:48,842 [Worker-83: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 11 resources from src\main\resources to target\classes
+2024-12-13 01:29:48,846 [Worker-83: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\juanl\OneDrive\Documents\GitHub\RETO1_MANEJOFICHEROS\RETO1_ManejoFicheros\src\test\resources
+2024-12-13 01:30:07,112 [Worker-83: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 11 resources from src\main\resources to target\classes
+2024-12-13 01:30:07,116 [Worker-83: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\juanl\OneDrive\Documents\GitHub\RETO1_MANEJOFICHEROS\RETO1_ManejoFicheros\src\test\resources
+2024-12-13 01:31:56,576 [Worker-88: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 11 resources from src\main\resources to target\classes
+2024-12-13 01:31:56,580 [Worker-88: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\juanl\OneDrive\Documents\GitHub\RETO1_MANEJOFICHEROS\RETO1_ManejoFicheros\src\test\resources
+2024-12-13 01:32:44,458 [Worker-60: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 11 resources from src\main\resources to target\classes
+2024-12-13 01:32:44,464 [Worker-60: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\juanl\OneDrive\Documents\GitHub\RETO1_MANEJOFICHEROS\RETO1_ManejoFicheros\src\test\resources
+2024-12-13 01:49:26,489 [Worker-88: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 11 resources from src\main\resources to target\classes
+2024-12-13 01:49:26,496 [Worker-88: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\juanl\OneDrive\Documents\GitHub\RETO1_MANEJOFICHEROS\RETO1_ManejoFicheros\src\test\resources
+2024-12-13 02:17:40,583 [Worker-115: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 12 resources from src\main\resources to target\classes
+2024-12-13 02:17:40,589 [Worker-115: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\juanl\OneDrive\Documents\GitHub\RETO1_MANEJOFICHEROS\RETO1_ManejoFicheros\src\test\resources
+2024-12-13 02:18:18,643 [Worker-118: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-13 02:18:18,646 [Worker-118: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\juanl\OneDrive\Documents\GitHub\RETO1_MANEJOFICHEROS\RETO1_ManejoFicheros\src\test\resources
+2024-12-13 02:21:41,370 [Worker-118: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 12 resources from src\main\resources to target\classes
+2024-12-13 02:21:41,375 [Worker-118: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\juanl\OneDrive\Documents\GitHub\RETO1_MANEJOFICHEROS\RETO1_ManejoFicheros\src\test\resources
+2024-12-13 02:25:39,531 [Worker-128: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 12 resources from src\main\resources to target\classes
+2024-12-13 02:25:39,534 [Worker-128: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\juanl\OneDrive\Documents\GitHub\RETO1_MANEJOFICHEROS\RETO1_ManejoFicheros\src\test\resources

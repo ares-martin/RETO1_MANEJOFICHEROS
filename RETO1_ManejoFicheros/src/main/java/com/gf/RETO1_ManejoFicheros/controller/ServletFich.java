@@ -1,5 +1,6 @@
 package com.gf.RETO1_ManejoFicheros.controller;
 
+import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -7,12 +8,14 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
 import java.io.FileInputStream;
@@ -85,6 +88,7 @@ public class ServletFich extends HttpServlet {
 				}
 				case "CSV": {
 					// Método para leer CSV
+					lecturaCSV(request);
 					break;
 				}
 				case "XLS": {
@@ -125,6 +129,7 @@ public class ServletFich extends HttpServlet {
 					}
 					case "CSV": {
 						// Método para escribir en CSV
+						escrituraCSV(request, response);
 						break;
 					}
 					case "XLS": {
@@ -533,5 +538,81 @@ public class ServletFich extends HttpServlet {
 		}
 	}
 
-	
+	public static void lecturaCSV(HttpServletRequest request) {
+        List<ObjetoPOJO> datos = new ArrayList<>();
+        Set<String> cabeceras = new LinkedHashSet<>();
+
+        try {
+            // Ruta del archivo CSV
+            InputStream inputStream = ServletFich.class.getClassLoader().getResourceAsStream("calidad-aire.csv");
+            if (inputStream == null) {
+                throw new FileNotFoundException("Archivo no encontrado: calidad-aire.csv");
+            }
+
+            // Leer el archivo usando BufferedReader
+            try (BufferedReader br = new BufferedReader(new InputStreamReader(inputStream))) {
+                String linea;
+                boolean esCabecera = true;
+
+                while ((linea = br.readLine()) != null) {
+                    String[] valores = linea.split(","); // Separar por comas
+
+                    if (esCabecera) {
+                        for (String cabecera : valores) {
+                            cabeceras.add(cabecera.trim());
+                        }
+                        esCabecera = false;
+                    } else {
+                        ObjetoPOJO pojo = new ObjetoPOJO();
+                        int indice = 0;
+                        for (String valor : valores) {
+                            pojo.setPropiedad(cabeceras.toArray(new String[0])[indice], valor.trim());
+                            indice++;
+                        }
+                        datos.add(pojo);
+                    }
+                }
+            }
+
+            // Pasar los datos al JSP
+            request.setAttribute("datos", datos);
+            request.setAttribute("cabeceras", cabeceras);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+    
+	public static void escrituraCSV(HttpServletRequest request, HttpServletResponse response) {
+	    try {
+	        String[] datos = request.getParameterValues("dato");	        
+
+	        String publicationDate = datos[0].trim();
+	        String value = datos[1].trim();
+	        String magnitud = datos[2].trim();
+	        String estado = datos[3].trim();
+	        String estacion = datos[4].trim();
+	        String periodo = datos[5].trim();
+
+	        String nuevaLinea = publicationDate + "," 
+	                          + value + "," 
+	                          + magnitud + "," 
+	                          + estado + "," 
+	                          + estacion + "," 
+	                          + periodo;
+
+	        // Ajusta la ruta del archivo CSV si es necesario
+	        File file = new File("calidad-aire.csv");
+
+	        try (FileWriter fw = new FileWriter(file, true);
+	             BufferedWriter bw = new BufferedWriter(fw)) {
+	            bw.write(nuevaLinea);
+	            bw.newLine();
+	        }
+
+	        // Volver a leer el CSV y pasar los datos al JSP
+	        lecturaCSV(request);
+	    } catch (Exception e) {
+	        e.printStackTrace();
+	    }
+	}
 }
