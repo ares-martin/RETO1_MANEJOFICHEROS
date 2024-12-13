@@ -555,7 +555,7 @@ public class ServletFich extends HttpServlet {
                 boolean esCabecera = true;
 
                 while ((linea = br.readLine()) != null) {
-                    String[] valores = linea.split(","); 												// Separar por comas
+                    String[] valores = linea.split(";"); 												// Separar por comas
 
                     if (esCabecera) {
                         for (String cabecera : valores) {
@@ -593,14 +593,14 @@ public class ServletFich extends HttpServlet {
 	        String estacion = datos[4].trim();
 	        String periodo = datos[5].trim();
 
-	        String nuevaLinea = publicationDate + "," 				// introducir en una sola linea todas las columnas en formato CSV
-	                          + value + "," 
-	                          + magnitud + "," 
-	                          + estado + "," 
-	                          + estacion + "," 
+	        String nuevaLinea = publicationDate + ";" 				// introducir en una sola linea todas las columnas en formato CSV
+	                          + value + ";" 
+	                          + magnitud + ";" 
+	                          + estado + ";" 
+	                          + estacion + ";" 
 	                          + periodo;
 
-	        File file = new File("calidad-aire.csv"); 				//ruta del archivo CSV
+	        File file = new File(ServletFich.class.getClassLoader().getResource("calidad-aire.csv").getFile()); 				//ruta del archivo CSV
 
 	        try (FileWriter fw = new FileWriter(file, true);		//hacer que el CSV se pueda escribir en el
 	             BufferedWriter bw = new BufferedWriter(fw)) {
@@ -609,6 +609,13 @@ public class ServletFich extends HttpServlet {
 	        }
 
 	        lecturaCSV(request);
+
+		// Abrir el archivo en el equipo
+	     	if (java.awt.Desktop.isDesktopSupported()) {
+	     		java.awt.Desktop desktop = java.awt.Desktop.getDesktop();
+	     		desktop.open(file);
+	     	}
+		    
 	    } catch (Exception e) {
 	        e.printStackTrace();
 	    }
