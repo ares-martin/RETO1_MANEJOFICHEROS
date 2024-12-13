@@ -50,3 +50,11 @@
 2024-12-13 02:21:41,375 [Worker-118: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\juanl\OneDrive\Documents\GitHub\RETO1_MANEJOFICHEROS\RETO1_ManejoFicheros\src\test\resources
 2024-12-13 02:25:39,531 [Worker-128: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 12 resources from src\main\resources to target\classes
 2024-12-13 02:25:39,534 [Worker-128: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\juanl\OneDrive\Documents\GitHub\RETO1_MANEJOFICHEROS\RETO1_ManejoFicheros\src\test\resources
+2024-12-13 02:28:34,765 [Worker-137: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-13 02:28:34,769 [Worker-137: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\juanl\OneDrive\Documents\GitHub\RETO1_MANEJOFICHEROS\RETO1_ManejoFicheros\src\test\resources
+2024-12-13 02:31:08,033 [Worker-128: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 11 resources from src\main\resources to target\classes
+2024-12-13 02:31:08,037 [Worker-128: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\juanl\OneDrive\Documents\GitHub\RETO1_MANEJOFICHEROS\RETO1_ManejoFicheros\src\test\resources
+2024-12-13 02:31:53,131 [Worker-136: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 11 resources from src\main\resources to target\classes
+2024-12-13 02:31:53,135 [Worker-136: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\juanl\OneDrive\Documents\GitHub\RETO1_MANEJOFICHEROS\RETO1_ManejoFicheros\src\test\resources
+2024-12-13 02:32:31,261 [Worker-137: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 11 resources from src\main\resources to target\classes
+2024-12-13 02:32:31,265 [Worker-137: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\juanl\OneDrive\Documents\GitHub\RETO1_MANEJOFICHEROS\RETO1_ManejoFicheros\src\test\resources

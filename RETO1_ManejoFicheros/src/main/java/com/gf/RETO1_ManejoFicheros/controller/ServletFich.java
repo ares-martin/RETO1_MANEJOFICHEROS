@@ -543,33 +543,33 @@ public class ServletFich extends HttpServlet {
         Set<String> cabeceras = new LinkedHashSet<>();
 
         try {
-            // Ruta del archivo CSV
-            InputStream inputStream = ServletFich.class.getClassLoader().getResourceAsStream("calidad-aire.csv");
+        	// Ruta del archivo CSV
+            InputStream inputStream = ServletFich.class.getClassLoader().getResourceAsStream("calidad-aire.csv"); 
             if (inputStream == null) {
                 throw new FileNotFoundException("Archivo no encontrado: calidad-aire.csv");
             }
 
-            // Leer el archivo usando BufferedReader
-            try (BufferedReader br = new BufferedReader(new InputStreamReader(inputStream))) {
+            
+            try (BufferedReader br = new BufferedReader(new InputStreamReader(inputStream))) {			// Leer el archivo usando BufferedReader
                 String linea;
                 boolean esCabecera = true;
 
                 while ((linea = br.readLine()) != null) {
-                    String[] valores = linea.split(","); // Separar por comas
+                    String[] valores = linea.split(","); 												// Separar por comas
 
                     if (esCabecera) {
                         for (String cabecera : valores) {
-                            cabeceras.add(cabecera.trim());
+                            cabeceras.add(cabecera.trim());												//separar la cabezera
                         }
                         esCabecera = false;
                     } else {
                         ObjetoPOJO pojo = new ObjetoPOJO();
                         int indice = 0;
                         for (String valor : valores) {
-                            pojo.setPropiedad(cabeceras.toArray(new String[0])[indice], valor.trim());
+                            pojo.setPropiedad(cabeceras.toArray(new String[0])[indice], valor.trim());	//guardar los datos del CSV
                             indice++;
                         }
-                        datos.add(pojo);
+                        datos.add(pojo);																//añadir los datos al POJO para su lectura
                     }
                 }
             }
@@ -584,32 +584,30 @@ public class ServletFich extends HttpServlet {
     
 	public static void escrituraCSV(HttpServletRequest request, HttpServletResponse response) {
 	    try {
-	        String[] datos = request.getParameterValues("dato");	        
+	        String[] datos = request.getParameterValues("dato");	//recoger los datos del JSP        
 
-	        String publicationDate = datos[0].trim();
+	        String publicationDate = datos[0].trim(); 				//organizar los datos por cada columna
 	        String value = datos[1].trim();
 	        String magnitud = datos[2].trim();
 	        String estado = datos[3].trim();
 	        String estacion = datos[4].trim();
 	        String periodo = datos[5].trim();
 
-	        String nuevaLinea = publicationDate + "," 
+	        String nuevaLinea = publicationDate + "," 				// introducir en una sola linea todas las columnas en formato CSV
 	                          + value + "," 
 	                          + magnitud + "," 
 	                          + estado + "," 
 	                          + estacion + "," 
 	                          + periodo;
 
-	        // Ajusta la ruta del archivo CSV si es necesario
-	        File file = new File("calidad-aire.csv");
+	        File file = new File("calidad-aire.csv"); 				//ruta del archivo CSV
 
-	        try (FileWriter fw = new FileWriter(file, true);
+	        try (FileWriter fw = new FileWriter(file, true);		//hacer que el CSV se pueda escribir en el
 	             BufferedWriter bw = new BufferedWriter(fw)) {
-	            bw.write(nuevaLinea);
-	            bw.newLine();
+	            bw.write(nuevaLinea);								//escribir la linea con todos los datos
+	            bw.newLine();										//pasar de linea
 	        }
 
-	        // Volver a leer el CSV y pasar los datos al JSP
 	        lecturaCSV(request);
 	    } catch (Exception e) {
 	        e.printStackTrace();
